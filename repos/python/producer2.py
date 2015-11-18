@@ -1,12 +1,10 @@
-import sys
-
 from kafka.client import KafkaClient
 from kafka.producer import SimpleProducer
 from datetime import datetime
 
 from TwitterAPI import TwitterAPI
 
-TRACK_TERM = 'Clemson'
+TRACK_TERM = 'poisoning'
 
 CONSUMER_KEY = 'yXmWAkCKfUTXpxakMqJxy8NuH'
 CONSUMER_SECRET = 'xBfst9PYhkpwv3X3WdhuBsJHwf9fUEBuHPGz1NJikjw025odDh'
@@ -21,7 +19,7 @@ api = TwitterAPI(CONSUMER_KEY,
 
 r = api.request('statuses/filter', {'track': TRACK_TERM})
 
-kafka = KafkaClient(sys.argv[1] + ":9092")
+kafka = KafkaClient("localhost:9092")
 
 producer = SimpleProducer(kafka)
 
