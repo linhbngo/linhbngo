@@ -49,6 +49,6 @@ if __name__ == "__main__":
         .map(lambda word: (word, 1)) \
         .reduceByKey(lambda a, b: a+b)
     counts.pprint()
-
+#    counts.print()
     ssc.start()
     ssc.awaitTermination()

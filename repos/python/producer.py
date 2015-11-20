@@ -6,7 +6,12 @@ from datetime import datetime
 
 from TwitterAPI import TwitterAPI
 
-TRACK_TERM = 'Clemson'
+if len(sys.argv) != 4:
+  print("Usage: producer.py <broker> <track-term> <topic>")
+  exit(-1)
+
+#TRACK_TERM = 'Clemson'
+TRACK_TERM = sys.argv[2]
 
 CONSUMER_KEY = 'yXmWAkCKfUTXpxakMqJxy8NuH'
 CONSUMER_SECRET = 'xBfst9PYhkpwv3X3WdhuBsJHwf9fUEBuHPGz1NJikjw025odDh'
@@ -24,11 +29,12 @@ r = api.request('statuses/filter', {'track': TRACK_TERM})
 kafka = KafkaClient(sys.argv[1] + ":9092")
 
 producer = SimpleProducer(kafka)
-
+i=1
 for item in r:
   if 'text' in item:
-    print(item['text'])
-    Tweet_content = str(item['text'].encode("utf-8"))
-    producer.send_messages("test", Tweet_content + str(datetime.now().time()) )
+    print(str(i) + " " + item['text'])
+    Tweet_content = str(i) + " " + str(item['text'].encode("utf-8"))
+    producer.send_messages(sys.argv[3], Tweet_content + str(datetime.now().time()) )
+    i += 1
 #  else:
 #    producer.send_messages("test", item + str(datetime.now().time()) )
