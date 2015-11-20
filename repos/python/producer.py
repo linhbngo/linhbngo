@@ -6,18 +6,24 @@ from datetime import datetime
 
 from TwitterAPI import TwitterAPI
 
-if len(sys.argv) != 4:
-  print("Usage: producer.py <broker> <track-term> <topic>")
+if len(sys.argv) != 5:
+  print("Usage: producer.py <broker> <track-term> <topic> <key location>")
   exit(-1)
 
 #TRACK_TERM = 'Clemson'
 TRACK_TERM = sys.argv[2]
 
-CONSUMER_KEY = 'yXmWAkCKfUTXpxakMqJxy8NuH'
-CONSUMER_SECRET = 'xBfst9PYhkpwv3X3WdhuBsJHwf9fUEBuHPGz1NJikjw025odDh'
-ACCESS_TOKEN_KEY = '374741989-xGscbglKIEFMY7MTch2vPF6qsOKsV3U7qt24k0wb'
-ACCESS_TOKEN_SECRET = 'QWLwpPFGsZ2pwbe3dxxAsLzTl9s0jF1qeQjSbl0vZcG5g'
+# read keys from external file (not on github)
+keyFile = open(sys.argv[4],"r")
+CONSUMER_KEY = keyFile.readline().rstrip()
+CONSUMER_SECRET = keyFile.readline().rstrip()
+ACCESS_TOKEN_KEY = keyFile.readline().rstrip()
+ACCESS_TOKEN_SECRET = keyFile.readline().rstrip()
 
+print(CONSUMER_KEY)
+print(CONSUMER_SECRET)
+print(ACCESS_TOKEN_KEY)
+print(ACCESS_TOKEN_SECRET)
 
 api = TwitterAPI(CONSUMER_KEY,
                  CONSUMER_SECRET,
