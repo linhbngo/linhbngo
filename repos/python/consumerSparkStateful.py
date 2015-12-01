@@ -62,7 +62,7 @@ if __name__ == "__main__":
     counts = lines.flatMap(lambda line: line.split(" ")) \
         .map(lambda word: (word, 1)) \
         .updateStateByKey(updateFunc)
-    counts.transform(lambda rdd: rdd.sortBy(lambda x: x[1], false))
+#    counts.transform(lambda rdd: rdd.sortBy(lambda x: x[1], false))
     counts.pprint()
 #    counts.print()
     ssc.start()
