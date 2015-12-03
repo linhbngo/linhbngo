@@ -1,10 +1,16 @@
 import sys
+import logging
 
 from kafka.client import KafkaClient
 from kafka.producer import SimpleProducer
 from datetime import datetime
 
 from TwitterAPI import TwitterAPI
+
+#logging.basicConfig(
+#  format='%(asctime)s.%(msecs)s:%(name)s:%(thread)d:%(levelname)s:%(process)d:%(message)s',
+#  level=logging.DEBUG
+#)
 
 if len(sys.argv) != 5:
   print("Usage: producer.py <broker> <track-term> <topic> <key location>")
@@ -32,7 +38,9 @@ api = TwitterAPI(CONSUMER_KEY,
 
 r = api.request('statuses/filter', {'track': TRACK_TERM})
 
-kafka = KafkaClient(sys.argv[1] + ":9092")
+#kafka = KafkaClient(sys.argv[1] + ":9092")
+# On Clemson Hadoop cluster, we use the Hortonworks port for Kafka: 6667
+kafka = KafkaClient(sys.argv[1] + ":6667")
 
 producer = SimpleProducer(kafka)
 i=1

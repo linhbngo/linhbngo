@@ -39,8 +39,8 @@ if __name__ == "__main__":
         exit(-1)
 
     sc = SparkContext(appName="PythonStreamingKafkaWordCount")
-    sc.setLogLevel("WARN")
-    ssc = StreamingContext(sc, 1)
+#    sc.setLogLevel("WARN")
+    ssc = StreamingContext(sc, 600)
 
     zkQuorum, topic = sys.argv[1:]
     kvs = KafkaUtils.createStream(ssc, zkQuorum, "spark-streaming-consumer", {topic: 1})
@@ -48,6 +48,7 @@ if __name__ == "__main__":
     counts = lines.flatMap(lambda line: line.split(" ")) \
         .map(lambda word: (word, 1)) \
         .reduceByKey(lambda a, b: a+b)
+    counts.saveAsTextFiles("hdfs://namenode2.palmetto.clemson.edu:8020/user/lngo/Twitter/ClemsonTopic","txt")
     counts.pprint()
 #    counts.print()
     ssc.start()
