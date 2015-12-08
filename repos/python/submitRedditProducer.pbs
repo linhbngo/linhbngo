@@ -1,13 +1,13 @@
 #!/bin/bash
 
-#PBS -N TwitProducer
+#PBS -N RedditProducer
 #PBS -l select=1:ncpus=16:mpiprocs=16:mem=60gb
 #PBS -l walltime=335:00:00
 #PBS -j oe
 #PBS -q bigdata
 
 cd $PBS_O_WORKDIR
-python producer.py 10.125.8.197 Paris ClemsonTopic /home/lngo/.cert/Twitter
+python rssReddit.py 10.125.8.197 ClemsonTopic http://www.reddit.com/r/news/.rss
 
 
 

@@ -18,29 +18,23 @@ if len(sys.argv) != 4:
   print("Usage: rssProducer.py <broker> <topic> <RSS URL>")
   exit(-1)
 
-
 rss = sys.argv[3]
 feed = feedparser.parse(rss)
-  # On Clemson Hadoop cluster, we use the Hortonworks port for Kafka: 6667
-  #kafka = KafkaClient(sys.argv[1] + ":6667")
+# On Clemson Hadoop cluster, we use the Hortonworks port for Kafka: 6667
+kafka = KafkaClient(sys.argv[1] + ":6667")
 #print feed.etag
 #print feed.modified
 while 1:  
-#  producer = SimpleProducer(kafka)
-  # production version might need to include Last-Modified check
-#  currentStatus = feed['status']
-#  if currentStatus == 304:
-#    print feed.debug_message
-#    continue
-#  currentEtag = feed.etag
-#  currentModified = feed.modified
-#  print (currentEtag)
+  producer = SimpleProducer(kafka)
   for entry in feed['entries']:
-    print(entry['title'])
-#  feed = feedparser.parse(rss, etag=currentEtag)
-#  feed = feedparser.parse(rss, modified=currentModified)
+    #print(entry['title'])
+    Reddit_content = "Reddit " + str(entry['title'].encode("utf-8"))
+    producer.send_messages(sys.argv[2], Reddit_content)
+
   feed = feedparser.parse(rss)
-  print ("=================================================")
+ 
+#  producer.send_messages(sys.argv[2], "Reddit" + entry['title'])
+  #print ("=================================================")
   time.sleep(10)
  
 #      print(entry['id'])
