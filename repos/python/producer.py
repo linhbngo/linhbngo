@@ -13,10 +13,10 @@ from TwitterAPI import TwitterAPI
 #)
 
 if len(sys.argv) != 5:
-  print("Usage: producer.py <broker> <track-term> <topic> <key location>")
+  print("Usage: producer.py <broker:port> <track-term> <topic> <key location>")
+  print("Note: use port 9092 for default Kafka broker and 6667 for HDP Kafka broker")
   exit(-1)
 
-#TRACK_TERM = 'Clemson'
 TRACK_TERM = sys.argv[2]
 
 # read keys from external file (not on github)
@@ -38,17 +38,13 @@ api = TwitterAPI(CONSUMER_KEY,
 
 r = api.request('statuses/filter', {'track': TRACK_TERM})
 
-#kafka = KafkaClient(sys.argv[1] + ":9092")
-# On Clemson Hadoop cluster, we use the Hortonworks port for Kafka: 6667
-kafka = KafkaClient(sys.argv[1] + ":6667")
+kafka = KafkaClient(sys.argv[1])
 
 producer = SimpleProducer(kafka)
 i=1
 for item in r:
   if 'text' in item:
-#    print(str(i) + " " + item['text'])
+    print(str(i) + " " + item['text'])
     Tweet_content = str(i) + " " + str(item['text'].encode("utf-8"))
     producer.send_messages(sys.argv[3], Tweet_content + str(datetime.now().time()) )
     i += 1
-#  else:
-#    producer.send_messages("test", item + str(datetime.now().time()) )
