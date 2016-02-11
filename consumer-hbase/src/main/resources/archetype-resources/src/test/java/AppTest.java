@@ -1,4 +1,4 @@
-package org.dsci.streaming.kafka;
+package $org.consumer.hbase;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
