@@ -1,4 +1,4 @@
-package $org.consumer.hbase;
+package org.consumer.hbase;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
