@@ -4,15 +4,15 @@
 
 Module for TwitterAPI
 
- pip install --user TwitterAPI
+  pip install --user TwitterAPI
 
 Module for Kafka
 
- pip install --user kafka-python
+  pip install --user kafka-python
 
 Module for HBase
  
- pip install --user happybase
+  pip install --user happybase
 
 # need to build Spark and Kafka 
 ./make-distribution.sh --name spark-1.5.2 --tgz -Phadoop-2.2 -Pyarn
