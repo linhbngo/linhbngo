@@ -1,5 +1,8 @@
 import sys
 import logging
+import json
+import yaml
+import ast
 
 from kafka.client import KafkaClient
 from kafka.consumer import SimpleConsumer
@@ -23,5 +26,15 @@ consumer = SimpleConsumer(kafka, "my-group", sys.argv[2])
 print("Start consuming ...")
 
 for message in consumer:
-    print(message)
-
+    #d = json.loads(unicode(message.message.value))
+    #print(message.message.value)
+#    d = yaml.safe_load(str(message.message.value).strip())
+    #d = json.loads(str(message.message.value).strip())
+    e = ast.literal_eval(message.message.value)
+    #print d
+    print ("\n")
+    print e[u'text'].encode("utf-8")
+    #print(message.message)
+    #print(d)
+    print("======== \n")
+    #print d
