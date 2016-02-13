@@ -26,10 +26,8 @@ consumer = SimpleConsumer(kafka, "my-group", sys.argv[2])
 print("Start consuming ...")
 
 for message in consumer:
-    #d = json.loads(unicode(message.message.value))
-    #print(message.message.value)
-#    d = yaml.safe_load(str(message.message.value).strip())
-    #d = json.loads(str(message.message.value).strip())
+    # the content sent from the producer cannot be parsed into a JSON object.
+    # this code settles with converting it into a python dict obect instead.
     e = ast.literal_eval(message.message.value)
     #print d
     print ("\n")

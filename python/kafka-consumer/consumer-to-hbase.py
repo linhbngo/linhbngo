@@ -1,6 +1,7 @@
 import sys
 import logging
 import happybase
+import ast
 
 from kafka.client import KafkaClient
 from kafka.consumer import SimpleConsumer
@@ -29,13 +30,30 @@ else:
     column_families = {'Raw_Tweets':dict()}
     new_table = connection.create_table(sys.argv[4],column_families)
 
-#kafka = KafkaClient(sys.argv[1])
+current_table = connection.table(sys.argv[4])
 
-#print("Connected to broker ...")
+kafka = KafkaClient(sys.argv[1])
 
-#consumer = SimpleConsumer(kafka, "my-group", sys.argv[2])
+print("Connected to broker ...")
 
-#print("Start consuming ...")
+consumer = SimpleConsumer(kafka, "my-group", sys.argv[2])
 
-#for message in consumer:
-#    print(message)
+print("Start consuming ...")
+
+# set up batch
+
+msg_batch = table.batch()
+msg_counter = 1
+
+for message in consumer:
+    e = ast.literal_eval(message.message.value)
+    # generate row key
+
+    if msg_counter <= 1000:
+        # call msg_batch.put('row-key', {'cf:col1': 'value1','cf:col2': 'value2'})
+        # or msg_batch.put('row-key', {'cf:col1': 'value1'}, timestamp=123456789)
+
+        msg_counter += 1
+    else:
+        msg_batch.send()
+        msg_counter = 1
