@@ -1,7 +1,7 @@
 import sys
 import logging
 import happybase
-import ast
+import json
 
 from kafka.client import KafkaClient
 from kafka.consumer import SimpleConsumer
@@ -43,17 +43,22 @@ print("Start consuming ...")
 # set up batch
 
 msg_batch = current_table.batch()
-msg_counter = 1
+msg_counter = 0
 
 for message in consumer:
-    e = ast.literal_eval(message.message.value)
+    # print message.message.value
+    d = json.loads(message.message.value)
     # generate row key
-    row_key = e[u'id']
-    if msg_counter >= 100:
+    # print d
+    row_key = d[u'id']
+    print str(msg_counter) + ": " + str(row_key)
+    if msg_counter >= 10:
         # call msg_batch.put('row-key', {'cf:col1': 'value1','cf:col2': 'value2'})
-        msg_batch.put('row-key', {'Raw_Tweets': e})
-        break
-    else:
+        print "Stop the batch at 100 tweets to send to HBase"
         msg_batch.send()
         msg_counter = 1
+        break
+    else:
+        msg_batch.put(str(row_key), {'Raw_Tweets:json': message.message.value})
+        msg_counter += 1
 connection.close()
