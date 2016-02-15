@@ -40,7 +40,7 @@ if __name__ == "__main__":
 
     sc = SparkContext(appName="PythonStreamingKafkaWordCount")
 #    sc.setLogLevel("WARN")
-    ssc = StreamingContext(sc, 600)
+    ssc = StreamingContext(sc, 1)
 
     zkQuorum, topic = sys.argv[1:]
     kvs = KafkaUtils.createStream(ssc, zkQuorum, "spark-streaming-consumer", {topic: 1})
