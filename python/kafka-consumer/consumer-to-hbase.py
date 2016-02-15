@@ -27,7 +27,7 @@ if (sys.argv[4] in table_list):
     print "Table exists"
 else:
     print "Table does not exist. Creating new table ..."
-    column_families = {'Raw_Tweets':dict()}
+    column_families = {'Raw_Tweets:json':dict()}
     new_table = connection.create_table(sys.argv[4],column_families)
 
 current_table = connection.table(sys.argv[4])
@@ -42,18 +42,18 @@ print("Start consuming ...")
 
 # set up batch
 
-msg_batch = table.batch()
+msg_batch = current_table.batch()
 msg_counter = 1
 
 for message in consumer:
     e = ast.literal_eval(message.message.value)
     # generate row key
-
-    if msg_counter <= 1000:
+    row_key = e[u'id']
+    if msg_counter >= 100:
         # call msg_batch.put('row-key', {'cf:col1': 'value1','cf:col2': 'value2'})
-        # or msg_batch.put('row-key', {'cf:col1': 'value1'}, timestamp=123456789)
-
-        msg_counter += 1
+        msg_batch.put('row-key', {'Raw_Tweets': e})
+        break
     else:
         msg_batch.send()
         msg_counter = 1
+connection.close()
