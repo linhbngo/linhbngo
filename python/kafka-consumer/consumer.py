@@ -1,5 +1,8 @@
 import sys
 import logging
+import json
+import yaml
+import ast
 
 from kafka.client import KafkaClient
 from kafka.consumer import SimpleConsumer
@@ -23,5 +26,13 @@ consumer = SimpleConsumer(kafka, "my-group", sys.argv[2])
 print("Start consuming ...")
 
 for message in consumer:
-    print(message)
-
+    # the content sent from the producer cannot be parsed into a JSON object.
+    # this code settles with converting it into a python dict obect instead.
+    e = ast.literal_eval(message.message.value)
+    #print d
+    print ("\n")
+    print e[u'text'].encode("utf-8")
+    #print(message.message)
+    #print(d)
+    print("======== \n")
+    #print d

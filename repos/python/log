@@ -1,3 +1,0 @@
-We use TwitterAPI for python (https://github.com/geduldig/TwitterAPI)
-
-Pay attention to slow Twitter streams due to lack of activities. These streams will be killed (stalled)

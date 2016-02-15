@@ -1,5 +1,6 @@
 import sys
 import logging
+import json
 
 from kafka.client import KafkaClient
 from kafka.producer import SimpleProducer
@@ -44,7 +45,10 @@ producer = SimpleProducer(kafka)
 i=1
 for item in r:
   if 'text' in item:
-    print(str(i) + " " + item['text'])
+    #print(str(i) + " " + item['text'])
+    print(str(i) + " " + str(item['id']) + " " + str(item['text'].encode("utf-8")))
     Tweet_content = str(i) + " " + str(item['text'].encode("utf-8"))
-    producer.send_messages(sys.argv[3], Tweet_content + str(datetime.now().time()) )
+#    producer.send_messages(sys.argv[3], Tweet_content + str(datetime.now().time()) )
+    # sending full Tweet
+    producer.send_messages(sys.argv[3], json.dumps(item))
     i += 1
