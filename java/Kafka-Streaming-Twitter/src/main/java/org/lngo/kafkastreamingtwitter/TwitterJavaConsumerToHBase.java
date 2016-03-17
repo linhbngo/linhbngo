@@ -1,4 +1,4 @@
-package com.saurzcode.twitter;
+package kafkastreamingtwitter;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
