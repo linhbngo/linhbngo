@@ -1,8 +1,10 @@
 package org.lngo.kafkastreamingtwitter;
 
+import java.util.*;
 import java.util.Properties;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
+import java.io.IOException;
 
 import kafka.producer.KeyedMessage;
 import kafka.producer.ProducerConfig;
@@ -25,31 +27,34 @@ import org.apache.hadoop.mapreduce.lib.input.*;
 import org.apache.hadoop.mapreduce.lib.output.*;
 import org.apache.hadoop.util.*;
 
-public class TwitterKafkaProducer extends Configured implements Tool{
+public class TwitterJavaProducer extends Configured implements Tool{
 
-	private static final String topic = "twitter-topic";
+	private static final String topic = "ElectionTwitter";
 
   
-  public static void main(String[] args) {
-    try {
-      TwitterKafkaProducer.run(args[0], args[1], args[2], args[3]);
-    } catch (InterruptedException e) {
-      System.out.println(e);
-    }
+  public static void main(String[] args) throws Exception {
+    int res = ToolRunner.run(new TwitterJavaProducer(), args);
+    System.exit(res);
   }
 
- public int run(String[] args) throws Exception {
+  public int run(String[] args) throws Exception {
     Path inputPath = new Path(args[0]);
+    Path outputPath = new Path(args[1]);
 
     Configuration conf = getConf();
     Job job = new Job(conf, this.getClass().toString());
 
     FileInputFormat.setInputPaths(job, inputPath);
+    FileOutputFormat.setOutputPath(job, outputPath);
 
-    job.setJarByClass(TwitterKafkaProducer.class);
+    job.setJarByClass(TwitterJavaProducer.class);
+ 
     job.setInputFormatClass(TextInputFormat.class);
+    job.setOutputFormatClass(TextOutputFormat.class);
+
     job.setMapOutputKeyClass(Text.class);
     job.setMapOutputValueClass(IntWritable.class);
+
     job.setOutputKeyClass(Text.class);
     job.setOutputValueClass(IntWritable.class);
 
@@ -63,24 +68,23 @@ public class TwitterKafkaProducer extends Configured implements Tool{
     public void setup(Context context) {
         Configuration config = context.getConfiguration();
         // get the following parameters from -D generic Options:
-        String topic = config.get("mapper.word");
-        String zookeeper = ;
-
-        word.set(wordstring);
+        String topic = config.get("kafka.topic");
+        //word.set(wordstring);
     }
 
     public void map(Object key, Text value, Context context) throws IOException, InterruptedException {
       String line = value.toString();
+      System.out.println(line);
       StringTokenizer tokenizer = new StringTokenizer(line);
-      String consumerKey = tokenizer[0];
-      String consumerSecret = tokenizer[1];
-			String token = tokenizer[2];
-      String secret = tokenizer[3];
+      String consumerKey = tokenizer.nextToken();
+      String consumerSecret = tokenizer.nextToken();
+			String token = tokenizer.nextToken();
+      String secret = tokenizer.nextToken();
 
   		Properties properties = new Properties();
-		  properties.put("metadata.broker.list", "localhost:9092");
+		  properties.put("metadata.broker.list", "dsci002.palmetto.clemson.edu:6667,dsci004.palmetto.clemson.edu:6667,dsci006.palmetto.clemson.edu:6667");
 		  properties.put("serializer.class", "kafka.serializer.StringEncoder");
-		  properties.put("client.id","camus");
+		  properties.put("client.id","lngo");
 
 		  ProducerConfig producerConfig = new ProducerConfig(properties);
 		  kafka.javaapi.producer.Producer<String, String> producer = new kafka.javaapi.producer.Producer<String, String>(producerConfig);
@@ -88,7 +92,11 @@ public class TwitterKafkaProducer extends Configured implements Tool{
 		  BlockingQueue<String> queue = new LinkedBlockingQueue<String>(10000);
 		  StatusesFilterEndpoint endpoint = new StatusesFilterEndpoint();
 		  // add some track terms
-		  endpoint.trackTerms(Lists.newArrayList("twitterapi","#AAPSweep"));
+		  endpoint.trackTerms(Lists.newArrayList("Hillary","Clinton","ImWithHer","Hillary2016","HillaryForAmerica",
+                                             "realDonaldTrump","Trump","TrumpNewMedia","Trump2016","MakeAmericaGreatAgain",
+                                             "ChooseCruz","tedcruz","CruzCrew","CruzToVictory","Cruz2016",
+                                             "BernieSanders","FeelTheBern","Bernie","bernie2016","Sanders",
+                                             "Elections2016","Decision2016"));
 
 		  Authentication auth = new OAuth1(consumerKey, consumerSecret, token,secret);
 		  
@@ -101,7 +109,9 @@ public class TwitterKafkaProducer extends Configured implements Tool{
 		  client.connect();
 
 		  // Do whatever needs to be done with messages
-		  for (int msgRead = 0; msgRead < 1000; msgRead++) {
+//		  for (int msgRead = 0; msgRead < 1000; msgRead++) {
+      int runTime = 0;
+      while(runTime == 0){
 			  KeyedMessage<String, String> message = null;
 			  try {
 				  message = new KeyedMessage<String, String>(topic, queue.take());
@@ -109,6 +119,7 @@ public class TwitterKafkaProducer extends Configured implements Tool{
 				  e.printStackTrace();
 			  }
 			  producer.send(message);
+        if (runTime != 0) break;
 		  }
 		  producer.close();
 		  client.stop();

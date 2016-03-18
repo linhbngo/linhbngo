@@ -29,7 +29,10 @@ for message in consumer:
     e = json.loads(message.message.value)
     #print d
     print ("\n")
-    print e[u'text'].encode("utf-8")
+    if 'text' in e:
+      print e[u'text'].encode("utf-8")
+    else:
+      print e
     #print(message.message)
     #print(d)
     print("======== \n")

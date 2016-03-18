@@ -1,4 +1,4 @@
-package kafkastreamingtwitter;
+package org.lngo.kafkastreamingtwitter;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -12,7 +12,7 @@ import com.twitter.hbc.core.processor.StringDelimitedProcessor;
 import com.twitter.hbc.httpclient.auth.Authentication;
 import com.twitter.hbc.httpclient.auth.OAuth1;
 
-public class TwitterStreamExample {
+public class TwitterJavaConsumerToHBase {
 
 	  public static void run(String consumerKey, String consumerSecret, String token, String secret) throws InterruptedException {
 	    BlockingQueue<String> queue = new LinkedBlockingQueue<String>(10000);
@@ -45,7 +45,7 @@ public class TwitterStreamExample {
 	  }
 	  public static void main(String[] args) {
 	    try {
-	      TwitterStreamExample.run(args[0], args[1], args[2], args[3]);
+	      TwitterJavaConsumerToHBase.run(args[0], args[1], args[2], args[3]);
 	    } catch (InterruptedException e) {
 	      System.out.println(e);
 	    }
