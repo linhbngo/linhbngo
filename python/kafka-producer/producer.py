@@ -38,7 +38,13 @@ ACCESS_TOKEN_SECRET = keyFile.readline().rstrip()
 
 auth = OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN_KEY, ACCESS_TOKEN_SECRET)
-stream = Stream(auth, StdOutListener())
-
-stream.filter(track=["Hillary","Clinton","ImWithHer","Hillary2016","HillaryForAmerica","realDonaldTrump","Trump","TrumpNewMedia","Trump2016","MakeAmericaGreatAgain","ChooseCruz","tedcruz","CruzCrew","CruzToVictory","Cruz2016","BernieSanders","FeelTheBern","Bernie","bernie2016","Sanders","Elections2016","Decision2016"])
-
+while True:
+  try:
+    stream = Stream(auth, StdOutListener())
+    stream.filter(track=["Hillary","Clinton","ImWithHer","Hillary2016","HillaryForAmerica","realDonaldTrump","Trump","TrumpNewMedia","Trump2016","MakeAmericaGreatAgain","ChooseCruz","tedcruz","CruzCrew","CruzToVictory","Cruz2016","BernieSanders","FeelTheBern","Bernie","bernie2016","Sanders","Elections2016","Decision2016"])
+  except IncompleteRead:
+    print ("Lets try it again")
+    continue
+  except KeyboardInterrupt:
+    stream.disconnect()
+    break
