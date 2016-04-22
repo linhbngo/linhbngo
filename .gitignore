@@ -1,0 +1,6 @@
+java/Kafka-Streaming-Twitter/target/
+*~
+*.swp
+java/Kafka-Streaming-Twitter/src/test/
+java/hbase-mapreduce/target
+ 
