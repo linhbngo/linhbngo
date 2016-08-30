@@ -1,12 +1,2 @@
-<<<<<<< HEAD
-java/Kafka-Streaming-Twitter/target/
-*~
-*.swp
-java/Kafka-Streaming-Twitter/src/test/
-java/hbase-mapreduce/target
- 
-=======
 _site
 .sass-cache
-.jekyll-metadata
->>>>>>> cae158e93823de8c7377095920849d6527251ebb
