@@ -1,0 +1,21 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Linh B Ngo
+jobtitle: Assistant Professor
+email: lngo@wcupa.edu
+description: >- # this means to ignore newlines until "baseurl:"
+  This is my personal website
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: linhbngo
+github_username:  linhbngo
+
+# Build settings
+sass:
+  sass_dir: _sass
+include: ['_pages']
+kramdown:
+  input: GFM # See https://kramdown.gettalong.org/parser/gfm.html
