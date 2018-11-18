@@ -1,12 +1,14 @@
 ---
-layout: page
+layout: single
 title: Teaching
 permalink: /teaching/
+sidebar:
+  nav: "docs"
 ---
 
 **Spring 2019**
 
-- [CSC 331: Operating Systems]()
+- [CSC 331: Operating Systems]({{ site.baseurl }}{% link docs/csc-331/index.md %})
 
 
 **Fall 2018**

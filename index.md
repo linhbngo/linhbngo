@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: single
+author_profile: true
 ---
 
   <h2>Welcome</h2>

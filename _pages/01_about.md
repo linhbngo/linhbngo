@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: single
 title: About
 permalink: /about/
+author_profile: true
 ---
 
 I completed my PhD in Computer Science in December of 2011 at the University of Arkansas in Fayetteville. From 2012 to 2013, I worked as a postdoctoral researcher at the School of Computing, Clemson University. From 2013 to 2015, I became a research associate and Deputy Director of the Big Data Systems Lab, led by Dr. Amy Apon, at the School of Computing. Since 2015, I have joined Clemson University’s Cyberinfrastructure and Technology Integration (CITI) Department within the Clemson Computing and Information Technology Group as the Director of Data Science. At the same time, I have maintained my affiliation with the School of Computing as a Research Assistant Professor with teaching responsibilities and research participation. Starting August 2018, I have been appointed Assistant Professor of Computer Science at West Chester University of Pennsylvania.
