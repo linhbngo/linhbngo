@@ -1,8 +1,11 @@
 ---
-layout: post
 title:  "Setup AutoLab"
-date:   2018-11-25 14:45:00 -0500
-categories: lecture
+categories: technical document
+tags: 
+  - linux
+  - ubuntu
+  - installation
+  - autolab
 ---
 
 
@@ -105,7 +108,7 @@ $ sudo apt-get install -y docker-ce
 $ sudo usermod -aG docker $USER
 ```
 At this point, log out and log backin to enable group modification so that the user account can runs docker (See
-[Linux Postintallation](https://docs.docker.com/install/linux/linux-postinstall/). 
+[Linux Postintallation](https://docs.docker.com/install/linux/linux-postinstall/)). 
 
 Next, we clone Tango and create the default configuration file. 
 
