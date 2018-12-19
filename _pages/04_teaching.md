@@ -8,7 +8,7 @@ sidebar:
 
 **Spring 2019**
 
-- [CSC 331: Operating Systems]({{ site.baseurl }}{% link docs/csc-331/index.md %})
+- [CSC 331: Operating Systems]({{ "/docs/csc-331/" | relative_url }})
 
 
 **Fall 2018**

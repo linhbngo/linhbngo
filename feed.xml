@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://www.cs.wcupa.edu/lngo/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.cs.wcupa.edu/lngo/" rel="alternate" type="text/html" /><updated>2018-12-18T13:26:01-05:00</updated><id>https://www.cs.wcupa.edu/lngo/feed.xml</id><title type="html">Research, Learn, Practice, Teach</title><subtitle></subtitle><author><name>Linh B Ngo</name></author><entry><title type="html">Setup AutoLab</title><link href="https://www.cs.wcupa.edu/lngo/technical/document/setup-autolab/" rel="alternate" type="text/html" title="Setup AutoLab" /><published>2018-11-25T00:00:00-05:00</published><updated>2018-11-25T00:00:00-05:00</updated><id>https://www.cs.wcupa.edu/lngo/technical/document/setup-autolab</id><content type="html" xml:base="https://www.cs.wcupa.edu/lngo/technical/document/setup-autolab/">&lt;p&gt;In an effort to improve efficiency and to provide more detailed feedback to student, 
+we are looking into implementation and deployment of autograders. In this post, I describe 
+the process of configuring and deploying a test instance of Carnegie Mellon University’s 
+&lt;a href=&quot;http://www.autolabproject.com/&quot;&gt;Autolab&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The target operating system is Ubuntu 18.04. Initially, I tried Autolab’s 
+&lt;a href=&quot;https://autolab.github.io/docs/one-click/&quot;&gt;OneClick option&lt;/a&gt;. However, there are various errors 
+happened along the way, and using OneClick doesn’t help with the debugging process. In the end, 
+I decided to follow the manual installation guide.&lt;/p&gt;
+
+&lt;h4 id=&quot;installing-autolab&quot;&gt;Installing AutoLab&lt;/h4&gt;
+
+&lt;p&gt;The following commands are embedded in Autolab’s &lt;code class=&quot;highlighter-rouge&quot;&gt;setup.sh&lt;/code&gt; script. However, with Ubuntu 18.04, it 
+is better to manually run these commands so that you have more control over what is being done.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ sudo apt-get -y -qq update
+ $ sudo apt-get -y -qq upgrade
+ $ sudo apt-get -y install aptitude
+ $ sudo aptitude install build-essential git libffi-dev zlib1g-dev autoconf bison libssl1.0-dev libyaml-dev libreadline6-dev libncurses5-dev libgdbm5 libgdbm-dev libmysqlclient-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Note: Comparing to the original script, libssl-dev is changed to libssl1.0-dev, and libgdbm3 is changed to 
+libgdbm5. To help with the potential dependency issues, I used aptitude instead of apt-get.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In the original documentation, we have&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ AUTOLAB_SCRIPT=`mktemp` &amp;amp;&amp;amp; \curl -sSL https://raw.githubusercontent.com/autolab/Autolab/master/bin/setup.sh &amp;gt; $AUTOLAB_SCRIPT &amp;amp;&amp;amp; \bash $AUTOLAB_SCRIPT
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We will need to make several changes the &lt;code class=&quot;highlighter-rouge&quot;&gt;setup.sh&lt;/code&gt; script. We start by running:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ AUTOLAB_SCRIPT=`mktemp` &amp;amp;&amp;amp; \curl -sSL https://raw.githubusercontent.com/autolab/Autolab/master/bin/setup.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Next, run&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ vim $AUTOLAB_SCRIPT
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Comment out the lines between After line 104, insert the following line&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ bash $AUTOLAB_SCRIPT
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After the successful installation of Autolab, you will receive the following messages:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Autolab installation is now complete. When you start a new login-shell, you may run the following command to start up Autolab server at Port 3000:
+                         cd ~/Autolab &amp;amp;&amp;amp; bundle exec rails s -p 3000 --binding=0.0.0.0
+
+Top things to do after installation:
+
+- Try out Tango (https://github.com/autolab/Tango), the back-end service for Autolab, and fill in relevant parameters in ./config/autogradeConfig.rb
+- Sign up for our mailing list to learn about new features and bug fixes: http://eepurl.com/bTTOiT
+- Change MySQL root password (the password we generated is not strong enough for serious use.)
+- Change MySQL password for `lngo`, and update it in ./config/database.yml (default password is '&amp;lt;password&amp;gt;')
+- Contact us if you have any questions!
+
+Thank you for trying out Autolab! For questions and comments, email us at autolab-dev@andrew.cmu.edu.
+
+As a final reminder, your MySQL root password is: OTE4YjcwZjQ2MTA3YjU2Y2UyNTdlMTE5.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Let’s hold off on starting Autolab until a bit later.&lt;/p&gt;
+
+&lt;h3 id=&quot;installing-tango&quot;&gt;Installing Tango&lt;/h3&gt;
+
+&lt;p&gt;Install and run &lt;a href=&quot;https://redis.io/topics/quickstart&quot;&gt;Redis&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ~
+$ wget http://download.redis.io/redis-stable.tar.gz
+$ tar xvzf redis-stable.tar.gz
+$ cd redis-stable
+$ make
+$ sudo aptitude install tcl tk
+$ make test
+$ sudo make install
+$ redis-server --daemonize yes
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Install and run &lt;a href=&quot;https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1&quot;&gt;Docker&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo aptitude install -y apt-transport-https ca-certificates curl software-properties-common
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+$ sudo add-apt-repository &quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable&quot;
+$ sudo apt-get update
+$ sudo apt-get install -y docker-ce
+$ sudo usermod -aG docker $USER
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;At this point, log out and log backin to enable group modification so that the user account can runs docker (See
+&lt;a href=&quot;https://docs.docker.com/install/linux/linux-postinstall/&quot;&gt;Linux Postintallation&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Next, we clone Tango and create the default configuration file.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone https://github.com/autolab/Tango.git
+$ cd Tango
+$ cp config.template.py config.py
+$ mkdir courselabs
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We will use Docker to build a default autograder VM for Tango:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd path/to/Tango
+$ docker build -t autograding_image vmms/
+$ docker images autograding_image    # Check if image built
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Confirm that the &lt;code class=&quot;highlighter-rouge&quot;&gt;VMMS_NAME&lt;/code&gt; option in &lt;code class=&quot;highlighter-rouge&quot;&gt;config.py&lt;/code&gt; is set to &lt;code class=&quot;highlighter-rouge&quot;&gt;localDocker&lt;/code&gt; as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{python}&quot;&gt;# in config.py
+VMMS_NAME = &quot;localDocker&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next, we setup the Python virtual environment for Tango.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo aptitude install virtualenv
+$ virtualenv .
+$ source bin/activate
+$ pip install -r requirements.txt
+$ mkdir volumes
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Run the following command to start the server (producer). If no port is given, the server will run on the port specified in config.py (default: 3000):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ python restful-tango/server.py &amp;lt;port&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Open another terminal window and start the job manager (consumer):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd Tango
+$ source bin/activate
+$ python jobManager.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In yet another terminal, you can test that Tango is running:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ curl localhost:&amp;lt;port&amp;gt;
+# Hello, world! RESTful Tango here!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;running-autolab&quot;&gt;Running Autolab.&lt;/h4&gt;
+
+&lt;p&gt;Now you can configure Autolab to use Tango. Go to your Autolab directory and enter the following commands:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cp config/autogradeConfig.rb.template config/autogradeConfig.rb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can edit the &lt;code class=&quot;highlighter-rouge&quot;&gt;autogradeConfig.rb&lt;/code&gt; file so that it points to your Tango deployment. In this case, 
+we are hosting Tango in the same location as the Autolab web server.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Hostname for Tango RESTful API
+RESTFUL_HOST = &quot;localhost&quot;
+
+# Port for Tango RESTful API
+RESTFUL_PORT = &quot;2000&quot;
+
+# Key for Tango RESTful API
+RESTFUL_KEY = &quot;test&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now you can start Autolab:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ~/Autolab &amp;amp;&amp;amp; bundle exec rails s -p 3000 --binding=0.0.0.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If your host machine has a public IP address, you can open a browser and visit &lt;IP address=&quot;&quot;&gt;:3000. Otherwise, you can open an internal browser on your machine and visit `localhost:3000`. The login and password are admin@foo.bar and *adminfoobar*.&lt;/IP&gt;&lt;/p&gt;</content><author><name>Linh B Ngo</name></author><category term="linux" /><category term="ubuntu" /><category term="installation" /><category term="autolab" /><summary type="html">In an effort to improve efficiency and to provide more detailed feedback to student, we are looking into implementation and deployment of autograders. In this post, I describe the process of configuring and deploying a test instance of Carnegie Mellon University’s Autolab.</summary></entry></feed>

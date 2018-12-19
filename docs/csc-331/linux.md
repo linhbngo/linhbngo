@@ -1,6 +1,6 @@
 ---
 layout: slide
-title: Syllabus
+title: Linux Environment
 category: presentation
 ---
 

@@ -33,8 +33,6 @@ run by the computer hardware. This will lead to more efficient, stable, and secu
 - Students will be able to to design, implement and evaluate a computer-based system, process, component, or program to meet desired needs.
 
 
-
-
 ### Important Dates
 
 - Tue, Jan 29, 2019: Last Day of Add/Drop
@@ -47,7 +45,9 @@ run by the computer hardware. This will lead to more efficient, stable, and secu
 
 **Prerequisites**
 
-- Fundamental understanding of computer architecture and hardware design (CSC 242).
+- Foundations of Computer Science (CSC 220)
+- Computer Science III (CSC 240)
+- Fundamental understanding of computer architecture and hardware design (CSC 242)
 - Knowledge of core data structures and algorithms (CSC 241)
 
 **Textbook**
@@ -71,7 +71,7 @@ Make sure that your laptop is fully charged for the duration of the class (or co
 As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
 
 Virtual Enronment: Oracle VirtualBox
-Virtual OS for VirtualBox: CentOS 7 64-bit
+Virtual OS for VirtualBox: Minix
 Other software packages will be specified and installed insite the CentOS virtual machine as needed.
 
 
@@ -98,8 +98,8 @@ Participation: 5%
 
 Letter grades are assigned according to the following scale: 
 
-Number | 100-93 | 92-90 | 89-87 | 86-83 | 82-80 | 79-77 | 76-73 | 72-70 | 69-67 | 66-63 | 62-60 | <= 59
-Letter | A	| A- | B+ | B | B- | C+ | C | C- | D+ | D | D- | F |
+| Number | 100-93 | 92-90 | 89-87 | 86-83 | 82-80 | 79-77 | 76-73 | 72-70 | 69-67 | 66-63 | 62-60 | <= 59 |
+| Letter | A	| A- | B+ | B | B- | C+ | C | C- | D+ | D | D- | F |
 
 
 **Grading Appeals**
@@ -189,8 +189,25 @@ If you have a disability that requires accommodations under the Americans with D
 
 ### Tentative Course Outline
 
-- [Syllabus]({{ "/docs/csc-331/syllabus_slide/" | relative_url }})
-- Parallel and Distributed File Systems
-- High Performance and Data-Intensive Computing
-- Job Scheduling on Cluster of Computers
-- Complex Distributed Systems
+
+- [Syllabus]({{ "/docs/csc-331/syllabus_slide/" | relative_url }}) (**Week 1**)
+- Introduction to Operating Systems
+- Set up Linux environment
+- Introduction to C Programming (**Week 2**)
+- Virtualization 
+  - Processes (**Week 3**)
+  - CPU Scheduling (**Week 4**)
+  - Memory Management (**Week 5**)
+  - Paging (**Week 6**)
+- Concurrency 
+  - Threads (**Week 7**)
+  - Locks, 
+  - Condition Variables (**Week 8**)
+  - Semaphores (**Week 9**)
+  - Deadlock (**Week 10**)
+- Persistence
+  - I/O and Disks, Disk Scheduling (**Week 11**)
+  - RAID, File Systems (**Week 12**)
+  - File System Implementation (**Week 13**)
+  - Journaling (**Week 14**)
+  - LFS, SSD (**Week 15**)
