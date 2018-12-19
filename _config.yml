@@ -171,6 +171,8 @@ exclude:
   - README
   - tmp
   - /test # ignore Minimal Mistakes /test
+  - deploy.sh
+  - deploy_site.sh
 keep_files:
   - .git
   - .svn

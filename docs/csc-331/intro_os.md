@@ -1,11 +1,11 @@
 ---
 layout: slide
-title: Syllabus
+title: Introduction to OS
 category: presentation
 ---
 
 <section data-markdown>
-## <center> Operating Systems </center>
+## <center> Introduction to OS </center>
 </section>
 
 <section data-markdown>
@@ -145,6 +145,9 @@ Mistakes occasionally happen during the grading process. If you think a mistake 
 
 </section>
 
+
+
+
 <section data-markdown>
 ### Attendance Policy
 
@@ -247,13 +250,4 @@ Failure to access will not exempt individuals from the responsibilities associat
 - The class materials, including source codes, will be disseminated via Git. Being able to use Git is a critical skill for most, if not all software developers and/or IT professionals. There are many tutorials already available online for Git. Some of the more helpful ones include github's, "the simple guide", and atlassian's);
 
 - It would be a mistke if you just attempt to access the cloass materials via the web browser. "This is a mistake. Just learn Git. The command line interface is faster and more powerful, and you're going to need to learn it at some point in your life. Why not today?" - Dr. Jacob Sorber, Clemson University.
-</section>
-
-<section data-markdown>
-### Setup Linux environment
-As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
-
-- Virtual Enronment: Oracle VirtualBox
-- Virtual OS for VirtualBox: Minix
-- Other software packages will be specified and installed inside the virtual OS as needed. 
 </section>
