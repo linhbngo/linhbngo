@@ -5,7 +5,7 @@ category: presentation
 ---
 
 <section data-markdown>
-## <center> Introduction to OS </center>
+## <center> Introduction to Operating Systems </center>
 </section>
 
 <section data-markdown>
@@ -21,22 +21,22 @@ category: presentation
 <section data-markdown>
 ### Course Descriptions
 
-This course will introduce three fundamental concepts in operating system (OS): 
-Virtualization, Concurrency, and Persistence. 
+This course will introduce three fundamental concepts in operating system (OS):
+Virtualization, Concurrency, and Persistence.
 
-- *Virtualization*: How OS creates abstractions through which programmers can 
-interact with the underlying hardware 
-(e.g., *processes*, *memory spaces*, and *CPU scheduling*). 
+- *Virtualization*: How OS creates abstractions through which programmers can
+interact with the underlying hardware
+(e.g., *processes*, *memory spaces*, and *CPU scheduling*).
 
-- *Concurrency*: How OS supports sharing of physical resources 
+- *Concurrency*: How OS supports sharing of physical resources
 among these abstractions (e.g., *thread*, *lock*, and *semaphores*).
 
-- *Persistence*: How OS enables the long term management of information, 
-produced or required by computer programs, in a manner that persists beyond the scope or the duration 
-of these programs (e.g., *I/O devices* and *file systems*). 
+- *Persistence*: How OS enables the long term management of information,
+produced or required by computer programs, in a manner that persists beyond the scope or the duration
+of these programs (e.g., *I/O devices* and *file systems*).
 
-Understanding how operating systems work will facilitate better understanding about how programs are 
-run by the computer hardware. This will lead to more efficient, stable, and secure programs. 
+Understanding how operating systems work will facilitate better understanding about how programs are
+run by the computer hardware. This will lead to more efficient, stable, and secure programs.
 </section>
 
 <section data-markdown>
@@ -62,22 +62,22 @@ run by the computer hardware. This will lead to more efficient, stable, and secu
 - CSC 240 - Computer Science III
 - CSC 241 - Data Structures & Algorithms
 - CSC 242 - Computer Organization
-- Being able to program in **C**. We will cover some background information regarding C programming, but it is important that you take it upon yourself to learn the language. 
+- Being able to program in **C**. We will cover some background information regarding C programming, but it is important that you take it upon yourself to learn the language.
 </section>
 
 <section data-markdown>
 ### Textbook
 
-- **Operating Systems: Three Easy Pieces** by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. 
+- **Operating Systems: Three Easy Pieces** by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau.
 - [Free online PDF chapters by the authors](http://pages.cs.wisc.edu/~remzi/OSTEP/)
-- If you like it, buy it to support the efforts to produce inexpensive, quality, and free textbooks. 
+- If you like it, buy it to support the efforts to produce inexpensive, quality, and free textbooks.
 - Reference book (optional): [Operating Systems Design and Implementation](https://www.amazon.com/Operating-Systems-Design-Implementation-3rd/dp/0131429388)
 </section>
 
 <section data-markdown>
 ### Laptop requirements
 Having access to a laptop during class time is critical
-- Engaging in in-class examples that demonstrate the lectured concepts. 
+- Engaging in in-class examples that demonstrate the lectured concepts.
 - Working on in-class electronic quizzes on D2L
 - Make sure that your laptop is fully charged for the duration of the class (or come in early and get a spot with access to power outlets)
 </section>
@@ -88,7 +88,7 @@ As laptop style and model can vary, the following common (and free) software env
 
 - Virtual Enronment: Oracle VirtualBox
 - Virtual OS for VirtualBox: Minix
-- Other software packages will be specified and installed inside the virtual OS as needed. 
+- Other software packages will be specified and installed inside the virtual OS as needed.
 </section>
 
 <section data-markdown>
@@ -175,19 +175,19 @@ Mistakes occasionally happen during the grading process. If you think a mistake 
 <section data-markdown>
 ### Academic Integrity
 
-It is the responsibility of each student to adhere to the university's standards for academic integrity. Violations of academic integrity include any act that violates the rights of another student in academic work, that involves misrepresentation of your own work, or that disrupts the instruction of the course. 
+It is the responsibility of each student to adhere to the university's standards for academic integrity. Violations of academic integrity include any act that violates the rights of another student in academic work, that involves misrepresentation of your own work, or that disrupts the instruction of the course.
 
 </section>
 
 <section data-markdown>
 ### Academic Integrity
-Other violations include (but are not limited to): 
+Other violations include (but are not limited to):
 
-- cheating on assignments or examinations; 
-- plagiarizing, which means copying any part of another's work and/or using ideas of another and presenting them as one's own without giving proper credit to the source; 
-- selling, purchasing, or exchanging of term papers; 
-- falsifying of information; and 
-- using your own work from one class to fulfill the assignment for another class without significant modification. 
+- cheating on assignments or examinations;
+- plagiarizing, which means copying any part of another's work and/or using ideas of another and presenting them as one's own without giving proper credit to the source;
+- selling, purchasing, or exchanging of term papers;
+- falsifying of information; and
+- using your own work from one class to fulfill the assignment for another class without significant modification.
 
 Proof of academic misconduct can result in the automatic failure and removal from this course.
 </section>

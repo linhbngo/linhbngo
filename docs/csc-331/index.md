@@ -9,22 +9,22 @@ toc: true
 
 ### Course Description
 
-This course will introduce three fundamental concepts in operating system (OS): 
-Virtualization, Concurrency, and Persistence. 
+This course will introduce three fundamental concepts in operating system (OS):
+Virtualization, Concurrency, and Persistence.
 
-- In *Virtualization*, we learn how OS creates abstractions through which programmers can 
-interact with the underlying hardware. Examples of these abstractions include *processes*, 
-*memory spaces*, and *CPU scheduling*. 
+- In *Virtualization*, we learn how OS creates abstractions through which programmers can
+interact with the underlying hardware. Examples of these abstractions include *processes*,
+*memory spaces*, and *CPU scheduling*.
 
-- In *Concurrency*, we learn about how OS supports sharing of physical resources 
-among these abstractions. These include *thread*, *lock*, and *semaphores*. 
+- In *Concurrency*, we learn about how OS supports sharing of physical resources
+among these abstractions. These include *thread*, *lock*, and *semaphores*.
 
-- In *Persistence*, we learn about how OS enables the long term management of information, 
-produced or required by computer programs, in a manner that persists beyond the scope or the duration 
-of these programs. 
+- In *Persistence*, we learn about how OS enables the long term management of information,
+produced or required by computer programs, in a manner that persists beyond the scope or the duration
+of these programs.
 
-Understanding how operating systems work will facilitate better understanding about how programs are 
-run by the computer hardware. This will lead to more efficient, stable, and secure programs. 
+Understanding how operating systems work will facilitate better understanding about how programs are
+run by the computer hardware. This will lead to more efficient, stable, and secure programs.
 
 **Learning Objectives**
 
@@ -52,9 +52,9 @@ run by the computer hardware. This will lead to more efficient, stable, and secu
 
 **Textbook**
 
-- **Operating Systems: Three Easy Pieces** by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. 
+- **Operating Systems: Three Easy Pieces** by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau.
 - [Free online PDF chapters by the authors](http://pages.cs.wisc.edu/~remzi/OSTEP/)
-- If you like it, buy it to support the efforts to produce inexpensive, quality, and free textbooks. 
+- If you like it, buy it to support the efforts to produce inexpensive, quality, and free textbooks.
 - Reference book (optional): [Operating Systems Design and Implementation](https://www.amazon.com/Operating-Systems-Design-Implementation-3rd/dp/0131429388)
 
 **Laptop requirements**
@@ -64,7 +64,7 @@ Having access to a laptop during class time is critical, as we will be:
 - Working with hands-on examples in class, and
 - Working on in-class electronic quizzes on D2L
 
-Make sure that your laptop is fully charged for the duration of the class (or come in early and get a spot with access to power outlets). 
+Make sure that your laptop is fully charged for the duration of the class (or come in early and get a spot with access to power outlets).
 
 **Software requirements**
 
@@ -96,7 +96,7 @@ Exam 2: 10% (Comprehensive)
 Quiz: 20%
 Participation: 5%
 
-Letter grades are assigned according to the following scale: 
+Letter grades are assigned according to the following scale:
 
 | Number | 100-93 | 92-90 | 89-87 | 86-83 | 82-80 | 79-77 | 76-73 | 72-70 | 69-67 | 66-63 | 62-60 | <= 59 |
 | Letter | A	| A- | B+ | B | B- | C+ | C | C- | D+ | D | D- | F |
@@ -191,17 +191,17 @@ If you have a disability that requires accommodations under the Americans with D
 
 
 - [Syllabus]({{ "/docs/csc-331/syllabus_slide/" | relative_url }}) (**Week 1**)
-- Introduction to Operating Systems
+- [Introduction to Operating Systems]({{ "/docs/csc-331/intro_os/" | relative_url }})
 - Set up Linux environment
 - Introduction to C Programming (**Week 2**)
-- Virtualization 
+- Virtualization
   - Processes (**Week 3**)
   - CPU Scheduling (**Week 4**)
   - Memory Management (**Week 5**)
   - Paging (**Week 6**)
-- Concurrency 
+- Concurrency
   - Threads (**Week 7**)
-  - Locks, 
+  - Locks,
   - Condition Variables (**Week 8**)
   - Semaphores (**Week 9**)
   - Deadlock (**Week 10**)
