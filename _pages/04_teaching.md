@@ -9,7 +9,9 @@ sidebar:
 **Spring 2019**
 
 - [CSC 331: Operating Systems]({{ "/docs/csc-331/" | relative_url }})
-
+- [CSC 496: Cloud Computing]({{ "/docs/csc-496/" | relative_url }})
+- [CSC 512: Computer Programming I]({{ "/docs/csc-512/" | relative_url }})
+- [CSC 516: Introduction to Data Structures and Algorithms]({{ "/docs/csc-516/" | relative_url }})
 
 **Fall 2018**
 
