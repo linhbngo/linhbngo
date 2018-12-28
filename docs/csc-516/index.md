@@ -216,60 +216,41 @@ If you have a disability that requires accommodations under the Americans with D
 
 Week 1
 Tue, Jan 22, 2019
+Wed, Jan 23, 2019
 Thu, Jan 24, 2019
 
 Week 2
+Mon, Jan 28, 2019
 Tue, Jan 29, 2019
+Wed, Jan 30, 2019
 Thu, Jan 31, 2019
 
 Week 3
+Mon, Feb 04, 2019
 Tue, Feb 05, 2019
+Wed, Feb 06, 2019
 Thu, Feb 07, 2019
 
 Week 4
+Mon, Feb 11, 2019
 Tue, Feb 12, 2019
+Wed, Feb 13, 2019
 Thu, Feb 14, 2019
 
 Week 5
+Mon, Feb 18, 2019
 Tue, Feb 19, 2019
+Wed, Feb 20, 2019
 Thu, Feb 21, 2019
 
 Week 6
+Mon, Feb 25, 2019
 Tue, Feb 26, 2019
+Wed, Feb 27, 2019
 Thu, Feb 28, 2019
 
 Week 7
+Mon, Mar 04, 2019
 Tue, Mar 05, 2019
+Wed, Mar 06, 2019
 Thu, Mar 07, 2019
-
-Week 8
-Tue, Mar 12, 2019
-Thu, Mar 14, 2019
-
-Week 9
-Tue, Mar 19, 2019
-Thu, Mar 21, 2019
-
-Week 10
-Tue, Mar 26, 2019
-Thu, Mar 28, 2019
-
-Week 11
-Tue, Apr 02, 2019
-Thu, Apr 04, 2019
-
-Week 12
-Tue, Apr 09, 2019
-Thu, Apr 11, 2019
-
-Week 13
-Tue, Apr 16, 2019
-Thu, Apr 18, 2019
-
-Week 14
-Tue, Apr 23, 2019
-Thu, Apr 25, 2019
-
-Week 15
-Tue, Apr 30, 2019
-Thu, May 02, 2019
