@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Operating Systems
-permalink: /docs/csc-496/
+permalink: /docs/csc-496-2/
 sidebar:
   nav: "docs"
 toc: true
