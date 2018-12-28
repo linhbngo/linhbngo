@@ -262,9 +262,9 @@ Failure to access will not exempt individuals from the responsibilities associat
 </section>
 
 <section data-markdown>
-![VirtualBox]({{ "/assets/images/csc-331/syllabus_slide/virtualbox.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 
-*VirtualBox application installed inside a Linux environment*
+![VirtualBox-1]({{ "/assets/images/csc-331/syllabus_slide/virtualbox.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+
 </section>
 
 <section data-markdown>
@@ -272,12 +272,92 @@ Failure to access will not exempt individuals from the responsibilities associat
 
 - Download the disk image from: http://bit.ly/2GzKM3e
 - Launch VirtualBox
+- Select **File**, then **Virtual Media Manager**
+- Click **Add** and navigate to select the downloaded disk image, click **Open**
+- Once the image is added, click **Close**
 </section>
 
 
 <section data-markdown>
-![VirtualBox]({{ "/assets/images/csc-331/syllabus_slide/add-vdi.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 
-- Select **File**, then **Virtual Media Manager**
-- Click **Add** and navigate to select the downloaded disk image, then click **Close**
+![VirtualBox-2]({{ "/assets/images/csc-331/syllabus_slide/add-vdi.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+
+</section>
+
+<section data-markdown>
+### Setup a Virtual Machine (VM)
+
+- Click **New** to bring up the *Create Virtual Machine* dialog
+- Type in a **Name** for the virtual machine (csc-331)
+- You can keep the **Machine Folder** to its default location, or selection another location if you have additional hard drives with more space
+- **Type** is Linux
+- **Version** is Ubuntu (64-bit)
+- Click **Next**
+</section>
+
+<section data-markdown>
+
+![VirtualBox-3]({{ "/assets/images/csc-331/syllabus_slide/add-new-1.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+
+</section>
+
+
+<section data-markdown>
+### Setup a Virtual Machine (VM)
+
+- Memory size can be kept at 1024MB
+- Click **Next** 
+
+</section>
+
+<section data-markdown>
+
+![VirtualBox-4]({{ "/assets/images/csc-331/syllabus_slide/add-new-2.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+
+</section>
+
+<section data-markdown>
+### Setup a Virtual Machine (VM)
+
+- For Hard disk, click **Use existing virtual hard disk file**
+- Select the **ubuntu-server.vdi** file that you added earlier. 
+
+</section>
+
+<section data-markdown>
+
+![VirtualBox-5]({{ "/assets/images/csc-331/syllabus_slide/add-new-3.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+
+</section>
+
+<section data-markdown>
+### Setup a Virtual Machine (VM)
+
+- The VM is now created and appeared on the left windows
+- Click on the VM, select **Settings**, then **Systems**, and **Processor**
+- Set number of Processors to be 2
+- Click **OK**
+
+</section>
+
+<section data-markdown>
+
+![VirtualBox-6]({{ "/assets/images/csc-331/syllabus_slide/add-new-4.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+
+</section>
+
+<section data-markdown>
+### Setup a Virtual Machine (VM)
+
+- Click **Start** to begin launching the VM
+- Once the VM finishes starting up, enter *student* as the login and *goldenram* as the password
+- *You might have to hit Enter to initiate the login prompt
+- The VM will capture your keyboard and mouse entirely. To escape to your host machine, use the right Ctrl button. 
+
+</section>
+
+<section data-markdown>
+
+![VirtualBox-7]({{ "/assets/images/csc-331/syllabus_slide/add-new-5.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+
 </section>
