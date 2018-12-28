@@ -18,20 +18,20 @@ main:
 docs:
   - title: "Spring 2019"
     children:
-    - title: "Operating Systems"
+    - title: "Operating Systems (331)"
       url: /docs/csc-331/
     - title: "Programming I (512)"
       url: /docs/csc-512/
     - title: "Data Structures (516)"
       url: /docs/csc-516/
-    - title: "Cloud Computing"
+    - title: "Cloud Computing (496)"
       url: /docs/csc-496-2/
 
   - title: "Fall 2019"
     children:
-    - title: "Computer Security"
+    - title: "Computer Security II (302)"
       url: /docs/csc-302/
-    - title: "Fundamentals of Computer Science"
+    - title: "Fundamentals of Computer Science (110)"
       url: /docs/csc-110/
-    - title: "Distributed and Cluster Computing"
+    - title: "Distributed and Cluster Computing (496)"
       url: /docs/csc-496-1/

@@ -7,6 +7,8 @@ author_profile: true
 
 **Peer-reviewed Journal Articles**
 
+Khan, S. M., Chowdhury, M, & **Ngo, L. B.** (2018). Non-real-time Transportation Applications: Potential Use of Connected Vehicle Data and Data Infrastructure Requirements. *Journal of Infrastructure Systems*, 25(1). 
+
 **Ngo, L. B.**, Srinath, A. T., Denton, J., & Ziolkowski, M. (2018). Unifying computing resources and access interface to support parallel and distributed computing education. *Journal of Parallel and Distributed Computing.* 118, 201-212.
 
 Du, Y., Chowdhury, M., Rahman, M., Dey, K., Apon, A., Luckow, A., & **Ngo, L. B.** (2018). A Distributed Message Delivery Infrastructure for Connected Vehicle Technology Applications. *IEEE Transactions on Intelligent Transportation Systems*, 19(3), 787-801.
