@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Operating Systems
-permalink: /docs/csc-331/
+permalink: /docs/csc-512/
 sidebar:
   nav: "docs"
 toc: true
@@ -9,28 +9,20 @@ toc: true
 
 ### Course Description
 
-This course will introduce three fundamental concepts in operating system (OS):
-Virtualization, Concurrency, and Persistence.
-
-- In *Virtualization*, we learn how OS creates abstractions through which programmers can
-interact with the underlying hardware. Examples of these abstractions include *processes*,
-*memory spaces*, and *CPU scheduling*.
-
-- In *Concurrency*, we learn about how OS supports sharing of physical resources
-among these abstractions. These include *thread*, *lock*, and *semaphores*.
-
-- In *Persistence*, we learn about how OS enables the long term management of information,
-produced or required by computer programs, in a manner that persists beyond the scope or the duration
-of these programs.
-
-Understanding how operating systems work will facilitate better understanding about how programs are
-run by the computer hardware. This will lead to more efficient, stable, and secure programs.
+In this course, we will learn fundamental concepts of computer programming using Java programming language.
 
 **Learning Objectives**
 
-- Students will be able to apply mathematical foundations, algorithmic principles, and computer science theory.
-
-- Students will be able to to design, implement and evaluate a computer-based system, process, component, or program to meet desired needs.
+- Communicate effectively
+  - Plan program solutions using pseudo-codes
+  - Write program solutions using Java programming language
+  - Document code with appropriate explanatory information
+- Employ quantitative analysis and mathematical methods
+  - Analyze problem situations
+  - Use mathematical models to develop solutions
+- Think crtically and analytically
+  - Develop algorithmic solutions
+  - Implement and test problem solutions
 
 
 ### Important Dates
@@ -52,10 +44,7 @@ run by the computer hardware. This will lead to more efficient, stable, and secu
 
 **Textbook**
 
-- **Operating Systems: Three Easy Pieces** by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau.
-- [Free online PDF chapters by the authors](http://pages.cs.wisc.edu/~remzi/OSTEP/)
-- If you like it, buy it to support the efforts to produce inexpensive, quality, and free textbooks.
-- Reference book (optional): [Operating Systems Design and Implementation](https://www.amazon.com/Operating-Systems-Design-Implementation-3rd/dp/0131429388)
+- **Starting out with Java: From Control Structures through Objects** by Tony Gaddis, 7th Edition. ISBN-13 978-0134802213, ISBN-10 0134802217
 
 **Laptop requirements**
 
@@ -68,11 +57,7 @@ Make sure that your laptop is fully charged for the duration of the class (or co
 
 **Software requirements**
 
-As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
-
-Virtual Enronment: Oracle VirtualBox
-Virtual OS for VirtualBox: Minix
-Other software packages will be specified and installed insite the CentOS virtual machine as needed.
+We will be using jGRASP for this class.
 
 
 ### Course Materials
@@ -190,27 +175,18 @@ If you have a disability that requires accommodations under the Americans with D
 ### Tentative Course Outline
 
 
-- [Syllabus]({{ "/docs/csc-331/syllabus_slide/" | relative_url }}) (**Week 1**)
+- [Syllabus]({{ "/docs/csc-512/syllabus_slide/" | relative_url }}) (**Week 1**)
 - [Introduction to Operating Systems]({{ "/docs/csc-331/intro_os/" | relative_url }})
-- Set up Linux environment
-- Introduction to C Programming (**Week 2**)
-- Virtualization
-  - Processes (**Week 3**)
-  - CPU Scheduling (**Week 4**)
-  - Memory Management (**Week 5**)
-  - Paging (**Week 6**)
-- Concurrency
-  - Threads (**Week 7**)
-  - Locks,
-  - Condition Variables (**Week 8**)
-  - Semaphores (**Week 9**)
-  - Deadlock (**Week 10**)
-- Persistence
-  - I/O and Disks, Disk Scheduling (**Week 11**)
-  - RAID, File Systems (**Week 12**)
-  - File System Implementation (**Week 13**)
-  - Journaling (**Week 14**)
-  - LFS, SSD (**Week 15**)
+- Introduction to Computer and Java
+- Java Fundamentals
+- Decision Structure
+- Loops and Files
+- Methods
+- First Look at Classes
+- Array and the ArrayList Class
+- Second Look at Classes and Objects
+- A First Look at GUI Applications
+- Recursion
 
 ### Class Dates
 

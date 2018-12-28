@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Operating Systems
-permalink: /docs/csc-331/
+permalink: /docs/csc-516/
 sidebar:
   nav: "docs"
 toc: true
@@ -9,28 +9,20 @@ toc: true
 
 ### Course Description
 
-This course will introduce three fundamental concepts in operating system (OS):
-Virtualization, Concurrency, and Persistence.
-
-- In *Virtualization*, we learn how OS creates abstractions through which programmers can
-interact with the underlying hardware. Examples of these abstractions include *processes*,
-*memory spaces*, and *CPU scheduling*.
-
-- In *Concurrency*, we learn about how OS supports sharing of physical resources
-among these abstractions. These include *thread*, *lock*, and *semaphores*.
-
-- In *Persistence*, we learn about how OS enables the long term management of information,
-produced or required by computer programs, in a manner that persists beyond the scope or the duration
-of these programs.
-
-Understanding how operating systems work will facilitate better understanding about how programs are
-run by the computer hardware. This will lead to more efficient, stable, and secure programs.
+In this course, we will learn about the basic data structures and key algorithmic concepts in computer programming using Java.
 
 **Learning Objectives**
 
-- Students will be able to apply mathematical foundations, algorithmic principles, and computer science theory.
-
-- Students will be able to to design, implement and evaluate a computer-based system, process, component, or program to meet desired needs.
+- Communicate effectively
+  - Plan program solutions using pseudo-codes
+  - Write program solutions using Java programming language
+  - Document code with appropriate explanatory information
+- Employ quantitative analysis and mathematical methods
+  - Analyze problem situations
+  - Use mathematical models to develop solutions
+- Think crtically and analytically
+  - Develop algorithmic solutions
+  - Implement and test problem solutions
 
 
 ### Important Dates
@@ -89,12 +81,8 @@ Other software packages will be specified and installed insite the CentOS virtua
 
 Grades will be based on the following distribution:
 
-Assignments: 50%
-Exam:
-Exam 1: 15%
-Exam 2: 10% (Comprehensive)
-Quiz: 20%
-Participation: 5%
+Assignments: 75%
+Project: 25%
 
 Letter grades are assigned according to the following scale:
 
@@ -105,7 +93,6 @@ Letter grades are assigned according to the following scale:
 **Grading Appeals**
 
 Mistakes occasionally happen during the grading process. If you think a mistake has been made regarding your grades, you should send me an email with detailed justification within one week of the date the grades are available. No changes on grades will be made after one week from the date the grades are posted.
-
 
 
 ### Class Policy
@@ -132,7 +119,6 @@ Office hours are an opportunity to reinforce course topics either one-on-one or 
 **Late Work**
 
 - Without prior approval from the instructors, late homework assignments will not be accepted but will be assigned a grade of zero.
-
 - Unless accompanied with a valid medical or University excuse, all late submissions will be penalized.
 A make-up for the exams will be given only with a valid medical or University excuse.
 
@@ -190,27 +176,15 @@ If you have a disability that requires accommodations under the Americans with D
 ### Tentative Course Outline
 
 
-- [Syllabus]({{ "/docs/csc-331/syllabus_slide/" | relative_url }}) (**Week 1**)
-- [Introduction to Operating Systems]({{ "/docs/csc-331/intro_os/" | relative_url }})
-- Set up Linux environment
-- Introduction to C Programming (**Week 2**)
-- Virtualization
-  - Processes (**Week 3**)
-  - CPU Scheduling (**Week 4**)
-  - Memory Management (**Week 5**)
-  - Paging (**Week 6**)
-- Concurrency
-  - Threads (**Week 7**)
-  - Locks,
-  - Condition Variables (**Week 8**)
-  - Semaphores (**Week 9**)
-  - Deadlock (**Week 10**)
-- Persistence
-  - I/O and Disks, Disk Scheduling (**Week 11**)
-  - RAID, File Systems (**Week 12**)
-  - File System Implementation (**Week 13**)
-  - Journaling (**Week 14**)
-  - LFS, SSD (**Week 15**)
+- [Syllabus]({{ "/docs/csc-516/syllabus_slide/" | relative_url }}) (**Week 1**)
+- Text Processing and More about Wrapper Classes
+- Exceptions and Advanced File I/O
+- Inheritance
+- Sorting, Searching, and Algorithm Analysis
+- Generics
+- Linked Lists
+- Stack and Queues
+- Binary Tree, AVL Tress, and Priority Queues
 
 ### Class Dates
 

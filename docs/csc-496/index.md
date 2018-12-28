@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Operating Systems
-permalink: /docs/csc-331/
+permalink: /docs/csc-496/
 sidebar:
   nav: "docs"
 toc: true
@@ -190,27 +190,29 @@ If you have a disability that requires accommodations under the Americans with D
 ### Tentative Course Outline
 
 
-- [Syllabus]({{ "/docs/csc-331/syllabus_slide/" | relative_url }}) (**Week 1**)
-- [Introduction to Operating Systems]({{ "/docs/csc-331/intro_os/" | relative_url }})
-- Set up Linux environment
-- Introduction to C Programming (**Week 2**)
+- [Syllabus]({{ "/docs/csc-496/syllabus_slide/" | relative_url }}) (**Week 1**)
 - Virtualization
-  - Processes (**Week 3**)
-  - CPU Scheduling (**Week 4**)
-  - Memory Management (**Week 5**)
-  - Paging (**Week 6**)
-- Concurrency
-  - Threads (**Week 7**)
-  - Locks,
-  - Condition Variables (**Week 8**)
-  - Semaphores (**Week 9**)
-  - Deadlock (**Week 10**)
-- Persistence
-  - I/O and Disks, Disk Scheduling (**Week 11**)
-  - RAID, File Systems (**Week 12**)
-  - File System Implementation (**Week 13**)
-  - Journaling (**Week 14**)
-  - LFS, SSD (**Week 15**)
+  - KVM
+  - VirtualBox
+  - Vagrant
+- Infrastructure as a Service (IaaS)
+  - OpenStack
+  - Google Compute Engine
+- Platform as a Service (PaaS)
+  - CloudFoundry
+  - Heroku
+- Containers
+  - Docker
+  - Singularity
+- Containers Orchestration
+  - Docker Swarm
+  - Kubernetes
+  - Mesos
+- Configuration Management of Cloud Infrastructure
+  - Ansible
+  - Puppet
+  - Chef
+  - Salt
 
 ### Class Dates
 
