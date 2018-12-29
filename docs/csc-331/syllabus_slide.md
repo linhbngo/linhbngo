@@ -297,7 +297,7 @@ Failure to access will not exempt individuals from the responsibilities associat
 
 <section data-markdown>
 
-![VirtualBox-3]({{ "/assets/images/csc-331/syllabus_slide/add-new-1.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+![VirtualBox-3]({{ "/assets/images/csc-331/syllabus_slide/add-new-1.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 
 </section>
 
@@ -312,7 +312,7 @@ Failure to access will not exempt individuals from the responsibilities associat
 
 <section data-markdown>
 
-![VirtualBox-4]({{ "/assets/images/csc-331/syllabus_slide/add-new-2.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+![VirtualBox-4]({{ "/assets/images/csc-331/syllabus_slide/add-new-2.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 
 </section>
 
@@ -326,7 +326,7 @@ Failure to access will not exempt individuals from the responsibilities associat
 
 <section data-markdown>
 
-![VirtualBox-5]({{ "/assets/images/csc-331/syllabus_slide/add-new-3.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+![VirtualBox-5]({{ "/assets/images/csc-331/syllabus_slide/add-new-3.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 
 </section>
 
@@ -342,7 +342,7 @@ Failure to access will not exempt individuals from the responsibilities associat
 
 <section data-markdown>
 
-![VirtualBox-6]({{ "/assets/images/csc-331/syllabus_slide/add-new-4.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+![VirtualBox-6]({{ "/assets/images/csc-331/syllabus_slide/add-new-4.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 
 </section>
 
@@ -358,6 +358,15 @@ Failure to access will not exempt individuals from the responsibilities associat
 
 <section data-markdown>
 
-![VirtualBox-7]({{ "/assets/images/csc-331/syllabus_slide/add-new-5.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+![VirtualBox-7]({{ "/assets/images/csc-331/syllabus_slide/add-new-5.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+
+</section>
+
+<section data-markdown>
+### How to shutdown a VM properly
+
+- If you do not want to corrupt your VM or lost part of your on-going work
+- To shutdown the VM gracefully, type `sudo shutdown` and provide the password *goldenram* when asked. 
+- This will ensure that the VM is shutdown properly, and everything you have done is committed to the VM image file. 
 
 </section>

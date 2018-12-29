@@ -5,68 +5,88 @@ category: presentation
 ---
 
 <section data-markdown>
-## <center> Operating Systems </center>
+## <center> Introduction to Linux </center>
 </section>
 
 <section data-markdown>
-### Linh B. Ngo, Ph.D.
+### A Brief History
 
-- Email: LNGO at WCUPA dot EDU
-- Office: 144 UNA (25 University Avenue)
-- Office Hours:
-    - MT 2:00PM to  4:00PM
-    - W 11:00AM to 12:00PM
+- It is really brief! (see https://www.levenez.com/unix/ for full details)
+- 1969: Uniplexed Information and Computing System (Ken Thompson - Assembler)
+- 1973: 5th Edition of UNIX (Ken Thompson and Dennis Ritchie - C)
+- 1975: UNIX splits into two branches, SYSV (System 5) and BSD (Berkeley Software Distribution)
+  - SYSV comes from AT&T and other commercial companies (Solaris, AIX, IRIX, HP-UX, Diginal UNIX ...)
+  - BSD comes from Ken Thompson's sabbatical year at UC Berkeley (SunOS 4.x, ULTRIC, NextStep, FreeBSD, NetBSD, OpenBSD ...)
+- 1987: Minix (Andrew S. Tanenbaum for teaching operating systems), which inspires ...
+- 1991: Linux (Linus Torvald)
 </section>
 
 <section data-markdown>
-### Course Descriptions
+### The Linux Filesystem
 
-This course will introduce three fundamental concepts in operating system (OS): 
-Virtualization, Concurrency, and Persistence. 
-
-- *Virtualization*: How OS creates abstractions through which programmers can 
-interact with the underlying hardware 
-(e.g., *processes*, *memory spaces*, and *CPU scheduling*). 
-
-- *Concurrency*: How OS supports sharing of physical resources 
-among these abstractions (e.g., *thread*, *lock*, and *semaphores*).
-
-- *Persistence*: How OS enables the long term management of information, 
-produced or required by computer programs, in a manner that persists beyond the scope or the duration 
-of these programs (e.g., *I/O devices* and *file systems*). 
-
-Understanding how operating systems work will facilitate better understanding about how programs are 
-run by the computer hardware. This will lead to more efficient, stable, and secure programs. 
+- Everything in Linux is a file. 
+- The Linux filesystem is used to store all information relevant to the long-term state of the system, including
+  - the operating system kernel,
+  - the executable files for commands supported by the OS, 
+  - configuration information, 
+  - temporary workfiles, 
+  - user data, 
+  - special files that give controlled access to system hardware and OS functions.
 </section>
 
 <section data-markdown>
-### Learning Objectives
+### The Linux Filesystem
 
-- Students will be able to apply mathematical foundations, algorithmic principles, and computer science theory.
-- Students will be able to to design, implement and evaluate a computer-based system, process, component, or program to meet desired needs.
+- Start up and login to your VM
+- At the terminal, type the following commands (hit Enter after each command)
+- *The $ sign represents the prompt at the terminal. you do not retype $*
+
+```{bash}
+$ cd /
+$ clear
+$ ls -l -d */
+```
+
 </section>
 
 <section data-markdown>
-### Important Dates
-- Tue, Jan 29, 2019: Last Day of Add/Drop
-- Mon, Mar 11-17, 2019: Spring Break
-- Tue, Mar 26, 2019: Last Day of Course Withdrawal
-- Tue, Nov 20, 2019: Reading/Writing Day
-- Tue, May 07, 2019: 10:30AM to 12:30PM FINAL EXAM
+### The Linux Filesystem (Ubuntu)
+
+- /: The *root* directory
+- /dev: Hardware devices
+- /bin: Essential low-level system utilities
+- /usr: 
+  - /usr/bin: Higher-level system utilities and application programs
+  - /usr/lib: Program libraries for high-level user programs
+- /lib: Program libraries for low-level system utilities
+- /sbin: Superuser system utilities (for system administrative tasks)
+- /tmp: Temporary file storage space (can be used by any user)
+- /home: User home directories containing personal directory for each user
+- /etc: Configuration and information files (for both system and user programs )
+- /proc: A pseudo-filesystem to be used as an interface to the Linux kernel. It includes a sub-directory for each running process (run `ls /proc` and then `ps aux` to see the process ID matches up with the subdirectoriesls )
+
 </section>
 
 <section data-markdown>
-### Prerequisites
+### The Linux File System (Ubuntu)
 
-- CSC 220 - Foundations of Computer Science
-- CSC 240 - Computer Science III
-- CSC 241 - Data Structures & Algorithms
-- CSC 242 - Computer Organization
-- Being able to program in **C**. We will cover some background information regarding C programming, but it is important that you take it upon yourself to learn the language. 
+- /root: The *personal directory space* of the **root** user
+- /snap: The directory for Ubuntu's package management utility
+- /lost+found: abandoned files recovered by *fsck* but could not be placed into an exact location will be placed into this directory. 
+- /lib64: Program libraries (similar to /lib) for 64-bit only programs.
+- /media: Contains mount points for removable media
+- /srv: Data for services provided by the system
+- /opt: Add-on application software packages (usually via manual configuration/installation)
+- /sys: Virtual directory for system information
+- /run: Run-time variable data
+- /boot: Static files of the boot loader
+- /mnt: Mount point for mounting a file system temporarily
+- /var: Variable data
+
 </section>
 
 <section data-markdown>
-### Textbook
+### Where are you in a Linux Filesystem?
 
 - **Operating Systems: Three Easy Pieces** by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. 
 - [Free online PDF chapters by the authors](http://pages.cs.wisc.edu/~remzi/OSTEP/)
@@ -75,7 +95,7 @@ run by the computer hardware. This will lead to more efficient, stable, and secu
 </section>
 
 <section data-markdown>
-### Laptop requirements
+### Where are the other stuff in a Linux Filesystem?
 Having access to a laptop during class time is critical
 - Engaging in in-class examples that demonstrate the lectured concepts. 
 - Working on in-class electronic quizzes on D2L
@@ -83,7 +103,7 @@ Having access to a laptop during class time is critical
 </section>
 
 <section data-markdown>
-### Software requirements
+### How do you get from here to there?
 As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
 
 - Virtual Enronment: Oracle VirtualBox
