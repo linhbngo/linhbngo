@@ -191,8 +191,8 @@ If you have a disability that requires accommodations under the Americans with D
 
 
 - [Syllabus]({{ "/docs/csc-331/syllabus_slide/" | relative_url }}) (**Week 1**)
+- [Introduction to Linux]({{ "docs/csc-331/linux_slide/" | relative_url }})
 - [Introduction to Operating Systems]({{ "/docs/csc-331/intro_os/" | relative_url }})
-- Set up Linux environment
 - Introduction to C Programming (**Week 2**)
 - Virtualization
   - Processes (**Week 3**)
