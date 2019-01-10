@@ -30,7 +30,6 @@ In this course, we will learn fundamental concepts of computer programming using
 - Tue, Jan 29, 2019: Last Day of Add/Drop
 - Mon, Mar 11-17, 2019: Spring Break
 - Tue, Mar 26, 2019: Last Day of Course Withdrawal
-- Tue, Nov 20, 2019: Reading/Writing Day
 - Tue, May 07, 2019: 10:30AM to 12:30PM FINAL EXAM
 
 ### Course Requirements
@@ -187,4 +186,3 @@ If you have a disability that requires accommodations under the Americans with D
 - Second Look at Classes and Objects
 - A First Look at GUI Applications
 - Recursion
-

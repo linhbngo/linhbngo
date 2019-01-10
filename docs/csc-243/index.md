@@ -1,52 +1,58 @@
 ---
 layout: single
-title: Operating Systems
-permalink: /docs/csc-516/
+title: Introduction to Computer Systems
+permalink: /docs/csc-243/
 sidebar:
   nav: "docs"
 toc: true
 ---
 
+### Instructor
+
+- Instructor: Linh B. Ngo, Ph.D.
+- Email: LNGO *at* WCUPA *dot* EDU
+- Office: 144 UNA (25 University Avenue)
+- Office Hours:
+    - MT 2:00PM to  4:00PM
+    - W 11:00AM to 12:00PM
+    - By appointment
+- Office Phone: (610) 436 2595
+</section>
+
+
 ### Course Description
 
-In this course, we will learn about the basic data structures and key algorithmic concepts in computer programming using Java.
+In this course, we will learn fundamental concepts of modern computer systems. Unlike courses
+in Computer Organizations, Operating Systems, and Computer Architecture, we will
+be approaching these concepts from the perspective of system **users** rather than
+system **builders**. This will help us to understand how various computer system components,
+including CPU, memory, storage, and networking, work. Throughout the course, we will learn to use assembler
+language and C language to explore and observe specifically how computer systems intepret and execute programs.
+With the knowledge learned from this course, you will be able to build programs
+that are more efficient and have better performance.
 
-**Learning Objectives**
+**Student Learning Outcomes**
 
-- Communicate effectively
-  - Plan program solutions using pseudo-codes
-  - Write program solutions using Java programming language
-  - Document code with appropriate explanatory information
-- Employ quantitative analysis and mathematical methods
-  - Analyze problem situations
-  - Use mathematical models to develop solutions
-- Think crtically and analytically
-  - Develop algorithmic solutions
-  - Implement and test problem solutions
-
+- C) Able to design, implement, and evaluate a computer-based system, process, component, or program to meet desired needs
+  - Outcomes will be assessed via homework assignments
+- I) able to use current techniques, skills, and tools necessary for computing practices
+  - Outcomes will be assessed via in-class labs
 
 ### Important Dates
 
-- Tue, Jan 29, 2019: Last Day of Add/Drop
-- Mon, Mar 11-17, 2019: Spring Break
-- Tue, Mar 26, 2019: Last Day of Course Withdrawal
-- Tue, May 07, 2019: 10:30AM to 12:30PM FINAL EXAM
+- TBD
 
 ### Course Requirements
 
 **Prerequisites**
 
-- Foundations of Computer Science (CSC 220)
-- Computer Science III (CSC 240)
-- Fundamental understanding of computer architecture and hardware design (CSC 242)
+- Familiarity with at least one high-level programming language (e.g., Java) (CSC 141, CSC 142)
 - Knowledge of core data structures and algorithms (CSC 241)
 
-**Textbook**
+**Required Textbook**
 
-- **Operating Systems: Three Easy Pieces** by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau.
-- [Free online PDF chapters by the authors](http://pages.cs.wisc.edu/~remzi/OSTEP/)
-- If you like it, buy it to support the efforts to produce inexpensive, quality, and free textbooks.
-- Reference book (optional): [Operating Systems Design and Implementation](https://www.amazon.com/Operating-Systems-Design-Implementation-3rd/dp/0131429388)
+- **Computer Systems: A Programmer's Perspective** by Randal E. Bryant and David r. O'Hallaron, 3rd Edition. ISBN-13 978-0-13-409266-9, ISBN-10 0-13-409266-X
+- An electronic copy of this book (with lower cost) can be found online at [Vital Source](www.vitalsource.com/products/computer-systems-a-programmer-39-s-perspective-randal-e-bryant-david-r-v978013092997)
 
 **Laptop requirements**
 
@@ -61,18 +67,20 @@ Make sure that your laptop is fully charged for the duration of the class (or co
 
 As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
 
-Virtual Enronment: Oracle VirtualBox
-Virtual OS for VirtualBox: Minix
-Other software packages will be specified and installed insite the CentOS virtual machine as needed.
+- Virtual Enronment: Oracle VirtualBox
+- Other software packages will be specified and installed insite the CentOS virtual machine as needed.
 
 
 ### Course Materials
 
-- Lecture slides and example codes will be available online via links inside the course’ D2L page
+- The course website: https://www.cs.wcupa.edu/lngo/docs/csc-243/
+
+- Lecture slides and example codes will be available online via the course website and the course’ D2L page
 
 - Links to papers on subjects we will be discussing in class will also be listed and/or embedded in the slides.
 
 - West Chester University maintains extensive licensed products to academic publishers such as ACM, IEEE, Elsevier, and Springer, and many of the papers required for this course will be available through the library's online database.
+-
 - Google Scholar is another excellent source for downloading preprint or open-source versions of papers.
 
 
@@ -80,8 +88,11 @@ Other software packages will be specified and installed insite the CentOS virtua
 
 Grades will be based on the following distribution:
 
-Assignments: 75%
-Project: 25%
+Assignments: 35% (7 homework assignments)
+Labs: 25% (5 in-class labs)
+Quiz: 20% (10 in-class quizzes)
+Final Exam (comprehensive): 15%
+Participation: 5%
 
 Letter grades are assigned according to the following scale:
 
@@ -92,6 +103,7 @@ Letter grades are assigned according to the following scale:
 **Grading Appeals**
 
 Mistakes occasionally happen during the grading process. If you think a mistake has been made regarding your grades, you should send me an email with detailed justification within one week of the date the grades are available. No changes on grades will be made after one week from the date the grades are posted.
+
 
 
 ### Class Policy
@@ -118,6 +130,7 @@ Office hours are an opportunity to reinforce course topics either one-on-one or 
 **Late Work**
 
 - Without prior approval from the instructors, late homework assignments will not be accepted but will be assigned a grade of zero.
+
 - Unless accompanied with a valid medical or University excuse, all late submissions will be penalized.
 A make-up for the exams will be given only with a valid medical or University excuse.
 
@@ -174,13 +187,21 @@ If you have a disability that requires accommodations under the Americans with D
 
 ### Tentative Course Outline
 
+- Introduction to C Programming Language
+- Data Representation
+- Assember Language
+- Processor Architecture
+- Memory Hierarchy
+- File Systems
+- Network Programming
+- Concurrent Programming
 
-- [Syllabus]({{ "/docs/csc-516/syllabus_slide/" | relative_url }}) (**Week 1**)
-- Text Processing and More about Wrapper Classes
-- Exceptions and Advanced File I/O
-- Inheritance
-- Sorting, Searching, and Algorithm Analysis
-- Generics
-- Linked Lists
-- Stack and Queues
-- Binary Tree, AVL Tress, and Priority Queues
+### Bibliography for Computer Systems
+
+- **Computer Systems**, Warford, J., Fifth Edition, ISBN: 1284079635
+- **Computer Systems: Digital Design, Fundamental of Comptuer Architecture and Assembly Language**, Elahi, A., ISBN: 9783319667744
+- **Computer Organization and Design**, Patterson, D. and Hennessy, J., Fifth Edition, ISBN: 0124077269
+- **The Elements of Computing Systems: Building a Modern Computer from First Principles**, Nisan, N. and Schocken, S., ISBN: 0262640686
+- **Computer System Architecture**, Mano, M., Third Edition, ISBN 0131755633
+- **Introduction to Computing Systems: From Bits and Gates to C and Beyond**, Patt, Y. and Patel, S., Second Edition, ISBN: 0072467509
+- **Computer Systems: An Integrated Approach to Architecture and Operating Systems**, Ramachandran, U. and Leahy Jr., W., ISBN 0312486137

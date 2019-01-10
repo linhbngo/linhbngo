@@ -38,7 +38,6 @@ run by the computer hardware. This will lead to more efficient, stable, and secu
 - Tue, Jan 29, 2019: Last Day of Add/Drop
 - Mon, Mar 11-17, 2019: Spring Break
 - Tue, Mar 26, 2019: Last Day of Course Withdrawal
-- Tue, Nov 20, 2019: Reading/Writing Day
 - Tue, May 07, 2019: 10:30AM to 12:30PM FINAL EXAM
 
 ### Course Requirements
@@ -213,4 +212,3 @@ If you have a disability that requires accommodations under the Americans with D
   - Puppet
   - Chef
   - Salt
-
