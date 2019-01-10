@@ -26,7 +26,7 @@ in Computer Organizations, Operating Systems, and Computer Architecture, we will
 be approaching these concepts from the perspective of system **users** rather than
 system **builders**. This will help us to understand how various computer system components,
 including CPU, memory, storage, and networking, work. Throughout the course, we will learn to use assembler
-language and C language to explore and observe specifically how computer systems intepret and execute programs.
+language and C language to explore and observe specifically how computer systems interpret and execute programs.
 With the knowledge learned from this course, you will be able to build programs
 that are more efficient and have better performance.
 
@@ -66,7 +66,7 @@ Make sure that your laptop is fully charged for the duration of the class (or co
 
 As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
 
-- Virtual Enronment: Oracle VirtualBox
+- Virtual Environment: Oracle VirtualBox
 - Other software packages will be specified and installed insite the CentOS virtual machine as needed.
 
 
@@ -114,7 +114,7 @@ Office hours are an opportunity to reinforce course topics either one-on-one or 
 
 **Attendance**
 
-- Attendance is critical to the success of students in.
+- Attendance is critical to the success of students.
 - We will take note of who attends, including occasionally using attendance check in place of a quiz score.
 - If you miss a class, you are responsible for obtaining lecture notes, handouts, and homework assignments from fellow students.
 - If the instructor is late for class, please wait 20 minutes before leaving.
