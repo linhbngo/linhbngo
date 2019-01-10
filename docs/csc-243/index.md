@@ -17,7 +17,6 @@ toc: true
     - W 11:00AM to 12:00PM
     - By appointment
 - Office Phone: (610) 436 2595
-</section>
 
 
 ### Course Description
@@ -80,7 +79,7 @@ As laptop style and model can vary, the following common (and free) software env
 - Links to papers on subjects we will be discussing in class will also be listed and/or embedded in the slides.
 
 - West Chester University maintains extensive licensed products to academic publishers such as ACM, IEEE, Elsevier, and Springer, and many of the papers required for this course will be available through the library's online database.
--
+
 - Google Scholar is another excellent source for downloading preprint or open-source versions of papers.
 
 
