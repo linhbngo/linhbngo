@@ -29,7 +29,7 @@ category: presentation
   - the operating system kernel,
   - the executable files for commands supported by the OS, 
   - configuration information, 
-  - temporary workfiles, 
+  - temporary work files, 
   - user data, 
   - special files that give controlled access to system hardware and OS functions.
 </section>

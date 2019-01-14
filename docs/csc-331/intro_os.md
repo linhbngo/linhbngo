@@ -75,18 +75,10 @@ run by the computer hardware. This will lead to more efficient, stable, and secu
 </section>
 
 <section data-markdown>
-### Laptop requirements
-Having access to a laptop during class time is critical
-- Engaging in in-class examples that demonstrate the lectured concepts.
-- Working on in-class electronic quizzes on D2L
-- Make sure that your laptop is fully charged for the duration of the class (or come in early and get a spot with access to power outlets)
-</section>
-
-<section data-markdown>
 ### Software requirements
 As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
 
-- Virtual Enronment: Oracle VirtualBox
+- Virtual Environment: Oracle VirtualBox
 - Virtual OS for VirtualBox: Minix
 - Other software packages will be specified and installed inside the virtual OS as needed.
 </section>
@@ -97,6 +89,14 @@ As laptop style and model can vary, the following common (and free) software env
 - Links to papers on subjects we will be discussing in class will also be listed and/or embedded in the slides.
 - West Chester University maintains extensive licensed products to academic publishers such as ACM, IEEE, Elsevier, and Springer, and many of the papers required for this course will be available through the library's online database.
 - Google Scholar is another excellent source for downloading preprint or open-source versions of papers.
+</section>
+
+<section data-markdown>
+### Git
+
+- The class materials, including source codes, will be disseminated via Git. Being able to use Git is a critical skill for most, if not all software developers and/or IT professionals. There are many tutorials already available online for Git. Some of the more helpful ones include Github's, "the simple guide", and Atlassian's);
+
+- It would be a mistake if you just attempt to access the class materials via the web browser. "This is a mistake. Just learn Git. The command line interface is faster and more powerful, and you're going to need to learn it at some point in your life. Why not today?" - Dr. Jacob Sorber, Clemson University.
 </section>
 
 <section data-markdown>
@@ -244,10 +244,4 @@ Failure to access will not exempt individuals from the responsibilities associat
 
 
 
-<section data-markdown>
-### Git
 
-- The class materials, including source codes, will be disseminated via Git. Being able to use Git is a critical skill for most, if not all software developers and/or IT professionals. There are many tutorials already available online for Git. Some of the more helpful ones include github's, "the simple guide", and atlassian's);
-
-- It would be a mistke if you just attempt to access the cloass materials via the web browser. "This is a mistake. Just learn Git. The command line interface is faster and more powerful, and you're going to need to learn it at some point in your life. Why not today?" - Dr. Jacob Sorber, Clemson University.
-</section>

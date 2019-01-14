@@ -51,7 +51,6 @@ run by the computer hardware. This will lead to more efficient, stable, and secu
 - Tue, Jan 29, 2019: Last Day of Add/Drop
 - Mon, Mar 11-17, 2019: Spring Break
 - Tue, Mar 26, 2019: Last Day of Course Withdrawal
-- Tue, Nov 20, 2019: Reading/Writing Day
 - Tue, May 07, 2019: 10:30AM to 12:30PM FINAL EXAM
 </section>
 
@@ -75,18 +74,10 @@ run by the computer hardware. This will lead to more efficient, stable, and secu
 </section>
 
 <section data-markdown>
-### Laptop requirements
-Having access to a laptop during class time is critical
-- Engaging in in-class examples that demonstrate the lectured concepts.
-- Working on in-class electronic quizzes on D2L
-- Make sure that your laptop is fully charged for the duration of the class (or come in early and get a spot with access to power outlets)
-</section>
-
-<section data-markdown>
 ### Software requirements
 As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
 
-- Virtual Enronment: Oracle VirtualBox
+- Virtual Environment: Oracle VirtualBox
 - Virtual OS for VirtualBox: Minix
 - Other software packages will be specified and installed inside the virtual OS as needed.
 </section>
@@ -108,6 +99,14 @@ As laptop style and model can vary, the following common (and free) software env
     - Exam 2: 10% (Comprehensive)
 - Quiz: 20%
 - Participation: 5%
+</section>
+
+<section data-markdown>
+### Git
+
+- The class materials, including source codes, will be disseminated via Git. Being able to use Git is a critical skill for most, if not all software developers and/or IT professionals. There are many tutorials already available online for Git. Some of the more helpful ones include Github's, "the simple guide", and Atlassian's);
+
+- It would be a mistake if you just attempt to access the class materials via the web browser. "This is a mistake. Just learn Git. The command line interface is faster and more powerful, and you're going to need to learn it at some point in your life. Why not today?" - Dr. Jacob Sorber, Clemson University.
 </section>
 
 <section data-markdown>
@@ -237,15 +236,6 @@ Failure to access will not exempt individuals from the responsibilities associat
 - For individual issue, it is best to contact me via email. I check my email frequently during normal working hours (9-5) on weekdays, and I will try to respond quickly (hopefully the same day). I do also check email on weekends and evenings, but not nearly as frequently (almost never on Sundays). As a result, you should expect longer delays during these times.
 
 - If you send me an assignment-related email right before a deadline, I may not answer it in time to be helpful.
-</section>
-
-
-<section data-markdown>
-### Git
-
-- The class materials, including source codes, will be disseminated via Git. Being able to use Git is a critical skill for most, if not all software developers and/or IT professionals. There are many tutorials already available online for Git. Some of the more helpful ones include github's, "the simple guide", and atlassian's);
-
-- It would be a mistke if you just attempt to access the cloass materials via the web browser. "This is a mistake. Just learn Git. The command line interface is faster and more powerful, and you're going to need to learn it at some point in your life. Why not today?" - Dr. Jacob Sorber, Clemson University.
 </section>
 
 <section data-markdown>

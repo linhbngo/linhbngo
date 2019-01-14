@@ -20,7 +20,7 @@ In this course, we will learn fundamental concepts of computer programming using
 - Employ quantitative analysis and mathematical methods
   - Analyze problem situations
   - Use mathematical models to develop solutions
-- Think crtically and analytically
+- Think critically and analytically
   - Develop algorithmic solutions
   - Implement and test problem solutions
 
@@ -30,17 +30,13 @@ In this course, we will learn fundamental concepts of computer programming using
 - Tue, Jan 29, 2019: Last Day of Add/Drop
 - Mon, Mar 11-17, 2019: Spring Break
 - Tue, Mar 26, 2019: Last Day of Course Withdrawal
-- Tue, Nov 20, 2019: Reading/Writing Day
 - Tue, May 07, 2019: 10:30AM to 12:30PM FINAL EXAM
 
 ### Course Requirements
 
 **Prerequisites**
 
-- Foundations of Computer Science (CSC 220)
-- Computer Science III (CSC 240)
-- Fundamental understanding of computer architecture and hardware design (CSC 242)
-- Knowledge of core data structures and algorithms (CSC 241)
+- There is no prerequisite for this course
 
 **Textbook**
 
@@ -58,6 +54,12 @@ Make sure that your laptop is fully charged for the duration of the class (or co
 **Software requirements**
 
 We will be using jGRASP for this class.
+
+### Git
+
+- The class materials, including source codes, will be disseminated via Git. Being able to use Git is a critical skill for most, if not all software developers and/or IT professionals. There are many tutorials already available online for Git. Some of the more helpful ones include github's, "the simple guide", and atlassian's);
+
+- It would be a mistake if you just attempt to access the class materials via the web browser. "This is a mistake. Just learn Git. The command line interface is faster and more powerful, and you're going to need to learn it at some point in your life. Why not today?" - Dr. Jacob Sorber, Clemson University.
 
 
 ### Course Materials
@@ -163,14 +165,6 @@ If you have a disability that requires accommodations under the Americans with D
 - All students are encouraged to sign up for the University’s free WCU ALERT service, which delivers official WCU emergency text messages directly to your cell phone.
 
 - For more information, visit www.wcupa.edu/wcualert. To report an emergency, call the Department of Public Safety at 610-436-3311.
-
-
-### Git
-
-- The class materials, including source codes, will be disseminated via Git. Being able to use Git is a critical skill for most, if not all software developers and/or IT professionals. There are many tutorials already available online for Git. Some of the more helpful ones include github's, "the simple guide", and atlassian's);
-
-- It would be a mistke if you just attempt to access the cloass materials via the web browser. "This is a mistake. Just learn Git. The command line interface is faster and more powerful, and you're going to need to learn it at some point in your life. Why not today?" - Dr. Jacob Sorber, Clemson University.
-
 
 ### Tentative Course Outline
 

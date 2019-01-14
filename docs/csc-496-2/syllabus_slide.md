@@ -21,22 +21,7 @@ category: presentation
 <section data-markdown>
 ### Course Descriptions
 
-This course will introduce three fundamental concepts in operating system (OS):
-Virtualization, Concurrency, and Persistence.
 
-- *Virtualization*: How OS creates abstractions through which programmers can
-interact with the underlying hardware
-(e.g., *processes*, *memory spaces*, and *CPU scheduling*).
-
-- *Concurrency*: How OS supports sharing of physical resources
-among these abstractions (e.g., *thread*, *lock*, and *semaphores*).
-
-- *Persistence*: How OS enables the long term management of information,
-produced or required by computer programs, in a manner that persists beyond the scope or the duration
-of these programs (e.g., *I/O devices* and *file systems*).
-
-Understanding how operating systems work will facilitate better understanding about how programs are
-run by the computer hardware. This will lead to more efficient, stable, and secure programs.
 </section>
 
 <section data-markdown>
@@ -51,44 +36,35 @@ run by the computer hardware. This will lead to more efficient, stable, and secu
 - Tue, Jan 29, 2019: Last Day of Add/Drop
 - Mon, Mar 11-17, 2019: Spring Break
 - Tue, Mar 26, 2019: Last Day of Course Withdrawal
-- Tue, Nov 20, 2019: Reading/Writing Day
 - Tue, May 07, 2019: 10:30AM to 12:30PM FINAL EXAM
 </section>
 
 <section data-markdown>
 ### Prerequisites
 
-- CSC 220 - Foundations of Computer Science
-- CSC 240 - Computer Science III
-- CSC 241 - Data Structures & Algorithms
-- CSC 242 - Computer Organization
-- Being able to program in **C**. We will cover some background information regarding C programming, but it is important that you take it upon yourself to learn the language.
+
 </section>
 
 <section data-markdown>
 ### Textbook
 
-- **Operating Systems: Three Easy Pieces** by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau.
-- [Free online PDF chapters by the authors](http://pages.cs.wisc.edu/~remzi/OSTEP/)
-- If you like it, buy it to support the efforts to produce inexpensive, quality, and free textbooks.
-- Reference book (optional): [Operating Systems Design and Implementation](https://www.amazon.com/Operating-Systems-Design-Implementation-3rd/dp/0131429388)
-</section>
 
-<section data-markdown>
-### Laptop requirements
-Having access to a laptop during class time is critical
-- Engaging in in-class examples that demonstrate the lectured concepts.
-- Working on in-class electronic quizzes on D2L
-- Make sure that your laptop is fully charged for the duration of the class (or come in early and get a spot with access to power outlets)
 </section>
 
 <section data-markdown>
 ### Software requirements
 As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
 
-- Virtual Enronment: Oracle VirtualBox
-- Virtual OS for VirtualBox: Minix
+- Virtual Environment: Oracle VirtualBox
 - Other software packages will be specified and installed inside the virtual OS as needed.
+</section>
+
+<section data-markdown>
+### Git
+
+- The class materials, including source codes, will be disseminated via Git. Being able to use Git is a critical skill for most, if not all software developers and/or IT professionals. There are many tutorials already available online for Git. Some of the more helpful ones include Github's, "the simple guide", and Atlassian's);
+
+- It would be a mistake if you just attempt to access the class materials via the web browser. "This is a mistake. Just learn Git. The command line interface is faster and more powerful, and you're going to need to learn it at some point in your life. Why not today?" - Dr. Jacob Sorber, Clemson University.
 </section>
 
 <section data-markdown>
@@ -239,14 +215,6 @@ Failure to access will not exempt individuals from the responsibilities associat
 - If you send me an assignment-related email right before a deadline, I may not answer it in time to be helpful.
 </section>
 
-
-<section data-markdown>
-### Git
-
-- The class materials, including source codes, will be disseminated via Git. Being able to use Git is a critical skill for most, if not all software developers and/or IT professionals. There are many tutorials already available online for Git. Some of the more helpful ones include github's, "the simple guide", and atlassian's);
-
-- It would be a mistke if you just attempt to access the cloass materials via the web browser. "This is a mistake. Just learn Git. The command line interface is faster and more powerful, and you're going to need to learn it at some point in your life. Why not today?" - Dr. Jacob Sorber, Clemson University.
-</section>
 
 <section data-markdown>
 ## <center> Setup Linux environment </center>

@@ -38,7 +38,6 @@ run by the computer hardware. This will lead to more efficient, stable, and secu
 - Tue, Jan 29, 2019: Last Day of Add/Drop
 - Mon, Mar 11-17, 2019: Spring Break
 - Tue, Mar 26, 2019: Last Day of Course Withdrawal
-- Tue, Nov 20, 2019: Reading/Writing Day
 - Tue, May 07, 2019: 10:30AM to 12:30PM FINAL EXAM
 
 ### Course Requirements
@@ -57,22 +56,13 @@ run by the computer hardware. This will lead to more efficient, stable, and secu
 - If you like it, buy it to support the efforts to produce inexpensive, quality, and free textbooks.
 - Reference book (optional): [Operating Systems Design and Implementation](https://www.amazon.com/Operating-Systems-Design-Implementation-3rd/dp/0131429388)
 
-**Laptop requirements**
-
-Having access to a laptop during class time is critical, as we will be:
-
-- Working with hands-on examples in class, and
-- Working on in-class electronic quizzes on D2L
-
-Make sure that your laptop is fully charged for the duration of the class (or come in early and get a spot with access to power outlets).
-
 **Software requirements**
 
 As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
 
-Virtual Enronment: Oracle VirtualBox
+Virtual Environment: Oracle VirtualBox
 Virtual OS for VirtualBox: Minix
-Other software packages will be specified and installed insite the CentOS virtual machine as needed.
+Other software packages will be specified and installed inside the CentOS virtual machine as needed.
 
 
 ### Course Materials
@@ -83,6 +73,39 @@ Other software packages will be specified and installed insite the CentOS virtua
 
 - West Chester University maintains extensive licensed products to academic publishers such as ACM, IEEE, Elsevier, and Springer, and many of the papers required for this course will be available through the library's online database.
 - Google Scholar is another excellent source for downloading preprint or open-source versions of papers.
+
+
+### Git
+
+- The class materials, including source codes, will be disseminated via Git. Being able to use Git is a critical skill for most, if not all software developers and/or IT professionals. There are many tutorials already available online for Git. Some of the more helpful ones include Github's, "the simple guide", and Atlassian's);
+
+- It would be a mistake if you just attempt to access the class materials via the web browser. "This is a mistake. Just learn Git. The command line interface is faster and more powerful, and you're going to need to learn it at some point in your life. Why not today?" - Dr. Jacob Sorber, Clemson University.
+
+
+### Tentative Course Outline
+
+
+- [Syllabus]({{ "/docs/csc-331/syllabus_slide/" | relative_url }}) (**Week 1**)
+- [Introduction to Linux]({{ "docs/csc-331/linux_slide/" | relative_url }})
+- [Introduction to Operating Systems]({{ "/docs/csc-331/intro_os/" | relative_url }})
+- Introduction to C Programming (**Week 2**)
+- Virtualization
+  - Processes (**Week 3**)
+  - CPU Scheduling (**Week 4**)
+  - Memory Management (**Week 5**)
+  - Paging (**Week 6**)
+- Concurrency
+  - Threads (**Week 7**)
+  - Locks,
+  - Condition Variables (**Week 8**)
+  - Semaphores (**Week 9**)
+  - Deadlock (**Week 10**)
+- Persistence
+  - I/O and Disks, Disk Scheduling (**Week 11**)
+  - RAID, File Systems (**Week 12**)
+  - File System Implementation (**Week 13**)
+  - Journaling (**Week 14**)
+  - LFS, SSD (**Week 15**)
 
 
 ### Grading
@@ -166,7 +189,7 @@ If you have a disability that requires accommodations under the Americans with D
 
 - West Chester University and its faculty are committed to assuring a safe and productive educational environment for all students. In order to meet this commitment and to comply with Title IX of the Education Amendments of 1972 and guidance from the Office for Civil Rights, the University requires faculty members to report incidents of sexual violence shared by students to the University's Title IX Coordinator, Ms. Lynn Klingensmith.
 
-- The only exceptions to the faculty member's reporting obligation are when incidents of sexual violence are communicated by a student during a classroom discussion, in a writing assignment for a class, or as part of a University-approved research project. Faculty members are obligated to report sexual violence or any other abuse of a student who was, or is, a child (a person under 18 years of age) when the abuse allegedly occurred to the person designated in the University protection of minors policy. Information regarding the reporting of sexual violence and the resources that are available to victims of sexual violence is set forth at the webpage for the Office of Social Equity at http://www.wcupa.edu/_admin/social.equity/.
+- The only exceptions to the faculty member's reporting obligation are when incidents of sexual violence are communicated by a student during a classroom discussion, in a writing assignment for a class, or as part of a University-approved research project. Faculty members are obligated to report sexual violence or any other abuse of a student who was, or is, a child (a person under 18 years of age) when the abuse allegedly occurred to the person designated in the University protection of minors policy. Information regarding the reporting of sexual violence and the resources that are available to victims of sexual violence is set forth at the web page for the Office of Social Equity at http://www.wcupa.edu/_admin/social.equity/.
 
 - Ms. Lynn Klingensmith is the West Chester University Title IX Coordinator and is also the Director of Social Equity. She can be reached at 610-436-2433 or by email at LKlingensmith@wcupa.edu and can connect you to resources both on and on campus, as well as provide information about the processes related to cases of sexual misconduct.
 
@@ -179,36 +202,4 @@ If you have a disability that requires accommodations under the Americans with D
 
 - For more information, visit www.wcupa.edu/wcualert. To report an emergency, call the Department of Public Safety at 610-436-3311.
 
-
-### Git
-
-- The class materials, including source codes, will be disseminated via Git. Being able to use Git is a critical skill for most, if not all software developers and/or IT professionals. There are many tutorials already available online for Git. Some of the more helpful ones include github's, "the simple guide", and atlassian's);
-
-- It would be a mistke if you just attempt to access the cloass materials via the web browser. "This is a mistake. Just learn Git. The command line interface is faster and more powerful, and you're going to need to learn it at some point in your life. Why not today?" - Dr. Jacob Sorber, Clemson University.
-
-
-### Tentative Course Outline
-
-
-- [Syllabus]({{ "/docs/csc-331/syllabus_slide/" | relative_url }}) (**Week 1**)
-- [Introduction to Linux]({{ "docs/csc-331/linux_slide/" | relative_url }})
-- [Introduction to Operating Systems]({{ "/docs/csc-331/intro_os/" | relative_url }})
-- Introduction to C Programming (**Week 2**)
-- Virtualization
-  - Processes (**Week 3**)
-  - CPU Scheduling (**Week 4**)
-  - Memory Management (**Week 5**)
-  - Paging (**Week 6**)
-- Concurrency
-  - Threads (**Week 7**)
-  - Locks,
-  - Condition Variables (**Week 8**)
-  - Semaphores (**Week 9**)
-  - Deadlock (**Week 10**)
-- Persistence
-  - I/O and Disks, Disk Scheduling (**Week 11**)
-  - RAID, File Systems (**Week 12**)
-  - File System Implementation (**Week 13**)
-  - Journaling (**Week 14**)
-  - LFS, SSD (**Week 15**)
 

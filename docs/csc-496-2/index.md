@@ -9,28 +9,6 @@ toc: true
 
 ### Course Description
 
-This course will introduce three fundamental concepts in operating system (OS):
-Virtualization, Concurrency, and Persistence.
-
-- In *Virtualization*, we learn how OS creates abstractions through which programmers can
-interact with the underlying hardware. Examples of these abstractions include *processes*,
-*memory spaces*, and *CPU scheduling*.
-
-- In *Concurrency*, we learn about how OS supports sharing of physical resources
-among these abstractions. These include *thread*, *lock*, and *semaphores*.
-
-- In *Persistence*, we learn about how OS enables the long term management of information,
-produced or required by computer programs, in a manner that persists beyond the scope or the duration
-of these programs.
-
-Understanding how operating systems work will facilitate better understanding about how programs are
-run by the computer hardware. This will lead to more efficient, stable, and secure programs.
-
-**Learning Objectives**
-
-- Students will be able to apply mathematical foundations, algorithmic principles, and computer science theory.
-
-- Students will be able to to design, implement and evaluate a computer-based system, process, component, or program to meet desired needs.
 
 
 ### Important Dates
@@ -38,41 +16,22 @@ run by the computer hardware. This will lead to more efficient, stable, and secu
 - Tue, Jan 29, 2019: Last Day of Add/Drop
 - Mon, Mar 11-17, 2019: Spring Break
 - Tue, Mar 26, 2019: Last Day of Course Withdrawal
-- Tue, Nov 20, 2019: Reading/Writing Day
 - Tue, May 07, 2019: 10:30AM to 12:30PM FINAL EXAM
 
 ### Course Requirements
 
 **Prerequisites**
 
-- Foundations of Computer Science (CSC 220)
-- Computer Science III (CSC 240)
-- Fundamental understanding of computer architecture and hardware design (CSC 242)
-- Knowledge of core data structures and algorithms (CSC 241)
 
 **Textbook**
 
-- **Operating Systems: Three Easy Pieces** by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau.
-- [Free online PDF chapters by the authors](http://pages.cs.wisc.edu/~remzi/OSTEP/)
-- If you like it, buy it to support the efforts to produce inexpensive, quality, and free textbooks.
-- Reference book (optional): [Operating Systems Design and Implementation](https://www.amazon.com/Operating-Systems-Design-Implementation-3rd/dp/0131429388)
-
-**Laptop requirements**
-
-Having access to a laptop during class time is critical, as we will be:
-
-- Working with hands-on examples in class, and
-- Working on in-class electronic quizzes on D2L
-
-Make sure that your laptop is fully charged for the duration of the class (or come in early and get a spot with access to power outlets).
 
 **Software requirements**
 
 As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
 
-Virtual Enronment: Oracle VirtualBox
-Virtual OS for VirtualBox: Minix
-Other software packages will be specified and installed insite the CentOS virtual machine as needed.
+Virtual Environment: Oracle VirtualBox
+Other software packages will be specified and installed inside the CentOS virtual machine as needed.
 
 
 ### Course Materials
@@ -83,6 +42,43 @@ Other software packages will be specified and installed insite the CentOS virtua
 
 - West Chester University maintains extensive licensed products to academic publishers such as ACM, IEEE, Elsevier, and Springer, and many of the papers required for this course will be available through the library's online database.
 - Google Scholar is another excellent source for downloading preprint or open-source versions of papers.
+
+
+
+### Git
+
+- The class materials, including source codes, will be disseminated via Git. Being able to use Git is a critical skill for most, if not all software developers and/or IT professionals. There are many tutorials already available online for Git. Some of the more helpful ones include github's, "the simple guide", and atlassian's);
+
+- It would be a mistake if you just attempt to access the class materials via the web browser. "This is a mistake. Just learn Git. The command line interface is faster and more powerful, and you're going to need to learn it at some point in your life. Why not today?" - Dr. Jacob Sorber, Clemson University.
+
+
+### Tentative Course Outline
+
+
+- [Syllabus]({{ "/docs/csc-496-2/syllabus_slide/" | relative_url }}) (**Week 1**)
+- Virtualization
+  - KVM
+  - VirtualBox
+  - Vagrant
+- Infrastructure as a Service (IaaS)
+  - OpenStack
+  - Google Compute Engine
+- Platform as a Service (PaaS)
+  - CloudFoundry
+  - Heroku
+- Containers
+  - Docker
+  - Singularity
+- Containers Orchestration
+  - Docker Swarm
+  - Kubernetes
+  - Mesos
+- Configuration Management of Cloud Infrastructure
+  - Ansible
+  - Puppet
+  - Chef
+  - Salt
+
 
 
 ### Grading
@@ -179,38 +175,4 @@ If you have a disability that requires accommodations under the Americans with D
 
 - For more information, visit www.wcupa.edu/wcualert. To report an emergency, call the Department of Public Safety at 610-436-3311.
 
-
-### Git
-
-- The class materials, including source codes, will be disseminated via Git. Being able to use Git is a critical skill for most, if not all software developers and/or IT professionals. There are many tutorials already available online for Git. Some of the more helpful ones include github's, "the simple guide", and atlassian's);
-
-- It would be a mistke if you just attempt to access the cloass materials via the web browser. "This is a mistake. Just learn Git. The command line interface is faster and more powerful, and you're going to need to learn it at some point in your life. Why not today?" - Dr. Jacob Sorber, Clemson University.
-
-
-### Tentative Course Outline
-
-
-- [Syllabus]({{ "/docs/csc-496/syllabus_slide/" | relative_url }}) (**Week 1**)
-- Virtualization
-  - KVM
-  - VirtualBox
-  - Vagrant
-- Infrastructure as a Service (IaaS)
-  - OpenStack
-  - Google Compute Engine
-- Platform as a Service (PaaS)
-  - CloudFoundry
-  - Heroku
-- Containers
-  - Docker
-  - Singularity
-- Containers Orchestration
-  - Docker Swarm
-  - Kubernetes
-  - Mesos
-- Configuration Management of Cloud Infrastructure
-  - Ansible
-  - Puppet
-  - Chef
-  - Salt
 
