@@ -1,7 +1,7 @@
 ---
 title:  "Setup AutoLab"
 categories: technical document
-tags: 
+tags:
   - linux
   - ubuntu
   - installation
@@ -9,29 +9,29 @@ tags:
 ---
 
 
-In an effort to improve efficiency and to provide more detailed feedback to student, 
-we are looking into implementation and deployment of autograders. In this post, I describe 
-the process of configuring and deploying a test instance of Carnegie Mellon University's 
+In an effort to improve efficiency and to provide more detailed feedback to student,
+we are looking into implementation and deployment of autograders. In this post, I describe
+the process of configuring and deploying a test instance of Carnegie Mellon University's
 [Autolab](http://www.autolabproject.com/).
 
-The target operating system is Ubuntu 18.04. Initially, I tried Autolab's 
-[OneClick option](https://autolab.github.io/docs/one-click/). However, there are various errors 
-happened along the way, and using OneClick doesn't help with the debugging process. In the end, 
-I decided to follow the manual installation guide. 
+The target operating system is Ubuntu 18.04. Initially, I tried Autolab's
+[OneClick option](https://autolab.github.io/docs/one-click/). However, there are various errors
+happened along the way, and using OneClick doesn't help with the debugging process. In the end,
+I decided to follow the manual installation guide.
 
 #### Installing AutoLab
 
-The following commands are embedded in Autolab's `setup.sh` script. However, with Ubuntu 18.04, it 
-is better to manually run these commands so that you have more control over what is being done. 
+The following commands are embedded in Autolab's `setup.sh` script. However, with Ubuntu 18.04, it
+is better to manually run these commands so that you have more control over what is being done.
 
 ```
  $ sudo apt-get -y -qq update
  $ sudo apt-get -y -qq upgrade
  $ sudo apt-get -y install aptitude
- $ sudo aptitude install build-essential git libffi-dev zlib1g-dev autoconf bison libssl1.0-dev libyaml-dev libreadline6-dev libncurses5-dev libgdbm5 libgdbm-dev libmysqlclient-dev
+ $ sudo aptitude install build-essential git libffi-dev zlib1g-dev autoconf bison libssl1.0-dev libyaml-dev libreadline6-dev libncurses5-dev libgdbm5 libgdbm-dev libmysqlclient-dev curl
 ```
 
-*Note: Comparing to the original script, libssl-dev is changed to libssl1.0-dev, and libgdbm3 is changed to 
+*Note: Comparing to the original script, libssl-dev is changed to libssl1.0-dev, and libgdbm3 is changed to
 libgdbm5. To help with the potential dependency issues, I used aptitude instead of apt-get.*
 
 In the original documentation, we have
@@ -43,16 +43,22 @@ $ AUTOLAB_SCRIPT=`mktemp` && \curl -sSL https://raw.githubusercontent.com/autola
 We will need to make several changes the `setup.sh` script. We start by running:
 
 ```
-$ AUTOLAB_SCRIPT=`mktemp` && \curl -sSL https://raw.githubusercontent.com/autolab/Autolab/master/bin/setup.sh
+$ AUTOLAB_SCRIPT=`mktemp` && \curl -sSL https://raw.githubusercontent.com/autolab/Autolab/master/bin/setup.sh > $AUTOLAB_SCRIPT
 ```
 
-Next, run 
+Next, run
 
 ```
 $ vim $AUTOLAB_SCRIPT
 ```
 
-Comment out the lines between After line 104, insert the following line
+Comment out line 105. Also, on lines 138 and 139, change
+
+```
+`cat $AUTOLAB_PATH/.ruby-version`
+```
+
+to `2.3.0`. After save and quit from vim, run:
 
 ```
 $ bash $AUTOLAB_SCRIPT
@@ -77,7 +83,7 @@ Thank you for trying out Autolab! For questions and comments, email us at autola
 As a final reminder, your MySQL root password is: OTE4YjcwZjQ2MTA3YjU2Y2UyNTdlMTE5.
 ```
 
-Let's hold off on starting Autolab until a bit later. 
+Let's hold off on starting Autolab until a bit later.
 
 
 ### Installing Tango
@@ -108,9 +114,9 @@ $ sudo apt-get install -y docker-ce
 $ sudo usermod -aG docker $USER
 ```
 At this point, log out and log backin to enable group modification so that the user account can runs docker (See
-[Linux Postintallation](https://docs.docker.com/install/linux/linux-postinstall/)). 
+[Linux Postintallation](https://docs.docker.com/install/linux/linux-postinstall/)).
 
-Next, we clone Tango and create the default configuration file. 
+Next, we clone Tango and create the default configuration file.
 
 ```
 $ git clone https://github.com/autolab/Tango.git
@@ -119,7 +125,7 @@ $ cp config.template.py config.py
 $ mkdir courselabs
 ```
 
-We will use Docker to build a default autograder VM for Tango: 
+We will use Docker to build a default autograder VM for Tango:
 
 ```
 $ cd path/to/Tango
@@ -165,16 +171,16 @@ $ curl localhost:<port>
 # Hello, world! RESTful Tango here!
 ```
 
-#### Running Autolab. 
+#### Running Autolab.
 
 Now you can configure Autolab to use Tango. Go to your Autolab directory and enter the following commands:
 
 ```
 $ cp config/autogradeConfig.rb.template config/autogradeConfig.rb
-``` 
+```
 
-You can edit the `autogradeConfig.rb` file so that it points to your Tango deployment. In this case, 
-we are hosting Tango in the same location as the Autolab web server. 
+You can edit the `autogradeConfig.rb` file so that it points to your Tango deployment. In this case,
+we are hosting Tango in the same location as the Autolab web server.
 
 ```
 # Hostname for Tango RESTful API
@@ -193,4 +199,4 @@ Now you can start Autolab:
 $ cd ~/Autolab && bundle exec rails s -p 3000 --binding=0.0.0.0
 ```
 
-If your host machine has a public IP address, you can open a browser and visit <IP address>:3000. Otherwise, you can open an internal browser on your machine and visit `localhost:3000`. The login and password are admin@foo.bar and *adminfoobar*. 
+If your host machine has a public IP address, you can open a browser and visit <IP address>:3000. Otherwise, you can open an internal browser on your machine and visit `localhost:3000`. The login and password are admin@foo.bar and *adminfoobar*.
