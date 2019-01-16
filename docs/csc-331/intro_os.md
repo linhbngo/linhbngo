@@ -135,7 +135,7 @@ After running the command, how many programs do you see being run concurrently?
 - First, hit `Ctrl-C`
 - Ignore the scrolling text, and type `ps aux | grep cpu`
 - Identify the process IDs associated with the corresponding runs for A, B, and C
-- Enter `kill <process_ID`
+- Enter `kill process_ID`
 
 </section>
 
@@ -231,7 +231,7 @@ $ (./mem 100 &) ; (./mem 200)
 
 - First, hit `Ctrl-C`
 - Identify the process ID as they are being printed out
-- Enter `kill <process_number>`
+- Enter `kill process_ID`
 
 </section>
 
