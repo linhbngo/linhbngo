@@ -309,7 +309,7 @@ $ ./threads 2000
 
 <section data-markdown>
 
-![threads]({{ "/assets/images/csc-331/intro_os/threads.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+![threads]({{ "/assets/images/csc-331/intro_os/thread.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 
 </section>
 
