@@ -19,105 +19,122 @@ category: presentation
 </section>
 
 <section data-markdown>
-### Course Descriptions
+### Why?
 
-This course will introduce three fundamental concepts in operating system (OS):
-Virtualization, Concurrency, and Persistence.
+![von-neumann]({{ "/assets/images/csc-331/intro_os/von_neumann.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 
-- *Virtualization*: How OS creates abstractions through which programmers can
-interact with the underlying hardware
-(e.g., *processes*, *memory spaces*, and *CPU scheduling*).
-
-- *Concurrency*: How OS supports sharing of physical resources
-among these abstractions (e.g., *thread*, *lock*, and *semaphores*).
-
-- *Persistence*: How OS enables the long term management of information,
-produced or required by computer programs, in a manner that persists beyond the scope or the duration
-of these programs (e.g., *I/O devices* and *file systems*).
-
-Understanding how operating systems work will facilitate better understanding about how programs are
-run by the computer hardware. This will lead to more efficient, stable, and secure programs.
 </section>
 
 <section data-markdown>
-### Learning Objectives
+### How? Virtualization
 
-- Students will be able to apply mathematical foundations, algorithmic principles, and computer science theory.
-- Students will be able to to design, implement and evaluate a computer-based system, process, component, or program to meet desired needs.
+- **Virtualization**
+  - Presents general, powerful, and easy-to-use **virtual** forms of **physical** computing resources to users (*programmers*).
+- The linkage between virtual interfaces and physical components are enabled through the OS' **system calls** (or **standrad library**).
 </section>
 
 <section data-markdown>
-### Important Dates
-- Tue, Jan 29, 2019: Last Day of Add/Drop
-- Mon, Mar 11-17, 2019: Spring Break
-- Tue, Mar 26, 2019: Last Day of Course Withdrawal
-- Tue, Nov 20, 2019: Reading/Writing Day
-- Tue, May 07, 2019: 10:30AM to 12:30PM FINAL EXAM
+### How? Managing Resources
+- Each physical component in a computing system is considered a **resource**.
+- The OS **manages** these resources so that multiple programms can assess these resources (through the corresponding virtual interface) at the same time (**concurrency**)
 </section>
 
 <section data-markdown>
-### Prerequisites
-
-- CSC 220 - Foundations of Computer Science
-- CSC 240 - Computer Science III
-- CSC 241 - Data Structures & Algorithms
-- CSC 242 - Computer Organization
-- Being able to program in **C**. We will cover some background information regarding C programming, but it is important that you take it upon yourself to learn the language.
+### Hands-on
+- Start virtualbox
+- Start the *csc-331* VM
 </section>
 
 <section data-markdown>
-### Textbook
+<script type="text/template">
+### CPU Virtualization
 
-- **Operating Systems: Three Easy Pieces** by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau.
-- [Free online PDF chapters by the authors](http://pages.cs.wisc.edu/~remzi/OSTEP/)
-- If you like it, buy it to support the efforts to produce inexpensive, quality, and free textbooks.
-- Reference book (optional): [Operating Systems Design and Implementation](https://www.amazon.com/Operating-Systems-Design-Implementation-3rd/dp/0131429388)
+Code location: `/home/student/ostep-code/intro/cpu.c`
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include "common.h"
+
+int main(int argc, char *argv[])
+{
+  if (argc != 2) {
+	  fprintf(stderr, "usage: cpu <string>\n");
+	  exit(1);
+  }
+  char *str = argv[1];
+
+  while (1) {
+	  printf("%s\n", str);
+	  Spin(1);
+  }
+  return 0;
+}
+```
+</script>
 </section>
 
 <section data-markdown>
-### Software requirements
-As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
 
-- Virtual Environment: Oracle VirtualBox
-- Virtual OS for VirtualBox: Minix
-- Other software packages will be specified and installed inside the virtual OS as needed.
+### Compile and Run
+
+```
+$ cd /home/student/ostep-code/intro/
+$ gcc -o cpu cpu.c -Wall
+$ ./cpu "A"
+```
+
+To interrup a running program, press `Ctrl-C`
+
 </section>
 
 <section data-markdown>
-### Course Materials
-- Lecture slides and example codes will be available online via links inside the course’ D2L page
-- Links to papers on subjects we will be discussing in class will also be listed and/or embedded in the slides.
-- West Chester University maintains extensive licensed products to academic publishers such as ACM, IEEE, Elsevier, and Springer, and many of the papers required for this course will be available through the library's online database.
-- Google Scholar is another excellent source for downloading preprint or open-source versions of papers.
+
+![cpu]({{ "/assets/images/csc-331/intro_os/cpu.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+
 </section>
 
 <section data-markdown>
-### Git
+### Making things more interesting
 
-- The class materials, including source codes, will be disseminated via Git. Being able to use Git is a critical skill for most, if not all software developers and/or IT professionals. There are many tutorials already available online for Git. Some of the more helpful ones include Github's, "the simple guide", and Atlassian's);
+Before running the Linux command on this slide, take notes on the following:
 
-- It would be a mistake if you just attempt to access the class materials via the web browser. "This is a mistake. Just learn Git. The command line interface is faster and more powerful, and you're going to need to learn it at some point in your life. Why not today?" - Dr. Jacob Sorber, Clemson University.
+- How many CPU did we assign to the VM?
+
+```
+$ (./cpu "A" &) ; (./cpu "B" &) ; (./cpu "C" &); (./cpu "D")
+```
+
 </section>
 
 <section data-markdown>
-### Grading
+### Making things more interesting
 
-- Assignments: 50%
-- Exam:
-    - Exam 1: 15%
-    - Exam 2: 10% (Comprehensive)
-- Quiz: 20%
-- Participation: 5%
+After running the command, how many programs do you see being run concurrently?
+
+![multi-cpu]({{ "/assets/images/csc-331/intro_os/multi-cpu.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+
 </section>
 
 <section data-markdown>
-### Letter grades
+### The illusion of infinite CPU Resources
 
-| Number | 100-93 | 92-90 | 89-87 | 86-83 | 82-80 | 79-77 | 76-73 | 72-70 | 69-67 | 66-63 | 62-60 | <= 59 |
-| ------ | ------ | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Letter | A	  | A-    | B+    | B     | B-    | C+    | C     | C-    | D+    | D     | D-    | F     |
+- A limated number of physical CPUs can still be represented as infinite number of CPUs through **virtualization**
+- The OS will **manage** the scheduling and allocation of the actual run on physical resources.
+-
+</section>
+
+<section data-markdown>
+### How to stop the programs ...
+
+- First, hit `Ctrl-C`
+- Ignore the scrolling text, and type `ps aux | grep cpu`
+- Identify the process numbers associated with the corresponding runs for A, B, and C
+- Enter `kill <process_number`
 
 </section>
+
+
 
 <section data-markdown>
 ### Grading Appeals
@@ -144,9 +161,6 @@ Mistakes occasionally happen during the grading process. If you think a mistake 
 - Office hours are an opportunity to reinforce course topics either one-on-one or in small groups. If you are unable to attend during the posted time slots, I am happy to make an appointment.
 
 </section>
-
-
-
 
 <section data-markdown>
 ### Attendance Policy
