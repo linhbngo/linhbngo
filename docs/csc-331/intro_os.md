@@ -9,13 +9,13 @@ category: presentation
 </section>
 
 <section data-markdown>
-### Linh B. Ngo, Ph.D.
+### What happens when a computer program run? (*in a nutshell!*)
 
-- Email: LNGO at WCUPA dot EDU
-- Office: 144 UNA (25 University Avenue)
-- Office Hours:
-    - MT 2:00PM to  4:00PM
-    - W 11:00AM to 12:00PM
+- The processor
+  - **fetches** an instruction from memory
+  - **decodes** the instruction
+  - **executes** the instruction
+- This is the fundamental **Von Neumann** model of computing
 </section>
 
 <section data-markdown>
@@ -241,7 +241,3 @@ Failure to access will not exempt individuals from the responsibilities associat
 
 - If you send me an assignment-related email right before a deadline, I may not answer it in time to be helpful.
 </section>
-
-
-
-

@@ -28,7 +28,7 @@ is better to manually run these commands so that you have more control over what
  $ sudo apt-get -y -qq update
  $ sudo apt-get -y -qq upgrade
  $ sudo apt-get -y install aptitude
- $ sudo aptitude install build-essential git libffi-dev zlib1g-dev autoconf bison libssl1.0-dev libyaml-dev libreadline6-dev libncurses5-dev libgdbm5 libgdbm-dev libmysqlclient-dev curl
+ $ sudo aptitude -y install build-essential git libffi-dev zlib1g-dev autoconf bison libssl1.0-dev libyaml-dev libreadline6-dev libncurses5-dev libgdbm5 libgdbm-dev libmysqlclient-dev curl
 ```
 
 *Note: Comparing to the original script, libssl-dev is changed to libssl1.0-dev, and libgdbm3 is changed to
@@ -52,13 +52,13 @@ Next, run
 $ vim $AUTOLAB_SCRIPT
 ```
 
-Comment out line 105. Also, on lines 138 and 139, change
+Comment out line 105. Also, on lines 138, inside `ruby_setup()`, insert
 
 ```
-`cat $AUTOLAB_PATH/.ruby-version`
+echo "2.3.0" > $AUTOLAB_PATH/.ruby-version
 ```
 
-to `2.3.0`. After save and quit from vim, run:
+After save and quit from vim, run:
 
 ```
 $ bash $AUTOLAB_SCRIPT
