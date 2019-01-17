@@ -9,7 +9,7 @@ toc: true
 
 ### Course Description
 
-
+This course provides an introductory overview to the technologies that enable cloud computing. Topics covered include basic concepts about cloud computing, and advanced technical concepts regarding virtualization, containerization, and orchestration. 
 
 ### Important Dates
 
@@ -20,18 +20,7 @@ toc: true
 
 ### Course Requirements
 
-**Prerequisites**
-
-
-**Textbook**
-
-
-**Software requirements**
-
-As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
-
-Virtual Environment: Oracle VirtualBox
-Other software packages will be specified and installed inside the CentOS virtual machine as needed.
+...
 
 
 ### Course Materials
@@ -41,13 +30,14 @@ Other software packages will be specified and installed inside the CentOS virtua
 - Links to papers on subjects we will be discussing in class will also be listed and/or embedded in the slides.
 
 - West Chester University maintains extensive licensed products to academic publishers such as ACM, IEEE, Elsevier, and Springer, and many of the papers required for this course will be available through the library's online database.
+
 - Google Scholar is another excellent source for downloading preprint or open-source versions of papers.
 
 
 
 ### Git
 
-- The class materials, including source codes, will be disseminated via Git. Being able to use Git is a critical skill for most, if not all software developers and/or IT professionals. There are many tutorials already available online for Git. Some of the more helpful ones include github's, "the simple guide", and atlassian's);
+- The class materials, including source codes, will be disseminated via Git. Being able to use Git is a critical skill for most, if not all software developers and/or IT professionals. There are many tutorials already available online for Git. Some of the more helpful ones include Github's, "the simple guide", and Atlassian's);
 
 - It would be a mistake if you just attempt to access the class materials via the web browser. "This is a mistake. Just learn Git. The command line interface is faster and more powerful, and you're going to need to learn it at some point in your life. Why not today?" - Dr. Jacob Sorber, Clemson University.
 
@@ -56,30 +46,28 @@ Other software packages will be specified and installed inside the CentOS virtua
 
 
 - [Syllabus]({{ "/docs/csc-496-2/syllabus_slide/" | relative_url }}) (**Week 1**)
+
+- Basic Concepts
+  - Cloud Computing and Enabling Technologies
+  - Cloud Infrastructure
+  - Common Cloud Providers
+    - CloudLab (academic)
+    - Google Compute Engine
+    - Amazon Web Services
+
 - Virtualization
   - KVM
   - VirtualBox
   - Vagrant
-- Infrastructure as a Service (IaaS)
-  - OpenStack
-  - Google Compute Engine
-- Platform as a Service (PaaS)
-  - CloudFoundry
-  - Heroku
-- Containers
+
+- Containerization
   - Docker
   - Singularity
+
 - Containers Orchestration
   - Docker Swarm
   - Kubernetes
   - Mesos
-- Configuration Management of Cloud Infrastructure
-  - Ansible
-  - Puppet
-  - Chef
-  - Salt
-
-
 
 ### Grading
 
