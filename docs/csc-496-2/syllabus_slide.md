@@ -5,7 +5,7 @@ category: presentation
 ---
 
 <section data-markdown>
-## <center> Operating Systems </center>
+## <center> Introduction to Cloud Computing </center>
 </section>
 
 <section data-markdown>
@@ -21,14 +21,8 @@ category: presentation
 <section data-markdown>
 ### Course Descriptions
 
+This course provides an introductory overview to the technologies that enable cloud computing. Topics covered include basic concepts about cloud computing, and advanced technical concepts regarding virtualization, containerization, and orchestration. 
 
-</section>
-
-<section data-markdown>
-### Learning Objectives
-
-- Students will be able to apply mathematical foundations, algorithmic principles, and computer science theory.
-- Students will be able to to design, implement and evaluate a computer-based system, process, component, or program to meet desired needs.
 </section>
 
 <section data-markdown>
@@ -78,12 +72,17 @@ As laptop style and model can vary, the following common (and free) software env
 <section data-markdown>
 ### Grading
 
-- Assignments: 50%
+Grades will be based on the following distribution:
+
+- Assignments: 60%
+  - 1 individual assignment (15%)
+  - 1 project-based assignments (45%): 3 deliverables at 15% each
 - Exam:
-    - Exam 1: 15%
-    - Exam 2: 10% (Comprehensive)
-- Quiz: 20%
+  - Exam 1: 15%
+  - Exam 2: 10% (Comprehensive)
+- Quiz: 10%
 - Participation: 5%
+
 </section>
 
 <section data-markdown>
@@ -227,25 +226,4 @@ Failure to access will not exempt individuals from the responsibilities associat
 - Even if you are already running Linux or Linux/Unix-based OSes (e.g., Mac, ChromeOS ...), it is necessary to use VirtualBox to create an isolated environment for operating system.
 - VirtualBox can be downloaded from https://www.virtualbox.org/wiki/Downloads
 - Follow the online instruction to install VirtualBox.
-</section>
-
-<section data-markdown>
-![VirtualBox]({{ "/assets/images/csc-331/syllabus_slide/virtualbox.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
-
-*VirtualBox application installed inside a Linux environment*
-</section>
-
-<section data-markdown>
-### Setup a Virtual Machine (VM)
-
-- Download the disk image from: http://bit.ly/2GzKM3e
-- Launch VirtualBox
-</section>
-
-
-<section data-markdown>
-![VirtualBox]({{ "/assets/images/csc-331/syllabus_slide/add-vdi.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
-
-- Select **File**, then **Virtual Media Manager**
-- Click **Add** and navigate to select the downloaded disk image, then click **Close**
 </section>
