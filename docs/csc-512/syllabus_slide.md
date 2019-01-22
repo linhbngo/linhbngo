@@ -5,7 +5,7 @@ category: presentation
 ---
 
 <section data-markdown>
-## <center> Operating Systems </center>
+## <center> Computer Programming I </center>
 </section>
 
 <section data-markdown>
@@ -21,74 +21,50 @@ category: presentation
 <section data-markdown>
 ### Course Descriptions
 
-This course will introduce three fundamental concepts in operating system (OS):
-Virtualization, Concurrency, and Persistence.
+In this course, we will learn fundamental concepts of computer programming using Java programming language.
 
-- *Virtualization*: How OS creates abstractions through which programmers can
-interact with the underlying hardware
-(e.g., *processes*, *memory spaces*, and *CPU scheduling*).
-
-- *Concurrency*: How OS supports sharing of physical resources
-among these abstractions (e.g., *thread*, *lock*, and *semaphores*).
-
-- *Persistence*: How OS enables the long term management of information,
-produced or required by computer programs, in a manner that persists beyond the scope or the duration
-of these programs (e.g., *I/O devices* and *file systems*).
-
-Understanding how operating systems work will facilitate better understanding about how programs are
-run by the computer hardware. This will lead to more efficient, stable, and secure programs.
 </section>
 
 <section data-markdown>
 ### Learning Objectives
 
-- Students will be able to apply mathematical foundations, algorithmic principles, and computer science theory.
-- Students will be able to to design, implement and evaluate a computer-based system, process, component, or program to meet desired needs.
+- Communicate effectively
+  - Plan program solutions using pseudo-codes
+  - Write program solutions using Java programming language
+  - Document code with appropriate explanatory information
+- Employ quantitative analysis and mathematical methods
+  - Analyze problem situations
+  - Use mathematical models to develop solutions
+- Think critically and analytically
+  - Develop algorithmic solutions
+  - Implement and test problem solutions
 </section>
 
 <section data-markdown>
-### Important Dates
-- Tue, Jan 29, 2019: Last Day of Add/Drop
-- Mon, Mar 11-17, 2019: Spring Break
-- Tue, Mar 26, 2019: Last Day of Course Withdrawal
-- Tue, Nov 20, 2019: Reading/Writing Day
-- Tue, May 07, 2019: 10:30AM to 12:30PM FINAL EXAM
+- Tue, Jan 25, 2019: Last Day of Add/Drop
+- Sun, Feb 17, 2019: Last Day of Course Withdrawal
+- Sun, Mar 10, 2019: Last Day of Class
 </section>
 
 <section data-markdown>
 ### Prerequisites
 
-- CSC 220 - Foundations of Computer Science
-- CSC 240 - Computer Science III
-- CSC 241 - Data Structures & Algorithms
-- CSC 242 - Computer Organization
-- Being able to program in **C**. We will cover some background information regarding C programming, but it is important that you take it upon yourself to learn the language.
+- There is no prerequisite for this course
+
 </section>
 
 <section data-markdown>
 ### Textbook
 
-- **Operating Systems: Three Easy Pieces** by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau.
-- [Free online PDF chapters by the authors](http://pages.cs.wisc.edu/~remzi/OSTEP/)
-- If you like it, buy it to support the efforts to produce inexpensive, quality, and free textbooks.
-- Reference book (optional): [Operating Systems Design and Implementation](https://www.amazon.com/Operating-Systems-Design-Implementation-3rd/dp/0131429388)
-</section>
+- **Starting out with Java: From Control Structures through Objects** by Tony Gaddis, 7th Edition. ISBN-13 978-0134802213, ISBN-10 0134802217
 
-<section data-markdown>
-### Laptop requirements
-Having access to a laptop during class time is critical
-- Engaging in in-class examples that demonstrate the lectured concepts.
-- Working on in-class electronic quizzes on D2L
-- Make sure that your laptop is fully charged for the duration of the class (or come in early and get a spot with access to power outlets)
 </section>
 
 <section data-markdown>
 ### Software requirements
-As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
 
-- Virtual Enronment: Oracle VirtualBox
-- Virtual OS for VirtualBox: Minix
-- Other software packages will be specified and installed inside the virtual OS as needed.
+We will be using jGRASP for this class.
+
 </section>
 
 <section data-markdown>
@@ -97,6 +73,15 @@ As laptop style and model can vary, the following common (and free) software env
 - Links to papers on subjects we will be discussing in class will also be listed and/or embedded in the slides.
 - West Chester University maintains extensive licensed products to academic publishers such as ACM, IEEE, Elsevier, and Springer, and many of the papers required for this course will be available through the library's online database.
 - Google Scholar is another excellent source for downloading preprint or open-source versions of papers.
+</section>
+
+
+<section data-markdown>
+### Git
+
+- The class materials, including source codes, will be disseminated via Git. Being able to use Git is a critical skill for most, if not all software developers and/or IT professionals. There are many tutorials already available online for Git. Some of the more helpful ones include github's, "the simple guide", and atlassian's);
+
+- It would be a mistke if you just attempt to access the cloass materials via the web browser. "This is a mistake. Just learn Git. The command line interface is faster and more powerful, and you're going to need to learn it at some point in your life. Why not today?" - Dr. Jacob Sorber, Clemson University.
 </section>
 
 <section data-markdown>
@@ -240,44 +225,4 @@ Failure to access will not exempt individuals from the responsibilities associat
 </section>
 
 
-<section data-markdown>
-### Git
 
-- The class materials, including source codes, will be disseminated via Git. Being able to use Git is a critical skill for most, if not all software developers and/or IT professionals. There are many tutorials already available online for Git. Some of the more helpful ones include github's, "the simple guide", and atlassian's);
-
-- It would be a mistke if you just attempt to access the cloass materials via the web browser. "This is a mistake. Just learn Git. The command line interface is faster and more powerful, and you're going to need to learn it at some point in your life. Why not today?" - Dr. Jacob Sorber, Clemson University.
-</section>
-
-<section data-markdown>
-## <center> Setup Linux environment </center>
-</section>
-
-<section data-markdown>
-### VirtualBox
-
-- To emulate an operating system, we will use [VirtualBox](https://www.virtualbox.org).
-- Even if you are already running Linux or Linux/Unix-based OSes (e.g., Mac, ChromeOS ...), it is necessary to use VirtualBox to create an isolated environment for operating system.
-- VirtualBox can be downloaded from https://www.virtualbox.org/wiki/Downloads
-- Follow the online instruction to install VirtualBox.
-</section>
-
-<section data-markdown>
-![VirtualBox]({{ "/assets/images/csc-331/syllabus_slide/virtualbox.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
-
-*VirtualBox application installed inside a Linux environment*
-</section>
-
-<section data-markdown>
-### Setup a Virtual Machine (VM)
-
-- Download the disk image from: http://bit.ly/2GzKM3e
-- Launch VirtualBox
-</section>
-
-
-<section data-markdown>
-![VirtualBox]({{ "/assets/images/csc-331/syllabus_slide/add-vdi.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
-
-- Select **File**, then **Virtual Media Manager**
-- Click **Add** and navigate to select the downloaded disk image, then click **Close**
-</section>

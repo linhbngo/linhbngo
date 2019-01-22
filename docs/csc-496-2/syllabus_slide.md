@@ -30,18 +30,16 @@ This course provides an introductory overview to the technologies that enable cl
 - Tue, Jan 29, 2019: Last Day of Add/Drop
 - Mon, Mar 11-17, 2019: Spring Break
 - Tue, Mar 26, 2019: Last Day of Course Withdrawal
-- Tue, May 07, 2019: 10:30AM to 12:30PM FINAL EXAM
+- Tue, May 09, 2019: 6:00PM to 8:00PM FINAL EXAM
 </section>
 
 <section data-markdown>
 ### Prerequisites
 
-
 </section>
 
 <section data-markdown>
 ### Textbook
-
 
 </section>
 
@@ -63,7 +61,7 @@ As laptop style and model can vary, the following common (and free) software env
 
 <section data-markdown>
 ### Course Materials
-- Lecture slides and example codes will be available online via links inside the course’ D2L page
+- Lecture slides and example codes will be available online via links inside the course' D2L page
 - Links to papers on subjects we will be discussing in class will also be listed and/or embedded in the slides.
 - West Chester University maintains extensive licensed products to academic publishers such as ACM, IEEE, Elsevier, and Springer, and many of the papers required for this course will be available through the library's online database.
 - Google Scholar is another excellent source for downloading preprint or open-source versions of papers.
@@ -216,14 +214,175 @@ Failure to access will not exempt individuals from the responsibilities associat
 
 
 <section data-markdown>
-## <center> Setup Linux environment </center>
+## <center> Introduction to Cloud Computing </center>
 </section>
 
 <section data-markdown>
-### VirtualBox
+### Cluster Computing
 
-- To emulate an operating system, we will use [VirtualBox](https://www.virtualbox.org).
-- Even if you are already running Linux or Linux/Unix-based OSes (e.g., Mac, ChromeOS ...), it is necessary to use VirtualBox to create an isolated environment for operating system.
-- VirtualBox can be downloaded from https://www.virtualbox.org/wiki/Downloads
-- Follow the online instruction to install VirtualBox.
+- Prior to 1996, to achieve better computing performance (better speed, more memory, more storage ...), people relied on special-purpose computers (Cray, AIX).
+- In 1996, the Beowulf model was developed, enabling construction of **computing clusters**:
+  - Provide better overall performance than average computers,
+  - Are designed by connecting individual standard computers (commodity off-the-shelves).
+- Highly scalable (potentially infinite)
 </section>
+
+<section data-markdown>
+### Cluster Computing
+
+- Prior to 1996, to achieve better computing performance (better speed, more memory, more storage ...), people relied on special-purpose computers (Cray, AIX).
+- In 1996, the Beowulf model was developed, enabling construction of **computing clusters**:
+  - Provide better overall performance than average computers,
+  - Are designed by connecting individual standard computers (commodity off-the-shelves).
+- Highly scalable (potentially infinite)
+</section>
+
+<section data-markdown>
+### The Building is the Limit
+
+- **Scaling out**: Adding additional computers of similar performance to an existing cluster of computers.
+- Simple, inexpensive approach
+- Limited by how much space available
+- Limited by AC and power capacity
+
+</section>
+
+<section data-markdown>
+### The Funding is the Limit
+
+- **Scaling up**: Replacing existing computers in a cluster with better, fast computers
+- More expensive
+- More technical challenge to ensure stable performance
+
+</section>
+
+<section data-markdown>
+### Difference in perspectives
+
+- Academic: How can I get more performance with little funding that I have?
+- Industry: How can I avoid investing money into fixed cost when I only need bursts of performance?
+
+</section>
+
+<section data-markdown>
+### Next generations of cluster computing
+
+- Grid Computing
+- Cloud Computing
+
+</section>
+
+<section data-markdown>
+### Grid Computing
+
+- Bring together computing resources (clusters of computers) from geographically distributed locations.
+- Individual resources are under separate administrative domains.
+- Computing resources are highly heterogeneous (and the users have to take this into account).
+- A computing job with individual disjoint and asynchronous tasks can send these tasks over different resources in a grid computing federation. 
+- Suitable for academic research, not suitable for industry. 
+
+</section>
+
+<section data-markdown>
+### Cloud Computing
+
+- Bring together computing resources from geographically distributed locations.
+- Difference in administrative domains should be transparent to users. 
+- The heterogeneity of computing resources should be transparent to users.
+- Any type of computing job should be executable in a cloud computing environment. 
+
+</section>
+
+<section data-markdown>
+### Grid and Cloud
+
+![grid-cloud]({{ "/assets/images/csc-496-2/syllabus_slide/grid-cloud.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+
+</section>
+
+<section data-markdown>
+### Cloud Computing: Early Definition
+
+*A computing cloud is a set of network enabled services, providing scalable, QoS guaranteed, normally personalized, inexpensive computing infrastructures on demand, which could be accessed in a simple and pervasive way*
+
+Wang L, Von Laszewski G, Younge A, He X, Kunze M, Tao J, Fu C. Cloud computing: a perspective study. New Generation Computing. 2010 Apr 1;28(2):137-46.
+
+Cloud computing is too complex to be defined by just a sentence. 
+
+</section>
+
+
+<section data-markdown>
+### Cloud Computing: Formal Definition by NIST
+
+- Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction. This cloud model is composed of five essential characteristics, three service models, and four deployment models.
+- https://csrc.nist.gov/publications/detail/sp/800-145/final
+- How do we read this definition?
+
+</section>
+
+<section data-markdown>
+### Cloud Computing: Formal Definition by NIST
+
+Cloud computing is a model for enabling ubiquitous, convenient, **on-demand** network **access** to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction. This cloud model is composed of five essential characteristics, three service models, and four deployment models.
+
+</section>
+
+<section data-markdown>
+### Cloud Computing: Formal Definition by NIST
+
+Cloud computing is a model for enabling ubiquitous, convenient, **on-demand** network **access** to a **shared pool** of **configurable** computing **resources** (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction. This cloud model is composed of five essential characteristics, three service models, and four deployment models.
+
+</section>
+
+<section data-markdown>
+### Cloud Computing: Formal Definition by NIST
+
+Cloud computing is a model for enabling ubiquitous, convenient, **on-demand** network **access** to a **shared pool** of **configurable** computing **resources** (e.g., networks, servers, storage, applications, and services) that can be **rapidly provisioned** and released with **minimal management** effort or service provider interaction. This cloud model is composed of five essential characteristics, three service models, and four deployment models.
+
+</section>
+
+<section data-markdown>
+### Cloud Computing: Five Essential Characteristics
+
+- On-demand self-service
+- Broad network access
+- Resource pooling
+- Rapid elasticity
+- Measured service
+
+</section>
+
+<section data-markdown>
+### Cloud Trend
+
+![grid-cloud]({{ "/assets/images/csc-496-2/syllabus_slide/cloud-trend.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+
+</section>
+
+<section data-markdown>
+### Cloud Computing: Three Service Models
+
+- Software as a Service (SaaS)
+- Platform as a Service (PaaS)
+- Infrastructure as a Service (IaaS)
+
+</section>
+
+<section data-markdown>
+### Cloud Providers
+
+![grid-cloud]({{ "/assets/images/csc-496-2/syllabus_slide/cloud-major-providers.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+
+</section>
+
+<section data-markdown>
+### Cloud Computing: Four Deployment Models
+
+- Private Cloud
+- Community Cloud
+- Public Cloud
+- Hybrid Cloud
+
+</section>
+

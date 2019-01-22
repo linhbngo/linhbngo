@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Operating Systems
+title: Computer Programming I
 permalink: /docs/csc-512/
 sidebar:
   nav: "docs"
@@ -27,10 +27,9 @@ In this course, we will learn fundamental concepts of computer programming using
 
 ### Important Dates
 
-- Tue, Jan 29, 2019: Last Day of Add/Drop
-- Mon, Mar 11-17, 2019: Spring Break
-- Tue, Mar 26, 2019: Last Day of Course Withdrawal
-- Tue, May 07, 2019: 10:30AM to 12:30PM FINAL EXAM
+- Tue, Jan 25, 2019: Last Day of Add/Drop
+- Sun, Feb 17, 2019: Last Day of Course Withdrawal
+- Sun, Mar 10, 2019: Last Day of Class
 
 ### Course Requirements
 
@@ -71,17 +70,29 @@ We will be using jGRASP for this class.
 - West Chester University maintains extensive licensed products to academic publishers such as ACM, IEEE, Elsevier, and Springer, and many of the papers required for this course will be available through the library's online database.
 - Google Scholar is another excellent source for downloading preprint or open-source versions of papers.
 
+### Tentative Course Outline
+
+- [Syllabus]({{ "/docs/csc-512/syllabus_slide/" | relative_url }}) (**Week 1**)
+- Introduction to Computer and Java
+- Java Fundamentals
+- Decision Structure
+- Loops and Files
+- Methods
+- First Look at Classes
+- Array and the ArrayList Class
+- Second Look at Classes and Objects
+- A First Look at GUI Applications
+- Recursion
 
 ### Grading
 
 Grades will be based on the following distribution:
 
-Assignments: 50%
-Exam:
-Exam 1: 15%
-Exam 2: 10% (Comprehensive)
-Quiz: 20%
-Participation: 5%
+- Assignments: 75% (5 homework assignments, 15% each)
+  - Each homework contains three programming problems.
+  - Three students will be randomly picked to present (walk through) their homework solutions.
+  - Coding correctness and coding style will both be considered in grading. 
+- Projects: 25% 
 
 Letter grades are assigned according to the following scale:
 
@@ -166,18 +177,4 @@ If you have a disability that requires accommodations under the Americans with D
 
 - For more information, visit www.wcupa.edu/wcualert. To report an emergency, call the Department of Public Safety at 610-436-3311.
 
-### Tentative Course Outline
 
-
-- [Syllabus]({{ "/docs/csc-512/syllabus_slide/" | relative_url }}) (**Week 1**)
-- [Introduction to Operating Systems]({{ "/docs/csc-331/intro_os/" | relative_url }})
-- Introduction to Computer and Java
-- Java Fundamentals
-- Decision Structure
-- Loops and Files
-- Methods
-- First Look at Classes
-- Array and the ArrayList Class
-- Second Look at Classes and Objects
-- A First Look at GUI Applications
-- Recursion
