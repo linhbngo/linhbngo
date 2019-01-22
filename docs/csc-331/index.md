@@ -60,14 +60,13 @@ run by the computer hardware. This will lead to more efficient, stable, and secu
 
 As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
 
-Virtual Environment: Oracle VirtualBox
-Virtual OS for VirtualBox: Minix
-Other software packages will be specified and installed inside the CentOS virtual machine as needed.
+- Virtual Environment: Oracle VirtualBox
+- Other software packages will be specified and installed inside the CentOS virtual machine as needed.
 
 
 ### Course Materials
 
-- Lecture slides and example codes will be available online via links inside the course’ D2L page
+- Lecture slides and example codes will be available online via links inside the course' D2L page
 
 - Links to papers on subjects we will be discussing in class will also be listed and/or embedded in the slides.
 
@@ -178,10 +177,10 @@ Instructor Email Policy
 
 It is the responsibility of each student to adhere to the university’s standards for academic integrity. Violations of academic integrity include any act that violates the rights of another student in academic work, that involves misrepresentation of your own work, or that disrupts the instruction of the course. Other violations include (but are not limited to): cheating on assignments or examinations; plagiarizing, which means copying any part of another’s work and/or using ideas of another and presenting them as one’s own without giving proper credit to the source; selling, purchasing, or exchanging of term papers; falsifying of information; and using your own work from one class to fulfill the assignment for another class without significant modification. Proof of academic misconduct can result in the automatic failure and removal from this course.
 
-For questions regarding Academic Integrity, Sexual Harassment, or the Student Code of Conduct, students are encouraged to refer to the “Other” Menu of the Computer Science web page www.cs.wcupa.edu/, the Undergraduate Catalog, the Ram’s Eye View, and the University website at www.wcupa.edu.
+For questions regarding Academic Integrity, Sexual Harassment, or the Student Code of Conduct, students are encouraged to refer to the "Other" Menu of the Computer Science web page www.cs.wcupa.edu/, the Undergraduate Catalog, the Ram's Eye View, and the University website at www.wcupa.edu.
 
 ### Disability Accommodations
-To know more about West Chester University’s Services for Students with Disabilities (OSSD), contact the OSSD which is located at 223 Lawrence Center. The OSSD hours of Operation are Monday  Friday 8:30 a.m.  4:30 p.m. Their phone number is 610-436-2564, their fax number is 610-436-2600, their email address is ossd@wcupa.edu, and their website is at www.wcupa.edu/ussss/ossd.
+To know more about West Chester University's Services for Students with Disabilities (OSSD), contact the OSSD which is located at 223 Lawrence Center. The OSSD hours of Operation are Monday  Friday 8:30 a.m.  4:30 p.m. Their phone number is 610-436-2564, their fax number is 610-436-2600, their email address is ossd@wcupa.edu, and their website is at www.wcupa.edu/ussss/ossd.
 If you have a disability that requires accommodations under the Americans with Disabilities Act (ADA), please present your letter of accommodations to OSSD as soon as possible so that OSSD can support your success in an informed manner. Accommodations cannot be granted retroactively.
 
 
@@ -201,5 +200,3 @@ If you have a disability that requires accommodations under the Americans with D
 - All students are encouraged to sign up for the University’s free WCU ALERT service, which delivers official WCU emergency text messages directly to your cell phone.
 
 - For more information, visit www.wcupa.edu/wcualert. To report an emergency, call the Department of Public Safety at 610-436-3311.
-
-

@@ -78,13 +78,12 @@ run by the computer hardware. This will lead to more efficient, stable, and secu
 As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
 
 - Virtual Environment: Oracle VirtualBox
-- Virtual OS for VirtualBox: Minix
 - Other software packages will be specified and installed inside the virtual OS as needed.
 </section>
 
 <section data-markdown>
 ### Course Materials
-- Lecture slides and example codes will be available online via links inside the course’ D2L page
+- Lecture slides and example codes will be available online via links inside the course' D2L page
 - Links to papers on subjects we will be discussing in class will also be listed and/or embedded in the slides.
 - West Chester University maintains extensive licensed products to academic publishers such as ACM, IEEE, Elsevier, and Springer, and many of the papers required for this course will be available through the library's online database.
 - Google Scholar is another excellent source for downloading preprint or open-source versions of papers.
@@ -190,13 +189,13 @@ Proof of academic misconduct can result in the automatic failure and removal fro
 
 <section data-markdown>
 ### Academic Integrity
-For questions regarding Academic Integrity, Sexual Harassment, or the Student Code of Conduct, students are encouraged to refer to the “Other” Menu of the Computer Science web page www.cs.wcupa.edu/, the Undergraduate Catalog, the Ram’s Eye View, and the University website at www.wcupa.edu.
+For questions regarding Academic Integrity, Sexual Harassment, or the Student Code of Conduct, students are encouraged to refer to the "Other" Menu of the Computer Science web page www.cs.wcupa.edu/, the Undergraduate Catalog, the Ram's Eye View, and the University website at www.wcupa.edu.
 </section>
 
 
 <section data-markdown>
 ### Disability Accommodations
-- To know more about West Chester University’s Services for Students with Disabilities (OSSD), contact the OSSD which is located at 223 Lawrence Center. The OSSD hours of Operation are Monday  Friday 8:30 a.m.  4:30 p.m. Their phone number is 610-436-2564, their fax number is 610-436-2600, their email address is ossd@wcupa.edu, and their website is at www.wcupa.edu/ussss/ossd.
+- To know more about West Chester University's Services for Students with Disabilities (OSSD), contact the OSSD which is located at 223 Lawrence Center. The OSSD hours of Operation are Monday  Friday 8:30 a.m.  4:30 p.m. Their phone number is 610-436-2564, their fax number is 610-436-2600, their email address is ossd@wcupa.edu, and their website is at www.wcupa.edu/ussss/ossd.
 - If you have a disability that requires accommodations under the Americans with Disabilities Act (ADA), please present your letter of accommodations to OSSD as soon as possible so that OSSD can support your success in an informed manner. Accommodations cannot be granted retroactively.
 </section>
 
@@ -217,7 +216,7 @@ For questions regarding Academic Integrity, Sexual Harassment, or the Student Co
 
 <section data-markdown>
 ### Emergency Preparedness
-- All students are encouraged to sign up for the University’s free WCU ALERT service, which delivers official WCU emergency text messages directly to your cell phone.
+- All students are encouraged to sign up for the University's free WCU ALERT service, which delivers official WCU emergency text messages directly to your cell phone.
 - For more information, visit www.wcupa.edu/wcualert. To report an emergency, call the Department of Public Safety at 610-436-3311.
 </section>
 
@@ -296,7 +295,7 @@ Failure to access will not exempt individuals from the responsibilities associat
 ### Setup a Virtual Machine (VM)
 
 - Memory size can be kept at 1024MB
-- Click **Next** 
+- Click **Next**
 
 </section>
 
@@ -310,7 +309,7 @@ Failure to access will not exempt individuals from the responsibilities associat
 ### Setup a Virtual Machine (VM)
 
 - For Hard disk, click **Use existing virtual hard disk file**
-- Select the **ubuntu-server.vdi** file that you added earlier. 
+- Select the **ubuntu-server.vdi** file that you added earlier.
 
 </section>
 
@@ -342,7 +341,7 @@ Failure to access will not exempt individuals from the responsibilities associat
 - Click **Start** to begin launching the VM
 - Once the VM finishes starting up, enter *student* as the login and *goldenram* as the password
 - *You might have to hit Enter to initiate the login prompt
-- The VM will capture your keyboard and mouse entirely. To escape to your host machine, use the right Ctrl button. 
+- The VM will capture your keyboard and mouse entirely. To escape to your host machine, use the right Ctrl button.
 
 </section>
 
@@ -356,7 +355,7 @@ Failure to access will not exempt individuals from the responsibilities associat
 ### How to shutdown a VM properly
 
 - If you do not want to corrupt your VM or lost part of your on-going work
-- To shutdown the VM gracefully, type `sudo shutdown` and provide the password *goldenram* when asked. 
-- This will ensure that the VM is shutdown properly, and everything you have done is committed to the VM image file. 
+- To shutdown the VM gracefully, type `sudo shutdown` and provide the password *goldenram* when asked.
+- This will ensure that the VM is shutdown properly, and everything you have done is committed to the VM image file.
 
 </section>
