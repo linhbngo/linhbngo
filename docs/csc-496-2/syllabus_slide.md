@@ -21,7 +21,7 @@ category: presentation
 <section data-markdown>
 ### Course Descriptions
 
-This course provides an introductory overview to the technologies that enable cloud computing. Topics covered include basic concepts about cloud computing, and advanced technical concepts regarding virtualization, containerization, and orchestration. 
+This course provides an introductory overview to the technologies that enable cloud computing. Topics covered include basic concepts about cloud computing, and advanced technical concepts regarding virtualization, containerization, and orchestration.
 
 </section>
 
@@ -131,7 +131,7 @@ Mistakes occasionally happen during the grading process. If you think a mistake 
 ### Excused Absences Policy for University-Sanctioned Event
 
 - Students are advised to carefully read and comply with the excused absences policy for university-sanctioned events contained in the WCU Undergraduate Catalog.
-- In particular, please note that the “responsibility for meeting academic requirements rests with the student,” that this policy does not excuse students from completing required academic work, and that professors can require a “fair alternative” to attendance on those days that students must be absent from class in order to participate in a University-Sanctioned Event.
+- In particular, please note that the "responsibility for meeting academic requirements rests with the student," that this policy does not excuse students from completing required academic work, and that professors can require a "fair alternative" to attendance on those days that students must be absent from class in order to participate in a University-Sanctioned Event.
 </section>
 
 <section data-markdown>
@@ -164,7 +164,7 @@ Proof of academic misconduct can result in the automatic failure and removal fro
 
 <section data-markdown>
 ### Academic Integrity
-For questions regarding Academic Integrity, Sexual Harassment, or the Student Code of Conduct, students are encouraged to refer to the “Other” Menu of the Computer Science web page www.cs.wcupa.edu/, the Undergraduate Catalog, the Ram’s Eye View, and the University website at www.wcupa.edu.
+For questions regarding Academic Integrity, Sexual Harassment, or the Student Code of Conduct, students are encouraged to refer to the "Other' Menu of the Computer Science web page www.cs.wcupa.edu/, the Undergraduate Catalog, the Ram's Eye View, and the University website at www.wcupa.edu.
 </section>
 
 
@@ -228,16 +228,6 @@ Failure to access will not exempt individuals from the responsibilities associat
 </section>
 
 <section data-markdown>
-### Cluster Computing
-
-- Prior to 1996, to achieve better computing performance (better speed, more memory, more storage ...), people relied on special-purpose computers (Cray, AIX).
-- In 1996, the Beowulf model was developed, enabling construction of **computing clusters**:
-  - Provide better overall performance than average computers,
-  - Are designed by connecting individual standard computers (commodity off-the-shelves).
-- Highly scalable (potentially infinite)
-</section>
-
-<section data-markdown>
 ### The Building is the Limit
 
 - **Scaling out**: Adding additional computers of similar performance to an existing cluster of computers.
@@ -278,18 +268,29 @@ Failure to access will not exempt individuals from the responsibilities associat
 - Bring together computing resources (clusters of computers) from geographically distributed locations.
 - Individual resources are under separate administrative domains.
 - Computing resources are highly heterogeneous (and the users have to take this into account).
-- A computing job with individual disjoint and asynchronous tasks can send these tasks over different resources in a grid computing federation. 
-- Suitable for academic research, not suitable for industry. 
+- Keywords: sharing, collaboration, fine-grained access control, delegation ...
 
 </section>
+
+<section data-markdown>
+### Grid Computing
+
+- Started out as academic research project (U Chicago + U Southern California).
+- Enables sharing of geographically different reources through **virtual organizations**.
+- Computing resources are highly heterogeneous (and the users have to take this into account).
+- A computing job with individual disjoint and asynchronous tasks can send these tasks over different resources in a grid computing federation.
+- Suitable for academic research, not suitable for industry.
+
+</section>
+
 
 <section data-markdown>
 ### Cloud Computing
 
 - Bring together computing resources from geographically distributed locations.
-- Difference in administrative domains should be transparent to users. 
+- Difference in administrative domains should be transparent to users.
 - The heterogeneity of computing resources should be transparent to users.
-- Any type of computing job should be executable in a cloud computing environment. 
+- Any type of computing job should be executable in a cloud computing environment.
 
 </section>
 
@@ -307,7 +308,7 @@ Failure to access will not exempt individuals from the responsibilities associat
 
 Wang L, Von Laszewski G, Younge A, He X, Kunze M, Tao J, Fu C. Cloud computing: a perspective study. New Generation Computing. 2010 Apr 1;28(2):137-46.
 
-Cloud computing is too complex to be defined by just a sentence. 
+Cloud computing is too complex to be defined by just a sentence.
 
 </section>
 
@@ -385,4 +386,3 @@ Cloud computing is a model for enabling ubiquitous, convenient, **on-demand** ne
 - Hybrid Cloud
 
 </section>
-
