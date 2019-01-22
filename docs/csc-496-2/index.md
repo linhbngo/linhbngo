@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Operating Systems
+title: Introduction to Cloud Computing
 permalink: /docs/csc-496-2/
 sidebar:
   nav: "docs"
@@ -16,12 +16,7 @@ This course provides an introductory overview to the technologies that enable cl
 - Tue, Jan 29, 2019: Last Day of Add/Drop
 - Mon, Mar 11-17, 2019: Spring Break
 - Tue, Mar 26, 2019: Last Day of Course Withdrawal
-- Tue, May 07, 2019: 10:30AM to 12:30PM FINAL EXAM
-
-### Course Requirements
-
-...
-
+- Tue, May 09, 2019: 6:00PM to 8:00PM FINAL EXAM
 
 ### Course Materials
 
@@ -33,7 +28,11 @@ This course provides an introductory overview to the technologies that enable cl
 
 - Google Scholar is another excellent source for downloading preprint or open-source versions of papers.
 
+### Software requirements
+As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
 
+- Virtual Environment: Oracle VirtualBox
+- Other software packages will be specified and installed inside the virtual OS as needed.
 
 ### Git
 
@@ -45,25 +44,21 @@ This course provides an introductory overview to the technologies that enable cl
 ### Tentative Course Outline
 
 
-- [Syllabus]({{ "/docs/csc-496-2/syllabus_slide/" | relative_url }}) (**Week 1**)
-
+- [Syllabus]({{ "/docs/csc-496-2/syllabus_slide/" | relative_url }})
 - Basic Concepts
   - Cloud Computing and Enabling Technologies
-  - Cloud Infrastructure
-  - Common Cloud Providers
+  - Cloud Infrastructure 
+  - Common Cloud Providers 
     - CloudLab (academic)
     - Google Compute Engine
     - Amazon Web Services
-
-- Virtualization
+- Virtualization 
   - KVM
   - VirtualBox
   - Vagrant
-
-- Containerization
+- Containerization 
   - Docker
   - Singularity
-
 - Containers Orchestration
   - Docker Swarm
   - Kubernetes
@@ -73,12 +68,14 @@ This course provides an introductory overview to the technologies that enable cl
 
 Grades will be based on the following distribution:
 
-Assignments: 50%
-Exam:
-Exam 1: 15%
-Exam 2: 10% (Comprehensive)
-Quiz: 20%
-Participation: 5%
+- Assignments: 60%
+  - 1 individual assignment (15%)
+  - 1 project-based assignments (45%): 3 deliverables at 15% each
+- Exam:
+  - Exam 1: 15%
+  - Exam 2: 10% (Comprehensive)
+- Quiz: 10%
+- Participation: 5%
 
 Letter grades are assigned according to the following scale:
 
@@ -89,7 +86,6 @@ Letter grades are assigned according to the following scale:
 **Grading Appeals**
 
 Mistakes occasionally happen during the grading process. If you think a mistake has been made regarding your grades, you should send me an email with detailed justification within one week of the date the grades are available. No changes on grades will be made after one week from the date the grades are posted.
-
 
 
 ### Class Policy
