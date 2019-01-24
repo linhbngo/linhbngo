@@ -46,7 +46,7 @@ As laptop style and model can vary, the following common (and free) software env
 
 - [Syllabus]({{ "/docs/csc-496-2/syllabus_slide/" | relative_url }})
 - Basic Concepts
-  - Cloud Computing and Enabling Technologies
+  - [Cloud Computing and Enabling Technologies]({{ "/docs/csc-496-2/intro_cloud/" | relative_url }})
   - Cloud Infrastructure 
   - Common Cloud Providers 
     - CloudLab (academic)

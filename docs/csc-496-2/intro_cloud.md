@@ -1,204 +1,30 @@
 ---
 layout: slide
-title: Introduction to Cloud Computing
+title: Introduction to Cloud Computing (cont.)
 category: presentation
 ---
-
-<section data-markdown>
-## <center> Introduction to Cloud Computing </center>
-</section>
-
-<section data-markdown>
-### Cluster Computing
-
-- Prior to 1996, to achieve better computing performance (better speed, more memory, more storage ...), people relied on special-purpose computers (Cray, AIX).
-- In 1996, the Beowulf model was developed, enabling construction of **computing clusters**:
-  - Provide better overall performance than average computers,
-  - Are designed by connecting individual standard computers (commodity off-the-shelves).
-- Highly scalable (potentially infinite)
-</section>
-
-<section data-markdown>
-### The Building is the Limit
-
-- **Scaling out**: Adding additional computers of similar performance to an existing cluster of computers.
-- Simple, inexpensive approach
-- Limited by how much space available
-- Limited by AC and power capacity
-
-</section>
-
-<section data-markdown>
-### The Funding is the Limit
-
-- **Scaling up**: Replacing existing computers in a cluster with better, fast computers
-- More expensive
-- More technical challenge to ensure stable performance
-
-</section>
-
-<section data-markdown>
-### Difference in perspectives
-
-- Academic: How can I get more performance with little funding that I have?
-- Industry: How can I avoid investing money into fixed cost when I only need bursts of performance?
-
-</section>
-
-<section data-markdown>
-### Next generations of cluster computing
-
-- Grid Computing
-- Cloud Computing
-
-</section>
-
-<section data-markdown>
-### Grid Computing
-
-- Bring together computing resources (clusters of computers) from geographically distributed locations.
-- Individual resources are under separate administrative domains.
-- Computing resources are highly heterogeneous (and the users have to take this into account).
-- Keywords: sharing, collaboration, fine-grained access control, delegation ...
-
-</section>
-
-<section data-markdown>
-### Grid Computing
-
-- Started out as academic research project (U Chicago + U Southern California).
-- Enables sharing of geographically different reources through **virtual organizations**.
-- Computing resources are highly heterogeneous (and the users have to take this into account).
-- A computing job with individual disjoint and asynchronous tasks can send these tasks over different resources in a grid computing federation.
-- Suitable for academic research, not suitable for industry.
-
-</section>
-
-
-<section data-markdown>
-### Cloud Computing
-
-- Bring together computing resources from geographically distributed locations.
-- Difference in administrative domains should be transparent to users.
-- The heterogeneity of computing resources should be transparent to users.
-- Any type of computing job should be executable in a cloud computing environment.
-
-</section>
-
-<section data-markdown>
-### Grid and Cloud
-
-![grid-cloud]({{ "/assets/images/csc-496-2/syllabus_slide/grid-cloud.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
-
-</section>
-
-<section data-markdown>
-### Cloud Computing: Early Definition
-
-*A computing cloud is a set of network enabled services, providing scalable, QoS guaranteed, normally personalized, inexpensive computing infrastructures on demand, which could be accessed in a simple and pervasive way*
-
-Wang L, Von Laszewski G, Younge A, He X, Kunze M, Tao J, Fu C. Cloud computing: a perspective study. New Generation Computing. 2010 Apr 1;28(2):137-46.
-
-Cloud computing is too complex to be defined by just a sentence.
-
-</section>
-
-
-<section data-markdown>
-### Cloud Computing: Formal Definition by NIST
-
-- Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction. This cloud model is composed of five essential characteristics, three service models, and four deployment models.
-- https://csrc.nist.gov/publications/detail/sp/800-145/final
-- How do we read this definition?
-
-</section>
-
-<section data-markdown>
-### Cloud Computing: Formal Definition by NIST
-
-Cloud computing is a model for enabling ubiquitous, convenient, **on-demand** network **access** to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction. This cloud model is composed of five essential characteristics, three service models, and four deployment models.
-
-</section>
-
-<section data-markdown>
-### Cloud Computing: Formal Definition by NIST
-
-Cloud computing is a model for enabling ubiquitous, convenient, **on-demand** network **access** to a **shared pool** of **configurable** computing **resources** (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction. This cloud model is composed of five essential characteristics, three service models, and four deployment models.
-
-</section>
-
-<section data-markdown>
-### Cloud Computing: Formal Definition by NIST
-
-Cloud computing is a model for enabling ubiquitous, convenient, **on-demand** network **access** to a **shared pool** of **configurable** computing **resources** (e.g., networks, servers, storage, applications, and services) that can be **rapidly provisioned** and released with **minimal management** effort or service provider interaction. This cloud model is composed of five essential characteristics, three service models, and four deployment models.
-
-</section>
-
-<section data-markdown>
-### Cloud Computing: Five Essential Characteristics
-
-- On-demand self-service
-- Broad network access
-- Resource pooling
-- Rapid elasticity
-- Measured service
-
-</section>
-
-<section data-markdown>
-### Cloud Trend
-
-![grid-cloud]({{ "/assets/images/csc-496-2/syllabus_slide/cloud-trend.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
-
-</section>
-
-<section data-markdown>
-### Cloud Computing: Three Service Models
-
-- Software as a Service (SaaS)
-- Platform as a Service (PaaS)
-- Infrastructure as a Service (IaaS)
-
-</section>
-
-<section data-markdown>
-### Cloud Providers
-
-![grid-cloud]({{ "/assets/images/csc-496-2/syllabus_slide/cloud-major-providers.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
-
-</section>
-
-<section data-markdown>
-### Cloud Computing: Four Deployment Models
-
-- Private Cloud
-- Community Cloud
-- Public Cloud
-- Hybrid Cloud
-
-</section>
 
 <section data-markdown>
 ## <center> NIST: Essential Characteristics </center>
 </section>
 
 <section data-markdown>
-### On-demand self-service
+### On-demand self-service (C1)
 - Computing capabilities can be automatically and **unilaterally** provisioned by users **without human interaction** with the cloud provider.
 - What are computing capabilities
   - server time, network storage, number of servers ...
 </section>
 
 <section data-markdown>
-### Broad network access
+### Broad network access (C2)
 - Computing capabilities:
   - are made available over the (high speed) network
   - can be accessed through standard mechanisms
-- This enables inclusion of henetogeneous computing platforms
+- This enables inclusion of heterogeneous computing platforms
 </section>
 
 <section data-markdown>
-### Resource pooling
+### Resource pooling (C3)
 - Computing resources of cloud provider are pooled together to server multiple users.
 - Computing resources can be storage, processing power, memory, network bandwidth, and virtual machines.
 - Location independence
@@ -210,14 +36,14 @@ Cloud computing is a model for enabling ubiquitous, convenient, **on-demand** ne
 </section>
 
 <section data-markdown>
-### Rapid elasticity
+### Rapid elasticity (C4)
 - Capabilities (or resources) can be rapidly and elastically provisioned.
 - From users' perspective, resources are potentially unlimited.
 - Cloud providers should approach users with an understanding that predicting a ceiling of usage is difficult.
 </section>
 
 <section data-markdown>
-### Measured service
+### Measured service (C5)
 - Capability of service/resource abstractions are metered:
   - storage
   - processing
@@ -225,3 +51,130 @@ Cloud computing is a model for enabling ubiquitous, convenient, **on-demand** ne
   - active user accounts
   - ...
 </section>
+
+<section data-markdown>
+## <center> Enabling Technologies </center>
+</section>
+
+<section data-markdown>
+### Overview of Enabling Technologies for Cloud Computing (equal order of importance)
+- Broadband networks and Internet architecture
+- Data center technology
+- Virtualization technology
+- Web technology
+- Multi-tenant technology
+</section>
+
+
+<section data-markdown>
+### Broadband networks and Internet architecture
+- Everything is connected, with relatively high spped. 
+</section>
+
+<section data-markdown>
+### Broadband networks and Internet architecture
+
+[Durairajan, R., Barford, P., Sommers, J. and Willinger, W., 2015, August. **InterTubes: A study of the US long-haul fiber-optic infrastructure**. In ACM SIGCOMM Computer Communication Review (Vol. 45, No. 4, pp. 565-578). ACM.](https://conferences.sigcomm.org/sigcomm/2015/pdf/papers/p565.pdf)
+
+</section>
+
+<section data-markdown>
+### Broadband networks and Internet architecture
+
+[Internet 2 Timeline](https://www.internet2.edu/about-us/internet2-community-timeline/)
+
+</section>
+
+<section data-markdown>
+### Data Center Technology
+
+- Standardization and Modularity
+  - Commodity off-the-shelf (Beowulf model)
+  - Modular architecture (Linux-based software stacks)
+- Automation
+  - Orchestration Software (Chef, Ansible, Salt ...)
+- Remote Operation and Management
+  - On-board controller
+  - Network technologies
+</section>
+
+<section data-markdown>
+### Virtualization Technology
+
+- Converting a physical resource into a virtual resource
+- Concept almost as old as the computer itself (Operating System class)
+
+</section>
+
+<section data-markdown>
+### Virtualization Technology: Virtual Machine
+
+[Barham, P., Dragovic, B., Fraser, K., Hand, S., Harris, T., Ho, A., Neugebauer, R., Pratt, I. and Warfield, A., 2003, October. **Xen and the art of virtualization.** In ACM SIGOPS operating systems review (Vol. 37, No. 5, pp. 164-177). ACM.).](http://users.ece.cmu.edu/~dawnsong/teaching/s04/papers/xen-sosp.pdf)
+
+</section>
+
+<section data-markdown>
+### Virtualization Technology: Virtual Machine
+
+![xen]({{ "/assets/images/csc-496-2/intro_cloud/xen.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+
+</section>
+
+<section data-markdown>
+### Virtualization Technology: Container-based Virtualization
+
+[Soltesz, S., Pötzl, H., Fiuczynski, M.E., Bavier, A. and Peterson, L., 2007, March. **Container-based operating system virtualization: a scalable, high-performance alternative to hypervisors**. In ACM SIGOPS Operating Systems Review (Vol. 41, No. 3, pp. 275-287). ACM.](http://www.cs.toronto.edu/~demke/2227/S.14/Papers/p275-soltesz.pdf)
+
+</section>
+
+
+<section data-markdown>
+### Virtualization Technology: Software-Defined Networking
+
+[Kreutz, D., Ramos, F.M., Verissimo, P.E., Rothenberg, C.E., Azodolmolky, S. and Uhlig, S., 2015. **Software-defined networking: A comprehensive survey**. Proceedings of the IEEE, 103(1), pp.14-76.](https://arxiv.org/pdf/1406.0440)
+</section>
+
+<section data-markdown>
+### Virtualization Technology: Software-Defined Networking
+
+Conventional Network
+
+![network]({{ "/assets/images/csc-496-2/intro_cloud/network.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+
+</section>
+
+<section data-markdown>
+### Virtualization Technology: Software-Defined Networking
+
+Software-Defined Network
+
+![sdn]({{ "/assets/images/csc-496-2/intro_cloud/software-defined-networking.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+
+</section>
+
+<section data-markdown>
+### Web Technology
+
+- Uniform resource locator (URL)
+- Hypertext transfer protocol (HTTP)
+- Markup languages (HTML, XML)
+- Web applications
+
+</section>
+
+<section data-markdown>
+### Multi-tenant Technology
+
+[Bezemer, C.P., Zaidman, A., Platzbeecker, B., Hurkmans, T. and Hart, A.T., 2010, September. Enabling multi-tenancy: An industrial experience report. In Software Maintenance (ICSM), 2010 IEEE International Conference on (pp. 1-8). IEEE.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.176.8005&rep=rep1&type=pdf)
+
+- "Multiple customers - tenants share the same application and database instance. All the while, the tenants enjoy a highly configurable application, making it appear that the application is deployed on a dedicated server."
+</section>
+
+<section data-markdown>
+### Hands-on
+
+- taz
+- CloudLab
+
+</section>
+
