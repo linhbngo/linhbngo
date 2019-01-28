@@ -422,10 +422,56 @@ $ cat .ssh/id_rsa.pub
 
 <section data-markdown>
 ## <center> Security in the Cloud </center>
+</section>
 
-- Private Cloud
-- Community Cloud
-- Public Cloud
-- Hybrid Cloud
 
+<section data-markdown>
+### Who is doing what?
+
+- The cloud provider is responsible for the security **OF** the Cloud. 
+- The cloud consumer (users) is responsible for the security **IN** the Cloud. 
+</section>
+
+
+<section data-markdown>
+### Cloud Consumer
+
+- SaaS/PaaS:
+  - Standard security procedure for online presences.
+- IaaS:
+  - Standard security procedure as any on-premise infrastructures. 
+  - Benefits from native administrative tools. 
+</section>
+
+
+<section data-markdown>
+### Cloud Provider: SaaS
+
+- Web application security
+  - [OWASP's Top 10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project)
+- Multi-tenancy
+  - Data isolation/leakage
+- Data security
+- Accessibility versus Security trade-off
+</section>
+
+
+<section data-markdown>
+### Cloud Provider: PaaS
+
+- Similar security concerns as SaaS
+- Complex security schemes due to potential third-party relationships.
+- Development Lifecycle
+  - Users depend on PaaS providers to patch security issues of the individual tools. 
+</section>
+
+
+<section data-markdown>
+### Cloud Provider: IaaS
+
+- Standard security measures. 
+  - To Cloud Provider, cloud resources are on-premise. 
+- Concerns with virtual machines' security
+- Concerns with virtual networking security
+- [An analysis of security issues for cloud computing (2013)](https://link.springer.com/article/10.1186/1869-0238-4-5)
 </section>
