@@ -87,7 +87,7 @@ As laptop style and model can vary, the following common (and free) software env
 - [Syllabus]({{ "/docs/csc-331/syllabus_slide/" | relative_url }}) (**Week 1**)
 - [Introduction to Linux]({{ "docs/csc-331/linux_slide/" | relative_url }})
 - [Introduction to Operating Systems]({{ "/docs/csc-331/intro_os/" | relative_url }})
-- Introduction to C Programming (**Week 2**)
+- [Introduction to C Programming]({{ "/docs/csc-331/intro_c/" | relative_url }}) (**Week 2**)
 - Virtualization
   - Processes (**Week 3**)
   - CPU Scheduling (**Week 4**)
