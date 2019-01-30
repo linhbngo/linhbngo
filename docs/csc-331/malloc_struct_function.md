@@ -10,52 +10,67 @@ category: presentation
 
 
 <section data-markdown>
-### What is C?
+### Pointers and memory allocation
 
-- Developed by Dennis Ritchie at Bell Labs.
-- First public released in 1927.
-- The book: **Ritchie, Dennis M., and Brian W. Kernighan. The C programming language. Englewood Cliffs: Prentice Hall, 1988.**
+- How does C request dynamic memory when you don't know at compile-time exactly what you will need?
+- How does C allocate memory?
+  - Automatic: compile arranges for memory to be allocated and initialized for local variables when it is in scope.
+  - Static: memory for static variables are allocated once when program starts.
+  - Dynamic: memory is allocated on the fly as needed.
 </section>
 
 
 <section data-markdown>
-### How to learn C (now that you already know Java)?
+### Dynamic Memory Allocation in C
 
-- [C for Java Programmers](https://www.cs.rochester.edu/u/ferguson/csc/c/c-for-java-programmers.pdf)
-
-- [C Programming vs. Java Programming](https://introcs.cs.princeton.edu/java/faq/c2java.html)
+- Conceptually, it is similar to Java
+- But you have to do everything!
 </section>
 
 
 <section data-markdown>
-### Before you start ...
+### malloc, free
 
-- C is much less supportive for programmers than Java.
-- Easier to make mistake, and harder to fix. 
+https://linux.die.net/man/3/malloc
 </section>
 
 
 <section data-markdown>
-### But ...
+### What are we returning with void?
 
-- C requires less memory resources than Java. 
-- C, in many cases, runs faster than Java. 
-- Knowing C will make you a better Java programmer.
+- `void*``: pointer to unknown type (JBOB - just a bunch of bytes)
+```
+#include <stdlib.h>
+...
+void *p = malloc(100);
+...
+```
 </section>
 
 
 <section data-markdown>
-### Similarity (or mostly similar)
+<script type="text/template">
+Typecast
 
-- Values, types, literals, expressions
-- Variables
-- Control flow (if, switch, while, for, do-while)
-- Call-return: parameters, arguments, return values
-- Arrays (mostly)
-- Primitive and reference types
-- Typecasts
-- Library
+```
+/*
+* File: hello.c
+*/
+#include <stdio.h>
+int main(int argc, char *argv[]) {
+  printf("Hello world!\n");
+}
+```
+</script>
 </section>
+
+
+
+
+
+
+
+
 
 
 <section data-markdown>
@@ -97,7 +112,7 @@ category: presentation
 ### Setup directory
 
 - Confirm that you are in your `home` directory by typing `pwd` and confirm that you are in `/home/student`.
-- Create a new directory named `intro-c`, and then change into that directory. 
+- Create a new directory named `intro-c`, and then change into that directory.
 
 ```
 $ mkdir intro-c
@@ -114,7 +129,7 @@ $ cd intro-c
 <section data-markdown>
 ### Editor: nano
 
-- If you know `vim` or `emacs`, feel free to use them. 
+- If you know `vim` or `emacs`, feel free to use them.
 - Use `nano` for text editing on Linux (assuming you are still in `intro-c` directory from the previous slide:
 
 ```
@@ -128,21 +143,7 @@ $ nano hello.c
 </section>
 
 
-<section data-markdown>
-<script type="text/template">
-Enter the content below into the text editor:
 
-```
-/*
-* File: hello.c
-*/
-#include <stdio.h>
-int main(int argc, char *argv[]) {
-  printf("Hello world!\n");
-}
-```
-</script>
-</section>
 
 
 <section data-markdown>
@@ -155,7 +156,7 @@ int main(int argc, char *argv[]) {
 
 - To save and quit, first press `Ctrl-C` to ask to quit
 - You will be asked whether to save recent changes (**Y**) or not (**N**)
-- If you enter **Y**, you will next be asked for the file name to write, with the default choice is the current filename. If you don't plan to save your changes to a new file, go a head and press `Enter`. 
+- If you enter **Y**, you will next be asked for the file name to write, with the default choice is the current filename. If you don't plan to save your changes to a new file, go a head and press `Enter`.
 </section>
 
 
@@ -169,7 +170,7 @@ int main(int argc, char *argv[]) {
   - `int argc`: Number of command line arguments (including the C executable itself).
   - `char *argv[]`: Pointer to array of command line arguments (each command line argument is itself an array of characters).
   - `printf("Hello world!\n");`: `System.out.println("Hello world!");
-  - `return 0`: Exit a successfully executed program. 
+  - `return 0`: Exit a successfully executed program.
 </script>
 </section>
 
@@ -177,7 +178,7 @@ int main(int argc, char *argv[]) {
 <section data-markdown>
 ### Compile and Run: Simple Compilation
 
-- Make sure that you are still inside `/home/student/intro-c` using `pwd`. 
+- Make sure that you are still inside `/home/student/intro-c` using `pwd`.
 
 ```
 $ pwd
@@ -256,7 +257,7 @@ $ ./hello
 $ more hello.i
 ```
 
-- You can use the `Space` button to move forward, and `q` to quit. 
+- You can use the `Space` button to move forward, and `q` to quit.
 </section>
 
 
@@ -274,10 +275,10 @@ $ more hello.s
 <section data-markdown>
 ### What are in those files?
 
-- `hello.o`: we cannot use `more` since this is not a text file. 
+- `hello.o`: we cannot use `more` since this is not a text file.
 
 ```
-$ xxd -b hello.o | more 
+$ xxd -b hello.o | more
 ```
 </section>
 
@@ -285,10 +286,10 @@ $ xxd -b hello.o | more
 <section data-markdown>
 ### What are in those files?
 
-- `hello`: we cannot use `more` since this is not a text file. 
+- `hello`: we cannot use `more` since this is not a text file.
 
 ```
-$ xxd -b hello | more 
+$ xxd -b hello | more
 ```
 </section>
 
@@ -302,9 +303,9 @@ $ xxd -b hello | more
 <section data-markdown>
 ### <center> Variables, Addresses, and Pointers </center>
 
-- In Java, you cannot do anything to a variable other than get or set its value. 
+- In Java, you cannot do anything to a variable other than get or set its value.
 - In C, you can retrieve the address of the location in memory where the variable is stored.
-- The operator **&** (reference of) represents the memory address of a variable.  
+- The operator **&** (reference of) represents the memory address of a variable.
 
 </section>
 
@@ -312,7 +313,7 @@ $ xxd -b hello | more
 <section data-markdown>
 <script type="text/template">
 
-Inside your `intro-c` directory, create the following C program, name it `pointer-1.c`, compile, and run. 
+Inside your `intro-c` directory, create the following C program, name it `pointer-1.c`, compile, and run.
 
 ```
 #include <stdio.h>
@@ -334,8 +335,8 @@ int main(int argc, char *argv[]) {
 <section data-markdown>
 ### Pointer definition
 
-- Pointer is a variable that points to a memory location. 
-- A pointer is denoted by a * character.  
+- Pointer is a variable that points to a memory location.
+- A pointer is denoted by a * character.
 - The type of pointer must be the same as that of the value being stored in the memory location (that the pointer points to).
 </section>
 
@@ -343,8 +344,8 @@ int main(int argc, char *argv[]) {
 <section data-markdown>
 <script type="text/template">
 
-Inside your `intro-c` directory, make a copy of `pointer-1.c` and name it `pointer-2.c`. 
-Edit `pointer-2.c` and update it so that the codes look like the codes in the next slide. 
+Inside your `intro-c` directory, make a copy of `pointer-1.c` and name it `pointer-2.c`.
+Edit `pointer-2.c` and update it so that the codes look like the codes in the next slide.
 
 ```
 $ cp pointer-1.c pointer-2.c
@@ -386,9 +387,9 @@ int main(int argc, char *argv[]) {
 <section data-markdown>
 ### <center> Pass by Value and Pass by References </center>
 
-- Parameters are passed to functions. 
-- Parameters can be value variables or pointer variables. 
-- What is the difference?  
+- Parameters are passed to functions.
+- Parameters can be value variables or pointer variables.
+- What is the difference?
 
 </section>
 
@@ -396,7 +397,7 @@ int main(int argc, char *argv[]) {
 
 <section data-markdown>
 <script type="text/template">
-Inside your `intro-c` directory, make a copy of `pointer-2.c` and name it `pointer-3.c`. 
+Inside your `intro-c` directory, make a copy of `pointer-2.c` and name it `pointer-3.c`.
 Edit `pointer-3.c` and update it so that the codes look like following:
 ```
 #include <stdio.h>
@@ -409,7 +410,7 @@ int pass_by_value(int i) {
 int main(int argc, char *argv[]) {
     int i = 123;
     printf("Value of i before function call: %d\n", i);
-    printf("The function returns: %d\n", pass_by_value(i)); 
+    printf("The function returns: %d\n", pass_by_value(i));
     printf("Value of i after function call: %d\n", i);
     return 0;
 }
@@ -426,7 +427,7 @@ int main(int argc, char *argv[]) {
 
 <section data-markdown>
 <script type="text/template">
-Inside your `intro-c` directory, make a copy of `pointer-3.c` and name it `pointer-4.c`. 
+Inside your `intro-c` directory, make a copy of `pointer-3.c` and name it `pointer-4.c`.
 Edit `pointer-4.c` and update it so that the codes look like following:
 ```
 #include <stdio.h>
@@ -439,7 +440,7 @@ int pass_by_ref(int *i) {
 int main(int argc, char *argv[]) {
     int i = 123;
     printf("Value of i before function call: %d\n", i);
-    printf("The function returns: %d\n", pass_by_ref(&i)); 
+    printf("The function returns: %d\n", pass_by_ref(&i));
     printf("Value of i after function call: %d\n", i);
     return 0;
 }
