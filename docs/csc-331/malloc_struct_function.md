@@ -36,68 +36,18 @@ https://linux.die.net/man/3/malloc
 
 
 <section data-markdown>
+<script type="text/template">
+
 ### What are we returning with void?
 
-- `void*``: pointer to unknown type (JBOB - just a bunch of bytes)
+- void*: pointer to unknown type (JBOB - just a bunch of bytes)
 ```
 #include <stdlib.h>
 ...
 void *p = malloc(100);
 ...
 ```
-</section>
-
-
-<section data-markdown>
-<script type="text/template">
-Typecast
-
-```
-/*
-* File: hello.c
-*/
-#include <stdio.h>
-int main(int argc, char *argv[]) {
-  printf("Hello world!\n");
-}
-```
 </script>
-</section>
-
-
-
-
-
-
-
-
-
-
-<section data-markdown>
-### Differences
-
-- No classes or objects
-- Arrays are simpler:
-  - No boundary checking
-  - No knowledge of arrays' own size
-- Strings are very limited
-- No collections, exceptions, or generics
-- No memory management
-- Pointer!!!
-</section>
-
-
-<section data-markdown>
-### How Java works
-
-![java]({{ "/assets/images/csc-331/intro_c/java.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
-</section>
-
-
-<section data-markdown>
-### How C works
-
-![c]({{ "/assets/images/csc-331/intro_c/c.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 </section>
 
 
@@ -111,67 +61,48 @@ int main(int argc, char *argv[]) {
 <section data-markdown>
 ### Setup directory
 
+- If you shutdown your VM properly, you should still have the `intro-c` directory.
 - Confirm that you are in your `home` directory by typing `pwd` and confirm that you are in `/home/student`.
-- Create a new directory named `intro-c`, and then change into that directory.
+- Confirm that you still have `intro-c` using `ls`.
+- Change into `intro-c`. 
+- If you don't have `intro-c`, create one (take a look at Tuesday's lecture for instruction.) 
 
 ```
-$ mkdir intro-c
+$ ls
 $ cd intro-c
 ```
 </section>
 
 
 <section data-markdown>
-![c]({{ "/assets/images/csc-331/intro_c/hello-0.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
-</section>
-
-
-<section data-markdown>
-### Editor: nano
-
-- If you know `vim` or `emacs`, feel free to use them.
-- Use `nano` for text editing on Linux (assuming you are still in `intro-c` directory from the previous slide:
-
-```
-$ nano hello.c
-```
-</section>
-
-
-<section data-markdown>
-![nano]({{ "/assets/images/csc-331/intro_c/hello-1.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
-</section>
-
-
-
-
-
-<section data-markdown>
-![hello]({{ "/assets/images/csc-331/intro_c/hello-2.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
-</section>
-
-
-<section data-markdown>
-### Save and Quit from nano
-
-- To save and quit, first press `Ctrl-C` to ask to quit
-- You will be asked whether to save recent changes (**Y**) or not (**N**)
-- If you enter **Y**, you will next be asked for the file name to write, with the default choice is the current filename. If you don't plan to save your changes to a new file, go a head and press `Enter`.
-</section>
-
-
-<section data-markdown>
-### What's in the code?
 <script type="text/template">
-- `/* .. */`: Comments
-- `#include <stdio.h>: Standard C library for I/O
-- `int main(int argc, char *argv[])`:
-  - `int main`: Entry point to the main function, the first function that all C programs will execute.
-  - `int argc`: Number of command line arguments (including the C executable itself).
-  - `char *argv[]`: Pointer to array of command line arguments (each command line argument is itself an array of characters).
-  - `printf("Hello world!\n");`: `System.out.println("Hello world!");
-  - `return 0`: Exit a successfully executed program.
+Typecast
+
+Create and save the following code as malloc.c
+
+```
+#include <stdlib.h>
+#include <stdio.h>
+int main(int argc, char *argv[]) {
+  void *p = malloc(100);
+  int *ip = (int *)p;
+  *ip = 98765;
+  printf("%d\n", *ip);
+  return 0;
+}
+```
 </script>
+</section>
+
+
+<section data-markdown>
+### What points to where!!!
+
+- `void *p = malloc(100);`
+  - Allocate and assign the address of 100 bytes of unknown type to pointer variable `p`.
+- `int *ip = (int *)p;`
+  - Assign the address of the 100 bytes above to pointer variable `ip`, and cast `ip` to type int.
+  - Now you can use `*ip` to manipulate these 100 bytes. 
 </section>
 
 
@@ -182,145 +113,36 @@ $ nano hello.c
 
 ```
 $ pwd
-$ ls
-$ gcc hello.c
-$ ls
+$ gcc malloc.c
 $ ./a.out
 ```
 </section>
 
 
 <section data-markdown>
-![hello-simple]({{ "/assets/images/csc-331/intro_c/hello-3.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+![malloc]({{ "/assets/images/csc-331/malloc_struct_function/malloc.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 </section>
 
 
 <section data-markdown>
-### Compile and Run: Specify output files
+### So wasteful!!!
 
-```
-$ ls
-$ gcc -o hello hello.c
-$ ls
-$ ./hello
-```
-</section>
-
-
-<section data-markdown>
-![hello-specific]({{ "/assets/images/csc-331/intro_c/hello-4.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
-</section>
-
-
-<section data-markdown>
-### Compile and Run: I want to see everything
-
-```
-$ ls
-$ rm hello
-$ ls
-$ gcc -save-temps -o hello hello.c
-$ ls
-$ ./hello
-```
-</section>
-
-
-<section data-markdown>
-![hello-all]({{ "/assets/images/csc-331/intro_c/hello-5.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
-</section>
-
-
-<section data-markdown>
-### Compile and Run: What are those?
-
-- `hello.i`: generated by pre-processor
-- `hello.s`: generated by compiler
-- `hello.o`: generated by assembler
-- `hello`: executable, generated by linker
-
-</section>
-
-
-<section data-markdown>
-![c]({{ "/assets/images/csc-331/intro_c/c-hello.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
-</section>
-
-
-
-<section data-markdown>
-### What are in those files?
-
-- `hello.i`:
-
-```
-$ more hello.i
-```
-
-- You can use the `Space` button to move forward, and `q` to quit.
-</section>
-
-
-<section data-markdown>
-### What are in those files?
-
-- `hello.s`:
-
-```
-$ more hello.s
-```
-</section>
-
-
-<section data-markdown>
-### What are in those files?
-
-- `hello.o`: we cannot use `more` since this is not a text file.
-
-```
-$ xxd -b hello.o | more
-```
-</section>
-
-
-<section data-markdown>
-### What are in those files?
-
-- `hello`: we cannot use `more` since this is not a text file.
-
-```
-$ xxd -b hello | more
-```
-</section>
-
-
-<!------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------->
-
-
-<section data-markdown>
-### <center> Variables, Addresses, and Pointers </center>
-
-- In Java, you cannot do anything to a variable other than get or set its value.
-- In C, you can retrieve the address of the location in memory where the variable is stored.
-- The operator **&** (reference of) represents the memory address of a variable.
-
+- An `int` is only 4 to 8 bytes. 
+- How do we know how much to ask for? 
 </section>
 
 
 <section data-markdown>
 <script type="text/template">
-
-Inside your `intro-c` directory, create the following C program, name it `pointer-1.c`, compile, and run.
+Create a copy of `malloc.c` and name it `malloc-2.c`. Edit `malloc-2.c` as follows:
 
 ```
+#include <stdlib.h>
 #include <stdio.h>
-
 int main(int argc, char *argv[]) {
-  int i = 123;
-  printf("Variable i has addr (%p) and value %d\n", &i, i);
+  int *ip = (int *)malloc(sizeof(int));
+  *ip = 98765;
+  printf("%d\n", *ip);
   return 0;
 }
 ```
@@ -329,49 +151,23 @@ int main(int argc, char *argv[]) {
 
 
 <section data-markdown>
-![pointer-0]({{ "/assets/images/csc-331/intro_c/pointer-0.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
-</section>
-
-<section data-markdown>
-### Pointer definition
-
-- Pointer is a variable that points to a memory location.
-- A pointer is denoted by a * character.
-- The type of pointer must be the same as that of the value being stored in the memory location (that the pointer points to).
+![malloc-2]({{ "/assets/images/csc-331/malloc_struct_function/malloc-2.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 </section>
 
 
 <section data-markdown>
 <script type="text/template">
-
-Inside your `intro-c` directory, make a copy of `pointer-1.c` and name it `pointer-2.c`.
-Edit `pointer-2.c` and update it so that the codes look like the codes in the next slide.
+Free up memory after you are done with the pointer. To be extra careful, also set the pointer to NULL. 
 
 ```
-$ cp pointer-1.c pointer-2.c
-$ nano pointer-2.c
-```
-</script>
-</section>
-
-
-<section data-markdown>
-![pointer-1]({{ "/assets/images/csc-331/intro_c/pointer-1.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
-</section>
-
-
-<section data-markdown>
-<script type="text/template">
-Source code of `pointer-2.c`
-
-```
+#include <stdlib.h>
 #include <stdio.h>
-
 int main(int argc, char *argv[]) {
-  int i = 123;
-  int *pointer_to_i = &i;
-  printf("Variable i has addr (%p) and value %d\n", &i, i);
-  printf("The pointer points to addr (%p) containing value %d\n", pointer_to_i, *pointer_to_i);
+  int *ip = (int *)malloc(sizeof(int));
+  *ip = 98765;
+  printf("%d\n", *ip);
+  free(ip);
+  ip=NULL;
   return 0;
 }
 ```
@@ -380,38 +176,275 @@ int main(int argc, char *argv[]) {
 
 
 <section data-markdown>
-![pointer-2]({{ "/assets/images/csc-331/intro_c/pointer-2.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+## <center> Dynamic Array </center>
 </section>
 
 
 <section data-markdown>
-### <center> Pass by Value and Pass by References </center>
+### Array size determination
 
-- Parameters are passed to functions.
-- Parameters can be value variables or pointer variables.
-- What is the difference?
-
+- In Java, you can allocate storage for an array at any time in the program, not just when a variable is first initialized. 
+- In C, you need to specify the array size upfront when using the standard [] notation (*rare exception* with C99 standards).
+- What to do?
 </section>
 
+
+<section data-markdown>
+### What is an array in C?
+
+- In Java, you can allocate storage for an array at any time in the program, not just when a variable is first initialized. 
+- In C, you need to specify the array size upfront when using the standard [] notation (*rare exception* with C99 standards).
+- What to do?
+</section>
 
 
 <section data-markdown>
 <script type="text/template">
-Inside your `intro-c` directory, make a copy of `pointer-2.c` and name it `pointer-3.c`.
-Edit `pointer-3.c` and update it so that the codes look like following:
+What does an array in C look like?
+
+Create and save the following code as array.c
+
+```
+#include <stdio.h>
+int main(int argc, char *argv[]) {
+  int numbers[5];
+  int i;
+  for (i = 0; i < 5; i++){
+    numbers[i] = i * 2;
+    printf("Index %d has value %d at address (%p)\n", i, numbers[i], (numbers + i))
+  }
+  return 0;
+}
+```
+</script>
+</section>
+
+
+<section data-markdown>
+![array]({{ "/assets/images/csc-331/malloc_struct_function/array.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+</section>
+
+
+<section data-markdown>
+### Exercise
+
+- Create a copy of `array.c` called `array-2.c`
+- Change type of `numbers` to `double`. 
+- What is the address step now?
+</section>
+
+
+<section data-markdown>
+![array-2]({{ "/assets/images/csc-331/malloc_struct_function/array-2.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+</section>
+
+
+<section data-markdown>
+### An array variable ...
+
+- ... is in fact pointing to an address containing a value. 
+- ... without the bracket notation and with an index points to the corresponding address of the value at the index. 
+</section>
+
+
+<section data-markdown>
+### An array variable ...
+
+- ... is quite similar to a pointer.
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+
+Make a copy of `array.c` and call it  `array-3.c`. Compile and run.
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+int main(int argc, char *argv[]) {
+  int i, size;
+  int *p; 
+
+  size = 5;
+  for (i = 0; i < size; i++){
+    printf("Before init, index %d has value %d at addr (%p)\n", i, p[i], p + i);
+    p[i] = i * 2;
+    printf("After init, index %d has value %d at addr (%p)\n", i, p[i], p + i);
+  }
+  return 0;
+}
+```
+</script>
+</section>
+
+
+<section data-markdown>
+![array-3]({{ "/assets/images/csc-331/malloc_struct_function/array-3.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+</section>
+
+
+<section data-markdown>
+### Array of Strings
+
+- String is an array of characters. 
+- What then is an array of strings?
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+```
+char **s_array = (char **)calloc(array_len, sizeof(char*));
+for (int i = 0; i < array_len; i++) {
+  s_array[i] = (char *)calloc(this_str_len, sizeof(char));
+}
+```
+</script>
+</section>
+
+
+<section data-markdown>
+### Draw It!!!
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+
+Complete the following codes and save it to a file called `array-4.c`. The goal is to echo the two strings **Golden** and **Ram** to screen using an array of strings. 
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main(int argc, char *argv[]){ 
+  int i, word_count;
+  int str_len[2] = {6, ____};
+  char **s_array;
+
+  word_count = ___;
+  s_array = (char**)calloc(word_count, sizeof(char *));
+  for (i = 0; i < word_count; i++){
+    s_array[i] = (char *)calloc(_____, sizeof(char));
+  }
+  strcpy(s_array[0], "Golden");
+  strcpy(s_array[1], "Ram");
+  printf("%s %s\n", s_array[0], s_array[1]);
+  return 0;
+}
+```
+</script>
+</section>
+
+
+<section data-markdown>
+![array-4]({{ "/assets/images/csc-331/malloc_struct_function/array-4.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+</section>
+
+
+<section data-markdown>
+![array-4-sol]({{ "/assets/images/csc-331/malloc_struct_function/array-4-solution.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+</section>
+
+
+<section data-markdown>
+## <center> Structured Types </center>
+</section>
+
+
+<section data-markdown>
+### Object in C
+
+- C has no classes or objects
+</section>
+
+
+<section data-markdown>
+### Object in C
+
+- C has **struct** type (think ancestor of object)
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+Create a file named `struct.c`. Compile and run. 
+
 ```
 #include <stdio.h>
 
-int pass_by_value(int i) {
-    i = i * 2;
-    return i;
+struct point {
+  int x; 
+  int y;
+};
+
+int main(int argc, char *argv[]) {
+  struct point origin;
+  origin.x = 0;
+  origin.y = 0;
+  printf ("The coordinates of origin is %d and %d", origin.x, origin.y);
+  return 0;
+}
+```
+</script>
+</section>
+
+
+<section data-markdown>
+![struct]({{ "/assets/images/csc-331/malloc_struct_function/struct.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+</section>
+
+
+<section data-markdown>
+### Composite struct
+
+Just like Java
+
+```
+struct line {
+  struct point start;
+  struct point end;
+};
+
+....
+
+struct line line1;
+line1.start.x = 1;
+line1.start.y = 2;
+line1.end.x = 3;
+line1.end.y = 4;
+```
+</section>
+
+
+<section data-markdown>
+## <center> Functions </center>
+</section>
+
+
+<section data-markdown>
+### Almost the same as methods in Java, except for one tiny difference ...
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+Create a file named `function.c` with the following content. Compile and run. 
+```
+#include <stdio.h>
+
+int times2(int x) {
+  return x * 2;
+}
+
+int times4(int x) {
+  return times2(x) * 2;
 }
 
 int main(int argc, char *argv[]) {
-    int i = 123;
-    printf("Value of i before function call: %d\n", i);
-    printf("The function returns: %d\n", pass_by_value(i));
-    printf("Value of i after function call: %d\n", i);
+    int x = 100;
+    printf("Result: %d\n", times4(x);
     return 0;
 }
 
@@ -421,27 +454,22 @@ int main(int argc, char *argv[]) {
 
 
 <section data-markdown>
-![pointer-3]({{ "/assets/images/csc-331/intro_c/pointer-3.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
-</section>
-
-
-<section data-markdown>
 <script type="text/template">
-Inside your `intro-c` directory, make a copy of `pointer-3.c` and name it `pointer-4.c`.
-Edit `pointer-4.c` and update it so that the codes look like following:
+Create a file named `function-2.c` with the following content. Compile and run. 
 ```
 #include <stdio.h>
 
-int pass_by_ref(int *i) {
-    *i = (*i) * 2;
-    return *i;
+int times4(int x) {
+  return times2(x) * 2;
+}
+
+int times2(int x) {
+  return x * 2;
 }
 
 int main(int argc, char *argv[]) {
-    int i = 123;
-    printf("Value of i before function call: %d\n", i);
-    printf("The function returns: %d\n", pass_by_ref(&i));
-    printf("Value of i after function call: %d\n", i);
+    int x = 100;
+    printf("Result: %d\n", times4(x);
     return 0;
 }
 
@@ -451,12 +479,141 @@ int main(int argc, char *argv[]) {
 
 
 <section data-markdown>
-![pointer-4]({{ "/assets/images/csc-331/intro_c/pointer-4.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+![function]({{ "/assets/images/csc-331/malloc_struct_function/function.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 </section>
 
 
 <section data-markdown>
+<script type="text/template">
+### Function Declaration
 
-In Java, do you pass by value or pass by reference?
+Create a file named `function-3.c` with the following content. Compile and run. 
+```
+#include <stdio.h>
+int times2(int x);
+int times4(int x);
 
+int times4(int x) {
+  return times2(x) * 2;
+}
+
+int times2(int x) {
+  return x * 2;
+}
+
+int main(int argc, char *argv[]) {
+    int x = 100;
+    printf("Result: %d\n", times4(x);
+    return 0;
+}
+
+```
+</script>
+</section>
+
+
+<section data-markdown>
+![function-3]({{ "/assets/images/csc-331/malloc_struct_function/function-3.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+</section>
+
+
+<section data-markdown>
+## <center> Everything is a pointer!!! </center>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+Create a file named `struct-2.c`. Compile and run. 
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+struct point {
+  int x; 
+  int y;
+};
+
+int main(int argc, char *argv[]) {
+  struct point* p = (struct point *)malloc(sizeof(struct point));
+  (*p).x = 0;
+  (*p).y = 0;
+  printf ("The coordinates of origin is %d and %d", (*p).x, (*p).y);
+  return 0;
+}
+```
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+Create a file named `struct-3.c`. Compile and run. 
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+struct point {
+  int x; 
+  int y;
+};
+
+int main(int argc, char *argv[]) {
+  struct point* p = (struct point *)malloc(sizeof(struct point));
+  p->x = 0;
+  p->y = 0;
+  printf ("The coordinates of origin is %d and %d", p->x, p->y);
+  return 0;
+}
+```
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+### Function Declaration
+
+Create a file named `function-4.c` with the following content. Compile and run. 
+```
+#include <stdio.h>
+int times2(int x);
+int times5(int x);
+void array_apply(int a[], int alen, int (*fp)(int));
+
+int times5(int x) {
+  return x * 5;
+}
+
+int times2(int x) {
+  return x * 2;
+}
+
+void array_apply(int a[], int alen, int (*fp)(int)) {
+  int i;
+  for (i = 0; i <alen; i++) {
+    a[i] = (*fp)(a[i]);
+    printf("New value at index %d is %d\n", i, a[i]);
+  }
+}
+
+int main(int argc, char *argv[]) {
+    int numbers[] = {1, 2, 3};
+    array_apply(numbers, 3, times2);
+    array_apply(numbers, 3, times5);
+    return 0;
+}
+
+```
+</script>
+</section>
+
+
+<section data-markdown>
+## <center> How do you replicate the fundamental behavior of object and methods in Java with struct, function, and pointer in C? </center>
+</section>
+
+
+<section data-markdown>
+## <center> Assignment !!! </center>
 </section>
