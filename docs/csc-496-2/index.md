@@ -9,7 +9,7 @@ toc: true
 
 ### Course Description
 
-This course provides an introductory overview to the technologies that enable cloud computing. Topics covered include basic concepts about cloud computing, and advanced technical concepts regarding virtualization, containerization, and orchestration. 
+This course provides an introductory overview to the technologies that enable cloud computing. Topics covered include basic concepts about cloud computing, and advanced technical concepts regarding virtualization, containerization, and orchestration.
 
 ### Important Dates
 
@@ -46,17 +46,18 @@ As laptop style and model can vary, the following common (and free) software env
 
 - [Syllabus]({{ "/docs/csc-496-2/syllabus_slide/" | relative_url }})
 - Basic Concepts
-  - [Cloud Computing and Enabling Technologies]({{ "/docs/csc-496-2/intro_cloud/" | relative_url }})
-  - Cloud Infrastructure 
-  - Common Cloud Providers 
+  - [Cloud Computing: Introduction, Essential Characteristics, and Enabling Technologies]({{ "/docs/csc-496-2/intro_cloud/" | relative_url }})
+  - [Cloud Computing: Service Models and Depoyment Models]({{ "/docs/csc-496-2/service_deployment/" | relative_url }})
+  - Cloud Infrastructure
+  - Common Cloud Providers
     - CloudLab (academic)
     - Google Compute Engine
     - Amazon Web Services
-- Virtualization 
+- Virtualization
   - KVM
   - VirtualBox
   - Vagrant
-- Containerization 
+- Containerization
   - Docker
   - Singularity
 - Containers Orchestration
