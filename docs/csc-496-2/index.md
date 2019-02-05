@@ -48,9 +48,8 @@ As laptop style and model can vary, the following common (and free) software env
 - Basic Concepts
   - [Cloud Computing: Introduction, Essential Characteristics, and Enabling Technologies]({{ "/docs/csc-496-2/intro_cloud/" | relative_url }})
   - [Cloud Computing: Service Models and Depoyment Models]({{ "/docs/csc-496-2/service_deployment/" | relative_url }})
-  - Cloud Infrastructure
-  - Common Cloud Providers
-    - CloudLab (academic)
+  - Cloud Infrastructure through Common Cloud Providers:
+    - [CloudLab (academic)]({{ "/docs/csc-496-2/intro_cloudlab/" | relative_url }})
     - Google Compute Engine
     - Amazon Web Services
 - Virtualization
