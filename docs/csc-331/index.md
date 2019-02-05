@@ -91,6 +91,7 @@ As laptop style and model can vary, the following common (and free) software env
 - [Malloc, Struct, Function]({{ "/docs/csc-331/malloc_struct_function/" | relative_url }}) 
 - Virtualization
   - Processes (**Week 3**)
+    - [Abstraction: Process]({{ "/docs/csc-331/abstraction_process/" | relative_url }})
   - CPU Scheduling (**Week 4**)
   - Memory Management (**Week 5**)
   - Paging (**Week 6**)
