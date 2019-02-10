@@ -93,6 +93,7 @@ As laptop style and model can vary, the following common (and free) software env
   - Processes (**Week 3**)
     - [Abstraction: Process]({{ "/docs/csc-331/abstraction_process/" | relative_url }})
     - [Process API]({{ "/docs/csc-331/process_api/" | relative_url }})
+    - [Limited Direct Execution]({{ "/docs/csc-331/limited_direct_execution/" | relative_url }})
   - CPU Scheduling (**Week 4**)
   - Memory Management (**Week 5**)
   - Paging (**Week 6**)
