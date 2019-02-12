@@ -53,6 +53,7 @@ As laptop style and model can vary, the following common (and free) software env
     - Google Compute Engine
     - Amazon Web Services
 - Virtualization
+  - [Introduction to Virtualization in Cloud Computing](https://docs.google.com/presentation/d/1Qotr8-cG6aq-zHFVSVihHwXv5KdUzRtrtVfArgUPbK4/edit?usp=sharing)
   - KVM
   - VirtualBox
   - Vagrant

@@ -5,7 +5,7 @@ category: presentation
 ---
 
 <section data-markdown>
-## <center> Design Goals of CPU Virtualization </center>
+## <center> Limited Direct Execution  </center>
 </section>
 
 <section data-markdown>
@@ -17,7 +17,7 @@ category: presentation
 
 
 <section data-markdown>
-### Design Goals
+### Design Goals of CPU Virtualization
 
 - Performance
   - The process can be itself and run as fast as possible without frequent interaction with the OS. 
@@ -42,7 +42,7 @@ category: presentation
 
 
 <section data-markdown>
-![dm]({{ "/assets/images/csc-331/limited_direct_execurtion/direct_execution.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+![dm]({{ "/assets/images/csc-331/limited_direct_execution/direct_execution.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 </section>
 
 <section data-markdown>
@@ -103,7 +103,7 @@ category: presentation
 
 
 <section data-markdown>
-![de2]({{ "/assets/images/csc-331/limited_direct_execurtion/de2.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+![de2]({{ "/assets/images/csc-331/limited_direct_execution/de2.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 </section>
 
 
@@ -113,7 +113,7 @@ category: presentation
 
 
 <section data-markdown>
-![write]({{ "/assets/images/csc-331/limited_direct_execurtion/write.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+![write]({{ "/assets/images/csc-331/limited_direct_execution/write.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 </section>
 
 
@@ -152,16 +152,22 @@ category: presentation
 
 
 <section data-markdown>
-### How can the OS rega
+### First approach: Cooperative processes
+
+- The OS trusts the processes to behave cooperatively
+  - A process that runs for too long would voluntarily give up the CPU and hand control to the OS. 
+  - This is done by the process making a **yield()** system call periodically.
+  - When process performs an invalid/illegal operation (Exception raised). 
 </section>
 
 
 <section data-markdown>
-### The shell?
+### First approach: Cooperative processes
 
-- In a running shell, if we want to run a program, we are essentially:
-
-**asking a process to create and run another process**
+- All programmers promise to insert **yield()** into their code to give up CPU resources to other people's program. 
+  - We have solved the second problem and achieved eternal world peace. 
+- Even in a perfect world, what happens if a process falls into an infinite loop prior to calling **yield()**?
+  - [Collaborative multitasking (Windows 3.1X, Mac PowerPC)](https://en.wikipedia.org/wiki/Cooperative_multitasking)
 </section>
 
 
@@ -176,86 +182,25 @@ category: presentation
 
 
 <section data-markdown>
-### Why don't we just call exec() instead of fork()?
+### Second approach: Non-cooperative Processes
+
+- Similar to processor modes, the hardware once again provided assistance via **Timer Interrupt**.
+- A timer device can be programmed to raise an interrupt periodically.
+- When the interrupt is raised, the running process stops, a pre-configured interrupt handler in the OS runs. 
+- The OS regains control. 
 </section>
 
 
 <section data-markdown>
-Run the following command in the terminal:
+### Second approach: Non-cooperative Processes
 
-```
-$ cd ~/ostep-code/cpu-api
-$ wc p3.c
-$ wc p3.c > newfile.txt
-$ cat newfile.txt
-```
+- The OS first decides which process to switch to (with the help from the **scheduler**)
+- The OS executes a piece of assemble code (context switch.
+  - Save register values of the **currenlty running** process into its kernel stack.
+  - Restore register values of the **soon running** process from its kernel stack. 
 </section>
 
 
 <section data-markdown>
-### What happened?
-</section>
-
-
-<section data-markdown>
-### How did it happen?
-</section>
-
-
-<section data-markdown>
-### When you run `wc p3.c > newfile.txt` from the **prompt**, the shell ...
-
-- finds out where `wc` is in the file system. 
-- prepares `p3.c` as an input to `wc`.
-- calls *fork()* to create a new child process to run the command.
-- recognizes that `>` represents a **redirection**, thus closes the file descriptor to **standard output** and replaces it with a file descriptor to `newfile.txt`.
-- calls one of *exec()* family to run `wc p3.c`. 
-  - output of `wc p3.c` are now send to `newfile.txt`.
-- calls *wait()* to wait for the child process to finish before giving user the **prompt** again. 
-</section>
-
-<section data-markdown>
-- Inside `~/ostep-code/cpu-api` and view `p4.c`
-
-```
-$ cd ~/ostep-code/cpu-api
-$ nano -c p4.c
-```
-</section>
-
-
-<section data-markdown>
-- Compile and run p4.c
-</section>
-
-
-<section data-markdown>
-![p4]({{ "/assets/images/csc-331/limited_direct_execurtion/p4.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
-</section>
-
-
-<section data-markdown>
-### Similar principle, the UNIX pipe:
-
-How many processes are being run by the `student` account?
-
-```
-$ ps aux
-$ ps aux | grep student
-$ ps aux } grep student | wc -l
-```
-
-http://man7.org/linux/man-pages/man2/pipe.2.html
-</section>
-
-
-<section data-markdown>
-### Other system calls:
-
-- `kill()`: send **signals** to a process, including directive to pause, die, and other imperatives. 
-  - http://man7.org/linux/man-pages/man2/kill.2.html
-  - `SIGINT`: signal to terminate a process
-  - `SIGTSTP`: pause the process (can be resumed later). 
-- `signal()`: to *catch* a signal. 
-  - http://man7.org/linux/man-pages/man7/signal.7.html
+![cw]({{ "/assets/images/csc-331/limited_direct_execution/cw.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 </section>
