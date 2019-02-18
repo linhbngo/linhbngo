@@ -196,7 +196,7 @@ category: presentation
 
 - The OS first decides which process to switch to (with the help from the **scheduler**)
 - The OS executes a piece of assemble code (context switch.
-  - Save register values of the **currenlty running** process into its kernel stack.
+  - Save register values of the **currently running** process into its kernel stack.
   - Restore register values of the **soon running** process from its kernel stack.
 </section>
 
@@ -208,7 +208,7 @@ category: presentation
 <section data-markdown>
 ### Getting down and dirty
 
-We will be working with MIT's XV6 operating system in the future. Perform the following commands in your VM to set up the neccessary infrastructure:
+We will be working with MIT's XV6 operating system in the future. Perform the following commands in your VM to set up the necessary infrastructure:
 
 ```
 $ cd ~

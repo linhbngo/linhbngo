@@ -1,35 +1,44 @@
 ---
 layout: slide
-title: Process Abstraction
+title: Introduction to Scheduling
 category: presentation
 ---
 
 <section data-markdown>
-## <center> The Abstraction: Process </center>
+## <center> CPU Scheduling </center>
+</section>
+
+
+<section data-markdown>
+### In a Nutshell
+
+![load_program]({{ "/assets/images/csc-331/intro_sched/diner_dash.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 </section>
 
 <section data-markdown>
-### What is a program?
+### What is processor scheduling?
 
-- A program is a static list of instructions and data.
-  - When a program runs, the OS takes this list and asks the CPU to execute them.
-  - If we only have one CPU, how can we run more than one program at a time?
+- The allocation of processors to processes over time
+  - Key to **multiprogramming**
+  - Increase CPU utilization and job throughput by overlapping I/O and computation
+  - Different process queues representing different process states (ready, running, block ...)
+- Policies:
+  - Given more than one runnable processes, how do we choose which one to run next?
 </section>
+
 
 <section data-markdown>
-### What is a process?
+### Initial set of simple assumptions:
 
-- A process is a **running program**.
-- But the program itself is not running ...
-  - A process is an abstraction provided by the OS to describe the running of a program.
-- what is a process made of?
-  - Memory that the process (running program) can address.
-  - Memory registers.
-  - Program counter.
-  - Stack pointer.
-  - Frame pointer.
-  - I/O devices
+1. Each job (process/thread) runs the **same amount of time**.
+2. All jobs **arrive at the same time**.
+3. Once started, each job **runs to completion** (no interruption in the middle).
+4. All jobs only use the **CPU** (no I/O).
+5. The run time of each job is **known**.
+
+These are unrealistic assumptions, and we will relax them gradually to see how it works in a real system. 
 </section>
+
 
 <section data-markdown>
 ### Minimal list of a modern process API:
@@ -57,35 +66,63 @@ When a program is run, the OS performs the following steps:
 
 
 <section data-markdown>
-### Loading: From Program to Process
+### First performance metric
 
-![load_program]({{ "/assets/images/csc-331/abstraction_process/load_program.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+**Average turnaround time of all jobs**
+
+turnaround time = job completion time - job arrival time
+
 </section>
 
 
 <section data-markdown>
-### Process States
+<script type="text/template">
+### Algorithm 1: First Come First Serve
 
-- Running: the processor is executing a process' instructions.
-- Ready: the process is ready to run, but the OS is not running the process at the moment.
-- Blocked: the process has to performed some operation (e.g., I/O request to disk) that makes it not ready to run.
+| Job | Arrival Time | Service Time |
+| A | 0 | 3 |
+| B | 0 | 3 |
+| B | 0 | 3 |
+
+</script>
+</section>
+
+
+<section data-markdown>
+### Algorithm 1: First Come First Serve
+
+
+|---|---|---|
+| Job | Arrival Time | Service Time |
+|---|---|---|
+| A | 0 | 3 |
+| B | 0 | 3 |
+| B | 0 | 3 |
+|---|---|---|
+
+
+|---|---|---|---|---|---|---|---|---|---|--- |--- |
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
+|---|---|---|---|---|---|---|---|---|---|--- |--- | 
+| A | A | A |   |   |   |   |   |   |   |    |    |
+|---|---|---|---|---|---|---|---|---|---|--- |--- |
+| w | w | w | B | B | B |   |   |   |   |    |    |
+|---|---|---|---|---|---|---|---|---|---|--- |--- |
+| w | w | w | w | w | w | C | C | C |   |    |    |
+|---|---|---|---|---|---|---|---|---|---|--- |--- |
+
+
 </section>
 
 
 <section data-markdown>
 ### Process: State Transitions
 
-![state_transition]({{ "/assets/images/csc-331/abstraction_process/state_transition.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+![state_transition]({{ "/assets/images/csc-331/intro_sched/state_transition.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 </section>
 
 
-<section data-markdown>
-### Process: State Transition
 
-- When a process moves from *ready* to *running*, this means that it has been *scheduled* by the OS.
-- When a proess is moved from *running* to *ready*, this mean that it has been *descheduled* byt the OS.
-- Once the process is *blocked* (initiating I/O), it will be kept from becoming *ready* by the OS, until some events occur (I/O completion signal)
-</section>
 
 
 <section data-markdown>
@@ -95,7 +132,7 @@ When a program is run, the OS performs the following steps:
 
 
 <section data-markdown>
-![one-cpu]({{ "/assets/images/csc-331/abstraction_process/one_cpu.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+![one-cpu]({{ "/assets/images/csc-331/intro_sched/one_cpu.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 </section>
 
 
@@ -148,13 +185,13 @@ $ nano time_sharing.c
 
 
 <section data-markdown>
-![time-sharing-code]({{ "/assets/images/csc-331/abstraction_process/time_sharing_code.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+![time-sharing-code]({{ "/assets/images/csc-331/intro_sched/time_sharing_code.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 </section>
 
 
 <section data-markdown>
 After several runs of `a.out`
-![time-sharing-code]({{ "/assets/images/csc-331/abstraction_process/time_sharing_run.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+![time-sharing-code]({{ "/assets/images/csc-331/intro_sched/time_sharing_run.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 </section>
 
 
@@ -170,7 +207,7 @@ $ nano run_and_wait.c
 
 
 <section data-markdown>
-![time-sharing-code]({{ "/assets/images/csc-331/abstraction_process/run_and_wait.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+![time-sharing-code]({{ "/assets/images/csc-331/intro_sched/run_and_wait.PNG" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 </section>
 
 
