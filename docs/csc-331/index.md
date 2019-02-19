@@ -95,7 +95,8 @@ As laptop style and model can vary, the following common (and free) software env
     - [Process API]({{ "/docs/csc-331/process_api/" | relative_url }})
     - [Limited Direct Execution]({{ "/docs/csc-331/limited_direct_execution/" | relative_url }})
   - CPU Scheduling (**Week 4**)
-    - [Introduction to Scheduling]({{ "/docs/csc-331/intro_sched/" | relative_url }})
+    - [Introduction to Scheduling](https://docs.google.com/presentation/d/1tcFiERHNQMNoX4IdpHe95pBYkA86ZPUzYrZXP_HjSnE/edit?usp=sharing)
+    - [Introductoin to GDB]({{ "/docs/csc-331/intro_gdb/" | relative_url }})
   - Memory Management (**Week 5**)
   - Paging (**Week 6**)
 - Concurrency
