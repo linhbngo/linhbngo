@@ -52,14 +52,11 @@ As laptop style and model can vary, the following common (and free) software env
     - [CloudLab (academic)]({{ "/docs/csc-496-2/intro_cloudlab/" | relative_url }})
     - Google Compute Engine
     - Amazon Web Services
-- Virtualization
+- Virtualization and Containerization
   - [Introduction to Virtualization in Cloud Computing](https://docs.google.com/presentation/d/1Qotr8-cG6aq-zHFVSVihHwXv5KdUzRtrtVfArgUPbK4/edit?usp=sharing)
-  - KVM
+  - [KVM, Docker, and Singularity](https://docs.google.com/presentation/d/1vxfa-9dqCtlXBjmdRga7wO9Qm2RJfqWS2oPTFOjzgt8/edit?usp=sharing)
   - VirtualBox
   - Vagrant
-- Containerization
-  - Docker
-  - Singularity
 - Containers Orchestration
   - Docker Swarm
   - Kubernetes
