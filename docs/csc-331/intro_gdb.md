@@ -40,7 +40,7 @@ category: presentation
 ```
 $ sudo apt-get install -y libncurses5-dev
 $ git clone https://github.com/longld/peda.git
-$ echo "source ~/peda/peda.py" >> ~/.gbdinit
+$ echo "source ~/peda/peda.py" >> ~/.gdbinit
 ```
 
 When you run `gdb`, you will see a red `gdb-peda` prompt. 

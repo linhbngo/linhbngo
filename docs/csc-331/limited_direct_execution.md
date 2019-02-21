@@ -215,7 +215,7 @@ $ cd ~
 $ sudo apt-get update
 $ sudo apt-get install -y qemu
 $ sudo apt-get install -y tmux
-$ git clone git://github.com/mit-pdos/xv6-public.github
+$ git clone git://github.com/mit-pdos/xv6-public.git
 $ cd xv6-public
 $ make
 $ make qemu-nox
