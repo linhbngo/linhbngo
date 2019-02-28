@@ -57,8 +57,7 @@ As laptop style and model can vary, the following common (and free) software env
   - [KVM, Docker, and Singularity](https://docs.google.com/presentation/d/1vxfa-9dqCtlXBjmdRga7wO9Qm2RJfqWS2oPTFOjzgt8/edit?usp=sharing)
   - [CloudLab: Programmatically Deployment of Infrastructure](https://github.com/linhbngo/intro-to-cloudlab)
   - [CloudLab: Instantiating an OpenStack experiment](https://docs.google.com/presentation/d/1SdNmgORNbGJ6vKA5qUIVDthEEEGSeaXV-8ISHAplDCI/edit?usp=sharing)
-  - VirtualBox
-  - Vagrant
+  - [CloudLab: Programmatic Deployment of Infrastructures](https://docs.google.com/presentation/d/1CBPd74FU9Q6-kthcAI0_SMQlzB1nVE7MiGM4tYmeWd8/edit?usp=sharing)
 - Containers Orchestration
   - Docker Swarm
   - Kubernetes
