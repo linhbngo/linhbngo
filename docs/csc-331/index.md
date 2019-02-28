@@ -99,7 +99,8 @@ As laptop style and model can vary, the following common (and free) software env
     - [Introduction to GDB]({{ "/docs/csc-331/intro_gdb/" | relative_url }})
     - [Setup External Access to VM](https://docs.google.com/presentation/d/1R6er9r04ugwN1c0M1q_TOobqWyJ3XToEsbHOtcpi19E/edit?usp=sharing)
     - [Introduction to Scheduling Part 2](https://docs.google.com/presentation/d/1bgDV6pETFaQ_cxLTkkxJmVyz_GoA_ZgfgKJ8Hl5snhM/edit?usp=sharing)
-  - Memory Management 
+  - Memory Management
+    - [Address Space](https://docs.google.com/presentation/d/1IbHL88de17-9nFQrSRJaWYk_cfqmrsZl50kQ4sajtnk/edit?usp=sharing)
   - Paging 
 - Concurrency
   - Threads 
