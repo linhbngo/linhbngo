@@ -84,36 +84,37 @@ As laptop style and model can vary, the following common (and free) software env
 ### Tentative Course Outline
 
 
-- [Syllabus]({{ "/docs/csc-331/syllabus_slide/" | relative_url }}) 
+- [Syllabus]({{ "/docs/csc-331/syllabus_slide/" | relative_url }})
 - [Introduction to Linux]({{ "docs/csc-331/linux_slide/" | relative_url }})
 - [Introduction to Operating Systems]({{ "/docs/csc-331/intro_os/" | relative_url }})
-- [Introduction to C Programming]({{ "/docs/csc-331/intro_c/" | relative_url }}) 
-- [Malloc, Struct, Function]({{ "/docs/csc-331/malloc_struct_function/" | relative_url }}) 
+- [Introduction to C Programming]({{ "/docs/csc-331/intro_c/" | relative_url }})
+- [Malloc, Struct, Function]({{ "/docs/csc-331/malloc_struct_function/" | relative_url }})
 - Virtualization
-  - Processes 
+  - Processes
     - [Abstraction: Process]({{ "/docs/csc-331/abstraction_process/" | relative_url }})
     - [Process API]({{ "/docs/csc-331/process_api/" | relative_url }})
     - [Limited Direct Execution]({{ "/docs/csc-331/limited_direct_execution/" | relative_url }})
-  - CPU Scheduling 
+  - CPU Scheduling
     - [Introduction to Scheduling](https://docs.google.com/presentation/d/1tcFiERHNQMNoX4IdpHe95pBYkA86ZPUzYrZXP_HjSnE/edit?usp=sharing)
     - [Introduction to GDB]({{ "/docs/csc-331/intro_gdb/" | relative_url }})
     - [Setup External Access to VM](https://docs.google.com/presentation/d/1R6er9r04ugwN1c0M1q_TOobqWyJ3XToEsbHOtcpi19E/edit?usp=sharing)
     - [Introduction to Scheduling Part 2](https://docs.google.com/presentation/d/1bgDV6pETFaQ_cxLTkkxJmVyz_GoA_ZgfgKJ8Hl5snhM/edit?usp=sharing)
   - Memory Management
     - [Address Space](https://docs.google.com/presentation/d/1IbHL88de17-9nFQrSRJaWYk_cfqmrsZl50kQ4sajtnk/edit?usp=sharing)
-  - Paging 
+    - [Paging](https://docs.google.com/presentation/d/1HReO9A0PZV20fK_jpNEqC327DUeVTwmBnWlW9jp-vuc/edit?usp=sharing)
+    - [Docker](https://docs.google.com/presentation/d/1eDafjXEP2z9AggEDK_88Y2ctdrpb-l70zm5KiM4DuwM/edit?usp=sharing)
 - Concurrency
-  - Threads 
+  - Threads
   - Locks,
-  - Condition Variables 
-  - Semaphores 
-  - Deadlock 
+  - Condition Variables
+  - Semaphores
+  - Deadlock
 - Persistence
-  - I/O and Disks, Disk Scheduling 
-  - RAID, File Systems 
-  - File System Implementation 
-  - Journaling 
-  - LFS, SSD 
+  - I/O and Disks, Disk Scheduling
+  - RAID, File Systems
+  - File System Implementation
+  - Journaling
+  - LFS, SSD
 
 
 ### Grading

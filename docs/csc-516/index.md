@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Operating Systems
+title: Introduction to Data Structures
 permalink: /docs/csc-516/
 sidebar:
   nav: "docs"
@@ -20,33 +20,26 @@ In this course, we will learn about the basic data structures and key algorithmi
 - Employ quantitative analysis and mathematical methods
   - Analyze problem situations
   - Use mathematical models to develop solutions
-- Think crtically and analytically
+- Think critically and analytically
   - Develop algorithmic solutions
   - Implement and test problem solutions
 
 
 ### Important Dates
 
-- Tue, Jan 29, 2019: Last Day of Add/Drop
-- Mon, Mar 11-17, 2019: Spring Break
-- Tue, Mar 26, 2019: Last Day of Course Withdrawal
-- Tue, May 07, 2019: 10:30AM to 12:30PM FINAL EXAM
+- Thu, Mar 21, 2019: Last Day of Add/Drop
+- Sat, Apr 13, 2019: Last Day of Course Withdrawal
+- Sun, May 05, 2019: Last Day of the Session
 
 ### Course Requirements
 
 **Prerequisites**
 
-- Foundations of Computer Science (CSC 220)
-- Computer Science III (CSC 240)
-- Fundamental understanding of computer architecture and hardware design (CSC 242)
-- Knowledge of core data structures and algorithms (CSC 241)
+- Computer Programming I (CSC 512)
 
 **Textbook**
 
-- **Operating Systems: Three Easy Pieces** by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau.
-- [Free online PDF chapters by the authors](http://pages.cs.wisc.edu/~remzi/OSTEP/)
-- If you like it, buy it to support the efforts to produce inexpensive, quality, and free textbooks.
-- Reference book (optional): [Operating Systems Design and Implementation](https://www.amazon.com/Operating-Systems-Design-Implementation-3rd/dp/0131429388)
+- **Starting out with Java: From Control Structures through Data Structures** by Tony Gaddis, 4th Edition.
 
 **Laptop requirements**
 
@@ -59,11 +52,7 @@ Make sure that your laptop is fully charged for the duration of the class (or co
 
 **Software requirements**
 
-As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
-
-Virtual Enronment: Oracle VirtualBox
-Virtual OS for VirtualBox: Minix
-Other software packages will be specified and installed insite the CentOS virtual machine as needed.
+We will be using jGRASP for this class.
 
 
 ### Course Materials
@@ -174,8 +163,6 @@ If you have a disability that requires accommodations under the Americans with D
 
 ### Tentative Course Outline
 
-
-- [Syllabus]({{ "/docs/csc-516/syllabus_slide/" | relative_url }}) (**Week 1**)
 - Text Processing and More about Wrapper Classes
 - Exceptions and Advanced File I/O
 - Inheritance
