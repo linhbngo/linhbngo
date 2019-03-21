@@ -58,6 +58,8 @@ As laptop style and model can vary, the following common (and free) software env
   - [CloudLab: Programmatically Deployment of Infrastructure](https://github.com/linhbngo/intro-to-cloudlab)
   - [CloudLab: Instantiating an OpenStack experiment](https://docs.google.com/presentation/d/1SdNmgORNbGJ6vKA5qUIVDthEEEGSeaXV-8ISHAplDCI/edit?usp=sharing)
   - [CloudLab: Programmatic Deployment of Infrastructures](https://docs.google.com/presentation/d/1CBPd74FU9Q6-kthcAI0_SMQlzB1nVE7MiGM4tYmeWd8/edit?usp=sharing)
+  - [Introduction to Docker Part 1](https://docs.google.com/presentation/d/1CiWOstVISUezXfzzuKvVXZW97Dm7595rviVDRYfYzPE/edit?usp=sharing)
+  - [Introduction to Docker Part 2](https://docs.google.com/presentation/d/1Qd0yirV5GCephFnnv9V4dnpiEMV-YABDXZ9Bf7IV7iE/edit?usp=sharing)
 - Containers Orchestration
   - Docker Swarm
   - Kubernetes
