@@ -105,7 +105,7 @@ As laptop style and model can vary, the following common (and free) software env
     - [Docker](https://docs.google.com/presentation/d/1eDafjXEP2z9AggEDK_88Y2ctdrpb-l70zm5KiM4DuwM/edit?usp=sharing)
     - [TLB](https://docs.google.com/presentation/d/1bROMGY4_XGnSJtkW_PHCYLi-eyOmHDMRhgIxnlUdB88/edit?usp=sharing)
 - Concurrency
-  - Threads
+  - [Threads](https://docs.google.com/presentation/d/1TTInB1o19MzNHA3IaI0Jf60uuG6EeinAuWa9NARkKEk/edit?usp=sharing)
   - Locks,
   - Condition Variables
   - Semaphores
