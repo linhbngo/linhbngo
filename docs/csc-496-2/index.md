@@ -61,7 +61,7 @@ As laptop style and model can vary, the following common (and free) software env
   - [Introduction to Docker Part 1](https://docs.google.com/presentation/d/1CiWOstVISUezXfzzuKvVXZW97Dm7595rviVDRYfYzPE/edit?usp=sharing)
   - [Introduction to Docker Part 2](https://docs.google.com/presentation/d/1Qd0yirV5GCephFnnv9V4dnpiEMV-YABDXZ9Bf7IV7iE/edit?usp=sharing)
 - Containers Orchestration
-  - Docker Swarm
+  - [Docker Swarm Part 1](https://docs.google.com/presentation/d/15VTfgzvjQp1hVK5CGstrdBWfQ2DeOnR42YXc8hG5clE/edit?usp=sharing)
   - Kubernetes
   - Mesos
 
