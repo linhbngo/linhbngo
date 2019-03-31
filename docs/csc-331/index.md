@@ -106,10 +106,7 @@ As laptop style and model can vary, the following common (and free) software env
     - [TLB](https://docs.google.com/presentation/d/1bROMGY4_XGnSJtkW_PHCYLi-eyOmHDMRhgIxnlUdB88/edit?usp=sharing)
 - Concurrency
   - [Threads](https://docs.google.com/presentation/d/1TTInB1o19MzNHA3IaI0Jf60uuG6EeinAuWa9NARkKEk/edit?usp=sharing)
-  - Locks,
-  - Condition Variables
-  - Semaphores
-  - Deadlock
+  - [Locks, Condition Variables, Semaphores, Deadlock](https://docs.google.com/presentation/d/1HNfq_Vht4C-X63nYVzz_0CWjPbuMmejAnmBswGYfvMg/edit?usp=sharing)
 - Persistence
   - I/O and Disks, Disk Scheduling
   - RAID, File Systems
