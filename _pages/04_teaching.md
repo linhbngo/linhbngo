@@ -6,6 +6,10 @@ sidebar:
   nav: "docs"
 ---
 
+**Fall 2019**
+
+- [CSC 302: Computer Security II]({{ "/docs/csc-302/" | relative_url }})
+
 **Spring 2019**
 
 - [CSC 331: Operating Systems]({{ "/docs/csc-331/" | relative_url }})
