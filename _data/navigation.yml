@@ -2,13 +2,13 @@
 main:
   - title: "About"
     url: /about/
-  
+
   - title: "Research"
     url: /research/
-  
+
   - title: "Publications"
     url: /publications/
-  
+
   - title: "Teaching"
     url: /teaching/
 
@@ -16,6 +16,11 @@ main:
     url: /blog/
 
 docs:
+  - title: "Fall 2018"
+    children:
+      - title: "Computer Security II (302)"
+        url: /docs/csc-302/
+        
   - title: "Spring 2019"
     children:
     - title: "Operating Systems (331)"
@@ -27,11 +32,11 @@ docs:
     - title: "Cloud Computing (496)"
       url: /docs/csc-496-2/
 
-  - title: "Fall 2019"
+  - title: "Fall 2018"
     children:
     - title: "Computer Security II (302)"
-      url: /docs/csc-302/
+      url: https://github.com/linhbngo/Computer-Security
     - title: "Fundamentals of Computer Science (110)"
-      url: /docs/csc-110/
+      url: https://github.com/linhbngo/Fundamentals-of-Computer-Science
     - title: "Distributed and Cluster Computing (496)"
-      url: /docs/csc-496-1/
+      url: https://github.com/linhbngo/Distributed-and-Cluster-Computing
