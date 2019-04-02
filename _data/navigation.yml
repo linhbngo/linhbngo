@@ -16,11 +16,11 @@ main:
     url: /blog/
 
 docs:
-  - title: "Fall 2018"
+  - title: "Fall 2019"
     children:
       - title: "Computer Security II (302)"
         url: /docs/csc-302/
-        
+
   - title: "Spring 2019"
     children:
     - title: "Operating Systems (331)"
