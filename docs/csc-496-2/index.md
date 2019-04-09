@@ -63,7 +63,7 @@ As laptop style and model can vary, the following common (and free) software env
 - Containers Orchestration
   - [Docker Swarm Part 1](https://docs.google.com/presentation/d/15VTfgzvjQp1hVK5CGstrdBWfQ2DeOnR42YXc8hG5clE/edit?usp=sharing)
   - [Docker Swarm Part 2](https://docs.google.com/presentation/d/1IfaHpUUzbrFG6GrjzugJzyTJzDm54iO-UBj7ul2Ht5o/edit?usp=sharing)
-  - Kubernetes
+  - [Borg and Kubernetes](https://docs.google.com/presentation/d/1mGDDWlzvAysEMKXkh_xTD43zsB-v5na8IPy_mbwvpY8/edit?usp=sharing)
   - Mesos
 
 ### Grading
