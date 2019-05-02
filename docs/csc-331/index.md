@@ -124,7 +124,7 @@ Grades will be based on the following distribution:
 - Assignments: 50%
 - Exam:
   - Exam 1: 15%
-  - Exam 2: 10% (Comprehensive)
+  - Exam 2: 10%
 - Quiz: 20%
 - Participation: 5%
 
