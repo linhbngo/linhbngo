@@ -2,7 +2,7 @@ set args1=%1
 echo %args1%
 echo ${PWD}
 rm -Force -Recurse _site
-docker run --rm -v "%cd%":/srv/jekyll -it jekyll/jekyll jekyll build --verbose
+docker run -v "%cd%":/srv/jekyll -it jekyll/jekyll jekyll build --verbose
 scp -r _site\about %args1%:~/public_html
 scp -r _site\assets %args1%:~/public_html
 scp -r _site\blog %args1%:~/public_html
