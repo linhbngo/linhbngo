@@ -87,7 +87,7 @@ As laptop style and model can vary, the following common (and free) software env
 - [Syllabus]({{ "/docs/csc-331/syllabus_slide/" | relative_url }})
 - [Introduction to Linux]({{ "docs/csc-331/linux_slide/" | relative_url }})
 - [Introduction to Operating Systems]({{ "/docs/csc-331/intro_os/" | relative_url }})
-- [Introduction to C Programming]({{ "/docs/csc-331/intro_c/" | relative_url }})
+- [Introduction to C Programming](https://docs.google.com/presentation/d/1JEMZCWNPFMr22iibABmJfli1cKwgO02Bdgsb4JLau0U/edit?usp=sharing)
 - [Malloc, Struct, Function]({{ "/docs/csc-331/malloc_struct_function/" | relative_url }})
 - Virtualization
   - Processes
@@ -113,7 +113,8 @@ As laptop style and model can vary, the following common (and free) software env
   - [File Systems](https://docs.google.com/presentation/d/1gVoP704lM2BbX36lPpGJsC_O3v7nltp6WgoRI6Dyh6k/edit?usp=sharing)
   - [File System Implementation](https://docs.google.com/presentation/d/1IrJ9stkHG35pRhPbwZNl9f8NgHIgLY9J4GeKsv45Vx0/edit?usp=sharing)
   - [Journaling, LFS](https://docs.google.com/presentation/d/1F18HPuky5pm13qvCFUNjl7LZALsTcy9fa8Rmw-_izmE/edit?usp=sharing)
-  - RAID, SSD
+  - [Linux and Minix](https://docs.google.com/presentation/d/1B0GGxWo6xArW9HFevfT7Byknvy_76gFCKOauaoDWuxo/edit?usp=sharing)
+  - [RAID](https://docs.google.com/presentation/d/1XNBtAFFbk2Zv955HMZJgPXI3CxMPWSyGL2yNCGybr-8/edit?usp=sharing)
 
 
 ### Grading
@@ -123,7 +124,7 @@ Grades will be based on the following distribution:
 - Assignments: 50%
 - Exam:
   - Exam 1: 15%
-  - Exam 2: 10% (Comprehensive)
+  - Exam 2: 10%
 - Quiz: 20%
 - Participation: 5%
 
