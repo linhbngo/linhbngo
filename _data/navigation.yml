@@ -21,6 +21,13 @@ docs:
       - title: "Computer Security II (302)"
         url: /docs/csc-302/
 
+  - title: "Summer 2019"
+    children:
+      - title: "Fundamentals of Computer Science (110)"
+        url: /docs/csc-110/
+      - title: "System Administration and Security (586)"
+        url: /docs/csc-586/
+
   - title: "Spring 2019"
     children:
     - title: "Operating Systems (331)"

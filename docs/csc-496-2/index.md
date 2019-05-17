@@ -16,7 +16,7 @@ This course provides an introductory overview to the technologies that enable cl
 - Tue, Jan 29, 2019: Last Day of Add/Drop
 - Mon, Mar 11-17, 2019: Spring Break
 - Tue, Mar 26, 2019: Last Day of Course Withdrawal
-- Tue, May 09, 2019: 6:00PM to 8:00PM FINAL EXAM
+- Thu, May 09, 2019: 6:00PM to 8:00PM FINAL EXAM
 
 ### Course Materials
 

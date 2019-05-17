@@ -1,7 +1,7 @@
 ---
 layout: single
-title: Operating Systems
-permalink: /docs/csc-331/
+title: System Administration and Security
+permalink: /docs/csc-586/
 sidebar:
   nav: "docs"
 toc: true
@@ -9,52 +9,26 @@ toc: true
 
 ### Course Description
 
-This course will introduce three fundamental concepts in operating system (OS):
-Virtualization, Concurrency, and Persistence.
-
-- In *Virtualization*, we learn how OS creates abstractions through which programmers can
-interact with the underlying hardware. Examples of these abstractions include *processes*,
-*memory spaces*, and *CPU scheduling*.
-
-- In *Concurrency*, we learn about how OS supports sharing of physical resources
-among these abstractions. These include *thread*, *lock*, and *semaphores*.
-
-- In *Persistence*, we learn about how OS enables the long term management of information,
-produced or required by computer programs, in a manner that persists beyond the scope or the duration
-of these programs.
-
-Understanding how operating systems work will facilitate better understanding about how programs are
-run by the computer hardware. This will lead to more efficient, stable, and secure programs.
 
 **Learning Objectives**
 
-- Students will be able to apply mathematical foundations, algorithmic principles, and computer science theory.
-
-- Students will be able to to design, implement and evaluate a computer-based system, process, component, or program to meet desired needs.
 
 
 ### Important Dates
 
-- Tue, Jan 29, 2019: Last Day of Add/Drop
-- Mon, Mar 11-17, 2019: Spring Break
-- Tue, Mar 26, 2019: Last Day of Course Withdrawal
-- Tue, May 07, 2019: 10:30AM to 12:30PM FINAL EXAM
+
 
 ### Course Requirements
 
 **Prerequisites**
 
-- Foundations of Computer Science (CSC 220)
-- Computer Science III (CSC 240)
-- Fundamental understanding of computer architecture and hardware design (CSC 242)
-- Knowledge of core data structures and algorithms (CSC 241)
 
 **Textbook**
 
-- **Operating Systems: Three Easy Pieces** by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau.
-- [Free online PDF chapters by the authors](http://pages.cs.wisc.edu/~remzi/OSTEP/)
-- If you like it, buy it to support the efforts to produce inexpensive, quality, and free textbooks.
-- Reference book (optional): [Operating Systems Design and Implementation](https://www.amazon.com/Operating-Systems-Design-Implementation-3rd/dp/0131429388)
+- Optional: [**Unix and Linux System Administration Handbook** 5th Edition by Evi Nemeth, Garth Snyder, Trent R. Hein, Ben Whaley, and Dan Mackin.](https://www.amazon.com/UNIX-Linux-System-Administration-Handbook-ebook-dp-B075MK6LZ7/dp/B075MK6LZ7/ref=mt_kindle?_encoding=UTF8&me=&qid=1557854445)
+
+- The lectures will be heavily based on the structure of the suggested textbook. At the same time, as per the book's guidance, students will be provided with pointers to online documentation and resources that are better guaranteed to be up-to-date. Purchasing the book is not required, but is highly recommended.
+
 
 **Software requirements**
 
@@ -74,59 +48,39 @@ As laptop style and model can vary, the following common (and free) software env
 - Google Scholar is another excellent source for downloading preprint or open-source versions of papers.
 
 
-### Git
-
-- The class materials, including source codes, will be disseminated via Git. Being able to use Git is a critical skill for most, if not all software developers and/or IT professionals. There are many tutorials already available online for Git. Some of the more helpful ones include Github's, "the simple guide", and Atlassian's);
-
-- It would be a mistake if you just attempt to access the class materials via the web browser. "This is a mistake. Just learn Git. The command line interface is faster and more powerful, and you're going to need to learn it at some point in your life. Why not today?" - Dr. Jacob Sorber, Clemson University.
-
-
 ### Tentative Course Outline
 
-
-- [Syllabus]({{ "/docs/csc-331/syllabus_slide/" | relative_url }})
-- [Introduction to Linux]({{ "docs/csc-331/linux_slide/" | relative_url }})
-- [Introduction to Operating Systems]({{ "/docs/csc-331/intro_os/" | relative_url }})
-- [Introduction to C Programming](https://docs.google.com/presentation/d/1JEMZCWNPFMr22iibABmJfli1cKwgO02Bdgsb4JLau0U/edit?usp=sharing)
-- [Malloc, Struct, Function]({{ "/docs/csc-331/malloc_struct_function/" | relative_url }})
-- Virtualization
-  - Processes
-    - [Abstraction: Process]({{ "/docs/csc-331/abstraction_process/" | relative_url }})
-    - [Process API]({{ "/docs/csc-331/process_api/" | relative_url }})
-    - [Limited Direct Execution]({{ "/docs/csc-331/limited_direct_execution/" | relative_url }})
-  - CPU Scheduling
-    - [Introduction to Scheduling](https://docs.google.com/presentation/d/1tcFiERHNQMNoX4IdpHe95pBYkA86ZPUzYrZXP_HjSnE/edit?usp=sharing)
-    - [Introduction to GDB]({{ "/docs/csc-331/intro_gdb/" | relative_url }})
-    - [Setup External Access to VM](https://docs.google.com/presentation/d/1R6er9r04ugwN1c0M1q_TOobqWyJ3XToEsbHOtcpi19E/edit?usp=sharing)
-    - [Introduction to Scheduling Part 2](https://docs.google.com/presentation/d/1bgDV6pETFaQ_cxLTkkxJmVyz_GoA_ZgfgKJ8Hl5snhM/edit?usp=sharing)
-  - Memory Management
-    - [Address Space](https://docs.google.com/presentation/d/1IbHL88de17-9nFQrSRJaWYk_cfqmrsZl50kQ4sajtnk/edit?usp=sharing)
-    - [Paging](https://docs.google.com/presentation/d/1HReO9A0PZV20fK_jpNEqC327DUeVTwmBnWlW9jp-vuc/edit?usp=sharing)
-    - [Docker](https://docs.google.com/presentation/d/1eDafjXEP2z9AggEDK_88Y2ctdrpb-l70zm5KiM4DuwM/edit?usp=sharing)
-    - [TLB](https://docs.google.com/presentation/d/1bROMGY4_XGnSJtkW_PHCYLi-eyOmHDMRhgIxnlUdB88/edit?usp=sharing)
-- Concurrency
-  - [Threads](https://docs.google.com/presentation/d/1TTInB1o19MzNHA3IaI0Jf60uuG6EeinAuWa9NARkKEk/edit?usp=sharing)
-  - [Locks and Condition Variables](https://docs.google.com/presentation/d/1HNfq_Vht4C-X63nYVzz_0CWjPbuMmejAnmBswGYfvMg/edit?usp=sharing)
-  - [Semaphores, Deadlock](https://docs.google.com/presentation/d/1Fb0Y2iHbauAdGtC6_A9AbdZSaqIv0Oofffg_KoU8UrA/edit?usp=sharing)
-- Persistence
-  - [I/O and Disks, Disk Scheduling](https://docs.google.com/presentation/d/1LMuyQeOK4Bz-r4H1XKJ_Sl5I7KRTBMbf9ZVPhDUfLqo/edit?usp=sharing)
-  - [File Systems](https://docs.google.com/presentation/d/1gVoP704lM2BbX36lPpGJsC_O3v7nltp6WgoRI6Dyh6k/edit?usp=sharing)
-  - [File System Implementation](https://docs.google.com/presentation/d/1IrJ9stkHG35pRhPbwZNl9f8NgHIgLY9J4GeKsv45Vx0/edit?usp=sharing)
-  - [Journaling, LFS](https://docs.google.com/presentation/d/1F18HPuky5pm13qvCFUNjl7LZALsTcy9fa8Rmw-_izmE/edit?usp=sharing)
-  - [Linux and Minix](https://docs.google.com/presentation/d/1B0GGxWo6xArW9HFevfT7Byknvy_76gFCKOauaoDWuxo/edit?usp=sharing)
-  - [RAID](https://docs.google.com/presentation/d/1XNBtAFFbk2Zv955HMZJgPXI3CxMPWSyGL2yNCGybr-8/edit?usp=sharing)
+- [Syllabus]()
+- [Introduction to Linux]()
+- Basic Administration
+  - [What does a sys admin do?]()
+  - [Booting and system management daemons]()
+  - [Access control and root privileges]()
+  - [Process control]()
+  - [Filesystem]()
+  - [Software installation and management]()
+  - [Shell scripting]()
+  - [User management]()
+  - [Logging]()
+- Networking
+  - [TCP/IP]()
+  - [Single Sign-On]()
+  - [Network file system]()
+- Operations
+  - [Configuration Management]()
+  - [Security]()
+  - [Monitoring]()
+  - [Performance Analysis]()
+- After Promotion
+  - [Data Center Basics]()
+  - [Methodology, Policy, and Politics]()
 
 
 ### Grading
 
 Grades will be based on the following distribution:
 
-- Assignments: 50%
-- Exam:
-  - Exam 1: 15%
-  - Exam 2: 10%
-- Quiz: 20%
-- Participation: 5%
+TBD
 
 Letter grades are assigned according to the following scale:
 
@@ -136,7 +90,7 @@ Letter grades are assigned according to the following scale:
 
 **Grading Appeals**
 
-Mistakes occasionally happen during the grading process. If you think a mistake has been made regarding your grades, you should send me an email with detailed justification within one week of the date the grades are available. No changes on grades will be made after one week from the date the grades are posted.
+Mistakes occasionally happen during the grading process. If you think a mistake has been made regarding your grades, you should send me an email with detailed justification within twenty days from the date the grades are available. No changes on grades will be made after one week from the date the grades are posted.
 
 
 
