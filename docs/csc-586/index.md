@@ -51,7 +51,7 @@ As laptop style and model can vary, the following common (and free) software env
 ### Tentative Course Outline
 
 - [Syllabus]()
-- [Introduction to Linux]()
+- [Introduction to Linux](https://docs.google.com/presentation/d/1Kiogug59x2xmJx4IJuWoY3HBqNkEvFwDhYpFL97vScU/edit?usp=sharing)
 - Basic Administration
   - [What does a sys admin do?]()
   - [Booting and system management daemons]()
