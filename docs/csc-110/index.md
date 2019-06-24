@@ -1,27 +1,37 @@
 ---
 layout: single
-title: System Administration and Security
-permalink: /docs/csc-586/
+title: Fundamentals in Computer Science
+permalink: /docs/csc-110/
 sidebar:
   nav: "docs"
 toc: true
 ---
 
+### Instructor
+
+- Instructor: Linh B. Ngo, Ph.D.
+- Email: LNGO *at* WCUPA *dot* EDU
+- Office: 138 UNA (25 University Avenue)
+- Office Hours:
+    - TR 4:00PM to 6:00PM
+    - By appointment
+- Office Phone: (610) 436 2595
+
 ### Course Description
 
-This course is a hands-on study of operating system administration essentials
-with a focus on systems security and time in the lab. Additionally, various
-script languages are taught to provide a basis for understanding and extending
-the system capabilities.
+Introduction to the fundamentals of computer science. Topics include surveys of the
+following sub-areas of computer science: artificial intelligence, hardware/operating
+systems, programming languages/software, ethics/social issues, history, electronic
+communications, problem solving, and programming. The course includes laboratory projects
+(writing computer programs).  General Education Attribute: Science Distributive Requirement.
 
 **Learning Objectives**
 
-The following are clear, measurable and observable outcomes from taking this course:
-
-- Students will learn to write programs in the Bash scripting language.
-- Student will learn to write programs in the Python scripting language.
-- Student will learn how to install the Linux OS on a system and how to install and configure various critical services including network file systems and firewalls.
-
+- Students will be able to conduct research and communicate in written form, by means of a term paper, on a theme of their choice – involving the uses and abuses of a specific development of technology.
+- Students will be able to develop clear and logically correct algorithms to solve problems stated in written form.
+- Students will be able to implement these solutions in the programming language.
+- Students will be able to use of appropriate data types, mathematical formulas, and logical expressions in their programming assignments.
+- Students will be able to determine the correctness of the computer programs that they write to solve problems stated in written form.
 
 ### Important Dates
 
@@ -35,64 +45,30 @@ The following are clear, measurable and observable outcomes from taking this cou
 
 **Textbook**
 
-- Optional: [**Unix and Linux System Administration Handbook** 5th Edition by Evi Nemeth, Garth Snyder, Trent R. Hein, Ben Whaley, and Dan Mackin.](https://www.amazon.com/UNIX-Linux-System-Administration-Handbook-ebook-dp-B075MK6LZ7/dp/B075MK6LZ7/ref=mt_kindle?_encoding=UTF8&me=&qid=1557854445)
-
-- The lectures will be heavily based on the structure of the suggested textbook. At the same time, as per the book's guidance, students will be provided with pointers to online documentation and resources that are better guaranteed to be up-to-date. Purchasing the book is not required, but is highly recommended.
-
-
-**Software requirements**
-
-As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
-
-- Virtual Environment: Oracle VirtualBox
-- Other software packages will be specified and installed inside the CentOS virtual machine as needed.
-
-
-### Course Materials
-
-- Lecture slides and example codes will be available online via links inside the course' D2L page
-
-- Links to papers on subjects we will be discussing in class will also be listed and/or embedded in the slides.
-
-- West Chester University maintains extensive licensed products to academic publishers such as ACM, IEEE, Elsevier, and Springer, and many of the papers required for this course will be available through the library's online database.
-- Google Scholar is another excellent source for downloading preprint or open-source versions of papers.
-
+We will be using the following online textbook: [Computing Technology for All](https://www.zybooks.com/catalog/computing-technology-for-all/). Information regarding how to acquire the book will be provided in the course's D2L page.
 
 ### Tentative Course Outline
 
-- [Syllabus]()
-- [Introduction to Linux](https://docs.google.com/presentation/d/1Kiogug59x2xmJx4IJuWoY3HBqNkEvFwDhYpFL97vScU/edit?usp=sharing)
-- Basic Administration
-  - [What does a sysadmin do?]()
-  - [Booting and system management daemons]()
-  - [Access control and root privileges]()
-  - [Process control]()
-  - [Filesystem]()
-  - [Software installation and management]()
-  - [Shell scripting]()
-  - [User management]()
-  - [Logging]()
-- Networking
-  - [TCP/IP]()
-  - [Single Sign-On]()
-  - [Network file system]()
-- Operations
-  - [Configuration Management]()
-  - [Security]()
-  - [Monitoring]()
-  - [Performance Analysis]()
-- After Promotion
-  - [Data Center Basics]()
-  - [Methodology, Policy, and Politics]()
-
+- History and Basics
+- Hardware and Software
+- The Internet and Web
+- Operating Systems
+- Computer Applications
+- Web / Mobile Apps
+- Privacy
+- Security
+- Information Systems
+- More Societal Issues
+- Computing Concepts
 
 ### Grading
 
 Grades will be based on the following distribution:
 
-- Assignment 1: 40%
-- Assignment 2: 40%
-- Quiz: 15%
+- 5 Multiple Choice Emerging Concepts Quizzes: 60%
+- 5 Credit Projects on Python: 25%
+- Term Paper: 10%
+  - Self-selected topics on Uses and Abuses of Techonology Development - Due by the last day of the session.
 - Attendance: 5%
 
 Letter grades are assigned according to the following scale:
@@ -104,8 +80,6 @@ Letter grades are assigned according to the following scale:
 **Grading Appeals**
 
 Mistakes occasionally happen during the grading process. If you think a mistake has been made regarding your grades, you should send me an email with detailed justification within twenty days from the date the grades are available. No changes on grades will be made after one week from the date the grades are posted.
-
-
 
 ### Class Policy
 
