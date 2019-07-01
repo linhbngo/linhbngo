@@ -65,11 +65,11 @@ We will be using the following online textbook: [Computing Technology for All](h
 
 Grades will be based on the following distribution:
 
-- 5 Multiple Choice Emerging Concepts Quizzes: 60%
-- 5 Credit Projects on Python: 25%
+- 4 Multiple Choice Emerging Concepts Quizzes: 60%
+- 4 Credit Projects on Python: 20%
 - Term Paper: 10%
   - Self-selected topics on Uses and Abuses of Techonology Development - Due by the last day of the session.
-- Attendance: 5%
+- Attendance: 10%
 
 Letter grades are assigned according to the following scale:
 
