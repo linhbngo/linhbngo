@@ -79,7 +79,7 @@ Letter grades are assigned according to the following scale:
 
 **Grading Appeals**
 
-Mistakes occasionally happen during the grading process. If you think a mistake has been made regarding your grades, you should send me an email with detailed justification within twenty days from the date the grades are available. No changes on grades will be made after one week from the date the grades are posted.
+Mistakes occasionally happen during the grading process. If you think a mistake has been made regarding your grades, you should send me an email with detailed justification within twenty days from the date the grades are available. No changes on grades will be made after twenty days from the date the grades are posted.
 
 ### Class Policy
 
@@ -117,7 +117,8 @@ A make-up for the exams will be given only with a valid medical or University ex
 
 - You are responsible for accessing that mail to be sure to obtain official University communications.
 Failure to access will not exempt individuals from the responsibilities associated with this course.
-Instructor Email Policy
+
+**Instructor Email Policy**
 
 - For individual issue, it is best to contact me via email. I check my email frequently during normal working hours (9-5) on weekdays, and I will try to respond quickly (hopefully the same day). I do also check email on weekends and evenings, but not nearly as frequently (almost never on Sundays). As a result, you should expect longer delays during these times.
 
