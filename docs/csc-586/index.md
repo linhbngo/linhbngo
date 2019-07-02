@@ -60,10 +60,11 @@ As laptop style and model can vary, the following common (and free) software env
 
 ### Tentative Course Outline
 
-- [Syllabus]()
+- [Syllabus](https://docs.google.com/presentation/d/1w3s98cc8FAc7YAmr81JhxkJ0vsBmdeXXkntxtCJiAdY/edit?usp=sharing)
 - [Introduction to Linux](https://docs.google.com/presentation/d/1Kiogug59x2xmJx4IJuWoY3HBqNkEvFwDhYpFL97vScU/edit?usp=sharing)
+- [Introduction to CloudLab](https://docs.google.com/presentation/d/1yws6zJUAvIaCnsG1YMlWVoHx0Wf_x202pbcghGwtv6Y/edit?usp=sharing)
 - Basic Administration
-  - [What does a sysadmin do?]()
+  - [What does a sysadmin do?](https://docs.google.com/presentation/d/1ksVRNT8w3q3uMB-3eNDUcteAOFztGlAAOG3PQ_yu8ko/edit?usp=sharing)
   - [Booting and system management daemons]()
   - [Access control and root privileges]()
   - [Process control]()
