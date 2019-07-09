@@ -12,7 +12,7 @@ sidebar:
 - [CSC 302: Computer Security II]({{ "/docs/csc-302/" | relative_url }})
 - [CSC 331: Operating Systems]({{ "/docs/csc-331/" | relative_url }})
 - [CSC 496: Distributed and Cluster Computing]({{ "/docs/csc-496/" | relative_url }})
--
+
 **Summer 2019**
 
 - [CSC 586: System Administration and Security]({{ "/docs/csc-586/" | relative_url }})
