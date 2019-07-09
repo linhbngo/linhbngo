@@ -65,9 +65,9 @@ As laptop style and model can vary, the following common (and free) software env
 - [Introduction to CloudLab](https://docs.google.com/presentation/d/1yws6zJUAvIaCnsG1YMlWVoHx0Wf_x202pbcghGwtv6Y/edit?usp=sharing)
 - Basic Administration
   - [What does a sysadmin do?](https://docs.google.com/presentation/d/1ksVRNT8w3q3uMB-3eNDUcteAOFztGlAAOG3PQ_yu8ko/edit?usp=sharing)
-  - [Booting and system management daemons]()
-  - [Access control and root privileges]()
-  - [Process control]()
+  - [Booting and system management daemons](https://docs.google.com/presentation/d/1INcY8aYVtjkj50QyvVYkxO0Xla0hG-jzFwOe_hPEaX0/edit?usp=sharing)
+  - [Access control and root privileges](https://docs.google.com/presentation/d/1p5x7ciSNVr_NGv46s-fjEYYhWwN4XDeJjh8juC7CQjU/edit?usp=sharing)
+  - [Process control](https://docs.google.com/presentation/d/1GJ1YJRvo0BJi50dvuQgoUTXIlueODrM30HrYVf8dAlY/edit?usp=sharing)
   - [Filesystem]()
   - [Software installation and management]()
   - [Shell scripting]()
