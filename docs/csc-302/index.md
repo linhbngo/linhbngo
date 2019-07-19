@@ -45,7 +45,7 @@ toc: true
   - Set-UID Programs
   - Environment Variables
   - Program Memory Layout
-  - [Buffer Overflow](https://docs.google.com/presentation/d/1_BrB8zZU1SF0WU8GO_V1EaNP2F0dPUjtOKHs7acxKTU/edit?usp=sharing)
+  - [Buffer Overflow](http://bit.ly/2SmQcAY)
   - Return-to-libc Attack
   - Format String Vulnerability
   - Race Condition Vulnerability
