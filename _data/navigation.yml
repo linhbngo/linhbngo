@@ -28,8 +28,12 @@ docs:
       - title: "System Administration and Security (586)"
         url: /docs/csc-586/
 
-  - title: "Spring 2019"
+  - title: "Courses Taught"
     children:
+    - title: "Fundamentals of Computer Science (110)"
+      url: https://github.com/linhbngo/Fundamentals-of-Computer-Science
+    - title: "Computer Security II (302)"
+      url: https://github.com/linhbngo/Computer-Security
     - title: "Operating Systems (331)"
       url: /docs/csc-331/
     - title: "Programming I (512)"
@@ -38,12 +42,5 @@ docs:
       url: /docs/csc-516/
     - title: "Cloud Computing (496)"
       url: /docs/csc-496-2/
-
-  - title: "Fall 2018"
-    children:
-    - title: "Computer Security II (302)"
-      url: https://github.com/linhbngo/Computer-Security
-    - title: "Fundamentals of Computer Science (110)"
-      url: https://github.com/linhbngo/Fundamentals-of-Computer-Science
     - title: "Distributed and Cluster Computing (496)"
       url: https://github.com/linhbngo/Distributed-and-Cluster-Computing
