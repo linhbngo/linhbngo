@@ -37,7 +37,7 @@ toc: true
 ### Tentative Course Outline
 
 - Introduction
-  - Overview of course syllabus
+  - [Overview of course syllabus](http://bit.ly/2XR43FD)
   - Introduction of computer security
   - Introduction to SEED platform
   - Linux reviews
