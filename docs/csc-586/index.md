@@ -72,11 +72,11 @@ As laptop style and model can vary, the following common (and free) software env
   - [User management](https://docs.google.com/presentation/d/1Dsl-nCgrv9sSUn0XOTihp1WBFCPYzdto-twVAK7e1oM/edit?usp=sharing)
   - [Software installation and management](https://docs.google.com/presentation/d/1tvuxZvTZPQw0Ge4_BNzWK_klOoGug0Vd6KrHtD8PZt0/edit?usp=sharing)
   - [Shell scripting](https://docs.google.com/presentation/d/1XZntdPqaWB9PHYR4k-pcIhsqujNvtmlJ-7CeHHk7dKE/edit?usp=sharing)
-  - [Logging]()
+  - [Logging](https://docs.google.com/presentation/d/1vjVl2QwV2p-cijCEdePo1y-j1b0L4jz_yit5OJLmdic/edit?usp=sharing)
 - Networking
-  - [TCP/IP]()
-  - [Single Sign-On]()
+  - [Single Sign-On](https://docs.google.com/presentation/d/1NKpbcJNUvss1IdVACVd_XW6YCxCkzPGWLjROpsKROw8/edit?usp=sharing)
   - [Network file system]()
+  - [TCP/IP]()
 - Operations
   - [Configuration Management]()
   - [Security]()
