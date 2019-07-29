@@ -75,7 +75,7 @@ As laptop style and model can vary, the following common (and free) software env
   - [Logging](https://docs.google.com/presentation/d/1vjVl2QwV2p-cijCEdePo1y-j1b0L4jz_yit5OJLmdic/edit?usp=sharing)
 - Networking
   - [Single Sign-On](https://docs.google.com/presentation/d/1NKpbcJNUvss1IdVACVd_XW6YCxCkzPGWLjROpsKROw8/edit?usp=sharing)
-  - [Network file system]()
+  - [Network file system](http://bit.ly/2YtxHfE)
   - [TCP/IP]()
 - Operations
   - [Configuration Management]()
