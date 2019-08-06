@@ -86,7 +86,7 @@ As laptop style and model can vary, the following common (and free) software env
 
 - [Syllabus]({{ "/docs/csc-331/syllabus_slide/" | relative_url }})
 - [Introduction to Linux](http://bit.ly/2GQ7x0x)
-- [Introduction to Operating Systems]({{ "/docs/csc-331/intro_os/" | relative_url }})
+- [Introduction to Operating Systems](http://bit.ly/2YNnDCj)
 - [Introduction to C Programming](https://docs.google.com/presentation/d/1JEMZCWNPFMr22iibABmJfli1cKwgO02Bdgsb4JLau0U/edit?usp=sharing)
 - [Malloc, Struct, Function]({{ "/docs/csc-331/malloc_struct_function/" | relative_url }})
 - Virtualization
