@@ -84,7 +84,8 @@ As laptop style and model can vary, the following common (and free) software env
 ### Tentative Course Outline
 
 
-- [Syllabus]({{ "/docs/csc-331/syllabus_slide/" | relative_url }})
+- [Syllabus](http://bit.ly/31mvrIP)
+- [Setup Linux Environment](http://bit.ly/2ZCnv63)
 - [Introduction to Linux](http://bit.ly/2GQ7x0x)
 - [Introduction to Operating Systems](http://bit.ly/2YNnDCj)
 - [Introduction to C Programming](https://docs.google.com/presentation/d/1JEMZCWNPFMr22iibABmJfli1cKwgO02Bdgsb4JLau0U/edit?usp=sharing)
