@@ -89,11 +89,11 @@ As laptop style and model can vary, the following common (and free) software env
 - [Introduction to Linux](http://bit.ly/2GQ7x0x)
 - [Introduction to Operating Systems](http://bit.ly/2YNnDCj)
 - [Introduction to C Programming](http://bit.ly/2T8YnRG)
-- [Malloc, Struct, Function]({{ "/docs/csc-331/malloc_struct_function/" | relative_url }})
+- [Malloc, Struct, Function](http://bit.ly/2MOuVzo)
 - Virtualization
   - Processes
-    - [Abstraction: Process]({{ "/docs/csc-331/abstraction_process/" | relative_url }})
-    - [Process API]({{ "/docs/csc-331/process_api/" | relative_url }})
+    - [Abstraction: Process](http://bit.ly/2KwJchh)
+    - [Process API](http://bit.ly/2YMnBL3)
     - [Limited Direct Execution]({{ "/docs/csc-331/limited_direct_execution/" | relative_url }})
   - CPU Scheduling
     - [Introduction to Scheduling](https://docs.google.com/presentation/d/1tcFiERHNQMNoX4IdpHe95pBYkA86ZPUzYrZXP_HjSnE/edit?usp=sharing)
