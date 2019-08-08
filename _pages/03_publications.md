@@ -5,6 +5,8 @@ permalink: /publications/
 author_profile: true
 ---
 
+DeFever, R. S., Hanger, W., Sarupria, S., Kilgannon, J., Apon, A. W., & **Ngo, L. B**. (2019, July). Building A Scalable Forward Flux Sampling Framework using Big Data and HPC. In *Proceedings of the Practice and Experience in Advanced Research Computing Conference Series: Rise of the Machines (learning)* (pp. 1-8). ACM.
+
 **Ngo, L. B.**, & Denton, J. (2019). Using CloudLab as a Scalable Platform for Teaching Cluster Computing. Journal of Computational Science, 10(1).
 
 Khan, S. M., Chowdhury, M, & **Ngo, L. B.** (2018). Non-real-time Transportation Applications: Potential Use of Connected Vehicle Data and Data Infrastructure Requirements. *Journal of Infrastructure Systems*, 25(1).
