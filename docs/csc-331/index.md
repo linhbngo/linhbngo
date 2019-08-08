@@ -94,7 +94,7 @@ As laptop style and model can vary, the following common (and free) software env
   - Processes
     - [Abstraction: Process](http://bit.ly/2KwJchh)
     - [Process API](http://bit.ly/2YMnBL3)
-    - [Limited Direct Execution]({{ "/docs/csc-331/limited_direct_execution/" | relative_url }})
+    - [Limited Direct Execution](http://bit.ly/2KmYd6M)
   - CPU Scheduling
     - [Introduction to Scheduling](https://docs.google.com/presentation/d/1tcFiERHNQMNoX4IdpHe95pBYkA86ZPUzYrZXP_HjSnE/edit?usp=sharing)
     - [Introduction to GDB]({{ "/docs/csc-331/intro_gdb/" | relative_url }})
