@@ -35,10 +35,13 @@ run by the computer hardware. This will lead to more efficient, stable, and secu
 
 ### Important Dates
 
-- Tue, Jan 29, 2019: Last Day of Add/Drop
-- Mon, Mar 11-17, 2019: Spring Break
-- Tue, Mar 26, 2019: Last Day of Course Withdrawal
-- Tue, May 07, 2019: 10:30AM to 12:30PM FINAL EXAM
+- First Day of Session: 08/26/2019
+- Labor Day (no class): 09/02/2019
+- Last Day of Add/Drop: 09/03/2019
+- Last Day of Course Withdrawal: 10/22/2019
+- Reading/Writing Days: 11/25/2019 - 11/26/2019
+- Thanksgiving: 11/27/2019 - 12/01/2019
+- Last Day of Session: 12/09/2019
 
 ### Course Requirements
 
