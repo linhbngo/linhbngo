@@ -1,57 +1,80 @@
 ---
 layout: single
-title: Distributed and Cluster Computing
-permalink: /docs/csc-466/
+title: Introduction to Computer Systems
+permalink: /docs/csc-243/
 sidebar:
   nav: "docs"
 toc: true
 ---
 
+### Instructor
+
+- Instructor: Linh B. Ngo, Ph.D.
+- Email: LNGO *at* WCUPA *dot* EDU
+- Office: 144 UNA (25 University Avenue)
+- Office Hours:
+    - MT 2:00PM to  4:00PM
+    - W 11:00AM to 12:00PM
+    - By appointment
+- Office Phone: (610) 436 2595
+
+
 ### Course Description
 
-This course will investigate issues in modern distributed platforms by examining a number of important technologies in the areas of distributed computing in computational and data-intensive problems.
+In this course, we will learn fundamental concepts of modern computer systems. Unlike courses
+in Computer Organizations, Operating Systems, and Computer Architecture, we will
+be approaching these concepts from the perspective of system **users** rather than
+system **builders**. This will help us to understand how various computer system components,
+including CPU, memory, storage, and networking, work. Throughout the course, we will learn to use assembler
+language and C language to explore and observe specifically how computer systems interpret and execute programs.
+With the knowledge learned from this course, you will be able to build programs
+that are more efficient and have better performance.
 
-By the end of the course, each student should understand and be able to apply several specific tradeoffs for parallel application and algorithms development, performance, and management on a number of distributed platforms.
+**Student Learning Outcomes**
 
-### Learning Objectives
-
-- Students will be able to apply mathematical foundations, algorithmic principles, and computer science theory in the modeling and design of computer-based systems in a way that demonstrates comprehension of the tradeoffs involved in design choices.
-- Students will be able to analyze a problem, and identify and define the computing requirements appropriate to its solution.
-- Students will be able to apply design and development principles in the construction of large-scale computing systems.
-- Students will be able to function effectively on teams to accomplish a common goal.
+- C) Able to design, implement, and evaluate a computer-based system, process, component, or program to meet desired needs
+  - Outcomes will be assessed via homework assignments
+- I) able to use current techniques, skills, and tools necessary for computing practices
+  - Outcomes will be assessed via in-class labs
 
 ### Important Dates
 
-- First Day of Session: 08/26/2019
-- Labor Day (no class): 09/02/2019
-- Last Day of Add/Drop: 09/03/2019
-- Last Day of Course Withdrawal: 10/22/2019
-- Reading/Writing Days: 11/25/2019 - 11/26/2019
-- Thanksgiving: 11/27/2019 - 12/01/2019
-- Last Day of Session: 12/09/2019
+- TBD
 
 ### Course Requirements
 
 **Prerequisites**
 
-- Working knowledge of C/C++, Java, and Linux OS
+- Familiarity with at least one high-level programming language (e.g., Java) (CSC 141, CSC 142)
 - Knowledge of core data structures and algorithms (CSC 241)
 
-**Textbook**
+**Required Textbook**
 
-There is no textbook requirement for the course.
+- **Computer Systems: A Programmer's Perspective** by Randal E. Bryant and David r. O'Hallaron, 3rd Edition. ISBN-13 978-0-13-409266-9, ISBN-10 0-13-409266-X
+- An electronic copy of this book (with lower cost) can be found online at [Vital Source](www.vitalsource.com/products/computer-systems-a-programmer-39-s-perspective-randal-e-bryant-david-r-v978013092997)
+
+**Laptop requirements**
+
+Having access to a laptop during class time is critical, as we will be:
+
+- Working with hands-on examples in class, and
+- Working on in-class electronic quizzes on D2L
+
+Make sure that your laptop is fully charged for the duration of the class (or come in early and get a spot with access to power outlets).
 
 **Software requirements**
 
 As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
 
 - Virtual Environment: Oracle VirtualBox
-- Other software packages will be specified and installed inside the CentOS virtual machine as needed.
+- Other software packages will be specified and installed insite the CentOS virtual machine as needed.
 
 
 ### Course Materials
 
-- Lecture slides and example codes will be available online via links inside the course’ D2L page
+- The course website: https://www.cs.wcupa.edu/lngo/docs/csc-243/
+
+- Lecture slides and example codes will be available online via the course website and the course’ D2L page
 
 - Links to papers on subjects we will be discussing in class will also be listed and/or embedded in the slides.
 
@@ -60,47 +83,15 @@ As laptop style and model can vary, the following common (and free) software env
 - Google Scholar is another excellent source for downloading preprint or open-source versions of papers.
 
 
-### Tentative Course Outline
-
-
-- [Syllabus](http://bit.ly/33kHZ5t)
-- Cluster of Computers
-  - [The demand for computational speed](http://bit.ly/2yOWMr3)
-  - [Introduction to Parallel and Distributed Computing](http://bit.ly/2TeTlmQ)
-  - [Introduction to XSEDE](http://bit.ly/2MQDxFC)
-  - [Introduction to Linux](http://bit.ly/2GQ7x0x)
-  - [Introduction to C programming]()
-  - [Introduction to Message Passing Interface (MPI)]()
-- Parallel and Distributed File Systems
-  - [Introduction to Parallel and Distributed File Systems]()
-  - [OrangeFS]()
-  - [LustreFS]()
-  - [Hadoop Distributed File System - HDFS]()
-- High Performance and Data-Intensive Computing
-  - [MPI: Pleasantly Parallel Computation]()
-  - [MPI: Partitioning and Divide-and-Conquer]()
-  - [MPI: Synchronous Computing]()
-  - [MPI: Parallel I/O]()
-  - [Introduction to MapReduce Programming Paradigm]()
-- Job Scheduling on Cluster of Computers
-  - [Scheduling Clusters of Computers]()
-  - [SLURM]()
-- Complex Distributed Systems
-  - [Memory-centric Data Intensive Computing]()
-
-
 ### Grading
 
 Grades will be based on the following distribution:
 
-- Assignments: 60%
-  - 1 individual assignment (15%)
-  - 1 project-based assignments (45%): 3 deliverables at 15% each
-- Exam:
-  - Exam 1: 15%
-  - Exam 2: 10% (Comprehensive)
-- Quiz: 10%
-- Participation: 5%
+Assignments: 35% (7 homework assignments)
+Labs: 25% (5 in-class labs)
+Quiz: 20% (10 in-class quizzes)
+Final Exam (comprehensive): 15%
+Participation: 5%
 
 Letter grades are assigned according to the following scale:
 
@@ -110,7 +101,8 @@ Letter grades are assigned according to the following scale:
 
 **Grading Appeals**
 
-Mistakes occasionally happen during the grading process. If you think a mistake has been made regarding your grades, you should send me an email with detailed justification within one week of the date the grades are available. No changes on grades will be made after twenty days from the date the grades are posted.
+Mistakes occasionally happen during the grading process. If you think a mistake has been made regarding your grades, you should send me an email with detailed justification within one week of the date the grades are available. No changes on grades will be made after one week from the date the grades are posted.
+
 
 
 ### Class Policy
@@ -122,8 +114,8 @@ Office hours are an opportunity to reinforce course topics either one-on-one or 
 
 **Attendance**
 
-- Attendance is critical to the success of students in.
-- Attendance will be taken at random, and count toward your participation score.
+- Attendance is critical to the success of students.
+- We will take note of who attends, including occasionally using attendance check in place of a quiz score.
 - If you miss a class, you are responsible for obtaining lecture notes, handouts, and homework assignments from fellow students.
 - If the instructor is late for class, please wait 20 minutes before leaving.
 
@@ -131,7 +123,7 @@ Office hours are an opportunity to reinforce course topics either one-on-one or 
 **Excused Absences Policy for University-Sanctioned Event**
 
 - Students are advised to carefully read and comply with the excused absences policy for university-sanctioned events contained in the WCU Undergraduate Catalog.
-- In particular, please note that the "responsibility for meeting academic requirements rests with the student," that this policy does not excuse students from completing required academic work, and that professors can require a “fair alternative” to attendance on those days that students must be absent from class in order to participate in a University-Sanctioned Event.
+- In particular, please note that the “responsibility for meeting academic requirements rests with the student,” that this policy does not excuse students from completing required academic work, and that professors can require a “fair alternative” to attendance on those days that students must be absent from class in order to participate in a University-Sanctioned Event.
 
 
 **Late Work**
@@ -147,7 +139,8 @@ A make-up for the exams will be given only with a valid medical or University ex
 
 - Official university communications, including those from your instructor, will be sent through your university e-mail account.
 
-- You are responsible for accessing that mail to be sure to obtain official University communications. Failure to access will not exempt individuals from the responsibilities associated with this course.
+- You are responsible for accessing that mail to be sure to obtain official University communications.
+Failure to access will not exempt individuals from the responsibilities associated with this course.
 Instructor Email Policy
 
 - For individual issue, it is best to contact me via email. I check my email frequently during normal working hours (9-5) on weekdays, and I will try to respond quickly (hopefully the same day). I do also check email on weekends and evenings, but not nearly as frequently (almost never on Sundays). As a result, you should expect longer delays during these times.
@@ -182,3 +175,32 @@ If you have a disability that requires accommodations under the Americans with D
 - All students are encouraged to sign up for the University’s free WCU ALERT service, which delivers official WCU emergency text messages directly to your cell phone.
 
 - For more information, visit www.wcupa.edu/wcualert. To report an emergency, call the Department of Public Safety at 610-436-3311.
+
+
+### Git
+
+- The class materials, including source codes, will be disseminated via Git. Being able to use Git is a critical skill for most, if not all software developers and/or IT professionals. There are many tutorials already available online for Git. Some of the more helpful ones include github's, "the simple guide", and atlassian's);
+
+- It would be a mistke if you just attempt to access the cloass materials via the web browser. "This is a mistake. Just learn Git. The command line interface is faster and more powerful, and you're going to need to learn it at some point in your life. Why not today?" - Dr. Jacob Sorber, Clemson University.
+
+
+### Tentative Course Outline
+
+- Introduction to C Programming Language
+- Data Representation
+- Assember Language
+- Processor Architecture
+- Memory Hierarchy
+- File Systems
+- Network Programming
+- Concurrent Programming
+
+### Bibliography for Computer Systems
+
+- **Computer Systems**, Warford, J., Fifth Edition, ISBN: 1284079635
+- **Computer Systems: Digital Design, Fundamental of Comptuer Architecture and Assembly Language**, Elahi, A., ISBN: 9783319667744
+- **Computer Organization and Design**, Patterson, D. and Hennessy, J., Fifth Edition, ISBN: 0124077269
+- **The Elements of Computing Systems: Building a Modern Computer from First Principles**, Nisan, N. and Schocken, S., ISBN: 0262640686
+- **Computer System Architecture**, Mano, M., Third Edition, ISBN 0131755633
+- **Introduction to Computing Systems: From Bits and Gates to C and Beyond**, Patt, Y. and Patel, S., Second Edition, ISBN: 0072467509
+- **Computer Systems: An Integrated Approach to Architecture and Operating Systems**, Ramachandran, U. and Leahy Jr., W., ISBN 0312486137

@@ -18,29 +18,30 @@ main:
 docs:
   - title: "Fall 2019"
     children:
+      - title: "Data Structures and Algorithms (241)"
+        url: /docs/csc-241/
       - title: "Computer Security II (302)"
         url: /docs/csc-302/
-
-  - title: "Summer 2019"
-    children:
-      - title: "Fundamentals of Computer Science (110)"
-        url: /docs/csc-110/
-      - title: "System Administration and Security (586)"
-        url: /docs/csc-586/
+      - title: "Operating Systems (331)"
+        url: /docs/csc-331/
+      - title: "Distributed and Cluster Computing (496)"
+        url: /docs/csc-466/
 
   - title: "Courses Taught"
     children:
-    - title: "Fundamentals of Computer Science (110)"
-      url: https://github.com/linhbngo/Fundamentals-of-Computer-Science
-    - title: "Computer Security II (302)"
-      url: https://github.com/linhbngo/Computer-Security
-    - title: "Operating Systems (331)"
-      url: /docs/csc-331/
-    - title: "Programming I (512)"
-      url: /docs/csc-512/
-    - title: "Data Structures (516)"
-      url: /docs/csc-516/
-    - title: "Cloud Computing (496)"
-      url: /docs/csc-496-2/
-    - title: "Distributed and Cluster Computing (496)"
-      url: https://github.com/linhbngo/Distributed-and-Cluster-Computing
+      - title: "Fundamentals of Computer Science (110)"
+        url: /docs/csc-110/
+      - title: "Computer Security II (302)"
+        url: /docs/csc-302/
+      - title: "Operating Systems (331)"
+        url: /docs/csc-331/
+      - title: "Cloud Computing (496)"
+        url: /docs/csc-496/
+      - title: "Distributed and Cluster Computing (496)"
+        url: /docs/csc-466/
+      - title: "Programming I (512)"
+        url: /docs/csc-512/
+      - title: "Data Structures (516)"
+        url: /docs/csc-516/
+      - title: "System Administration and Security (586)"
+        url: /docs/csc-586/
