@@ -7,16 +7,6 @@ sidebar:
 toc: true
 ---
 
-### Instructor
-
-- Instructor: Linh B. Ngo, Ph.D.
-- Email: LNGO *at* WCUPA *dot* EDU
-- Office: 138 UNA (25 University Avenue)
-- Office Hours:
-    - TR 4:00PM to 6:00PM
-    - By appointment
-- Office Phone: (610) 436 2595
-
 ### Course Description
 
 Introduction to the fundamentals of computer science. Topics include surveys of the

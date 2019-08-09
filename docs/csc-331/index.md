@@ -30,7 +30,7 @@ run by the computer hardware. This will lead to more efficient, stable, and secu
 
 - Students will be able to apply mathematical foundations, algorithmic principles, and computer science theory.
 
-- Students will be able to to design, implement and evaluate a computer-based system, process, component, or program to meet desired needs.
+- Students will be able to design, implement and evaluate a computer-based system, process, component, or program to meet desired needs.
 
 
 ### Important Dates

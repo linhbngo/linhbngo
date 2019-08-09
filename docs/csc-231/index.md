@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Introduction to Computer Systems
-permalink: /docs/csc-243/
+permalink: /docs/csc-231/
 sidebar:
   nav: "docs"
 toc: true
@@ -67,7 +67,7 @@ Make sure that your laptop is fully charged for the duration of the class (or co
 As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
 
 - Virtual Environment: Oracle VirtualBox
-- Other software packages will be specified and installed insite the CentOS virtual machine as needed.
+- Other software packages will be specified and installed inside the CentOS virtual machine as needed.
 
 
 ### Course Materials

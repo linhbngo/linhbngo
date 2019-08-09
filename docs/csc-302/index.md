@@ -7,18 +7,6 @@ sidebar:
 toc: true
 ---
 
-### Instructor
-
-- Instructor: Linh B. Ngo, Ph.D.
-- Email: LNGO *at* WCUPA *dot* EDU
-- Office: 144 UNA (25 University Avenue)
-- Office Hours:
-    - MT 2:00PM to  4:00PM
-    - W 11:00AM to 12:00PM
-    - By appointment
-- Office Phone: (610) 436 2595
-
-
 ### Course Description
 
 - TBD
