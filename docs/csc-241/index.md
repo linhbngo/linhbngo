@@ -108,11 +108,10 @@ As laptop style and model can vary, the following common (and free) software env
 
 Grades will be based on the following distribution:
 
-Assignments: 35% (7 homework assignments)
-Labs: 25% (5 in-class labs)
-Quiz: 20% (10 in-class quizzes)
-Final Exam (comprehensive): 15%
-Participation: 5%
+- Assignments: 60% (5-7 homework assignments)
+- Quiz: 20% (10 in-class quizzes)
+- Final Exam (comprehensive): 15%
+- Participation (Attendance): 5%
 
 Letter grades are assigned according to the following scale:
 
