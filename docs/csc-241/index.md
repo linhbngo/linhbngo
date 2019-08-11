@@ -80,8 +80,7 @@ As laptop style and model can vary, the following common (and free) software env
   - Pass by Reference versus Pass by Value
   - Buffer
 - Algorithm Analysis
-  - Computational Complexity
-  - Insertion Sort
+  - Insertion Sort and Computational Complexity
   - Merge Sort
   - Quick Sort
   - Best/Worst/Average Case Behavior
