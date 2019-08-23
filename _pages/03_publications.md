@@ -5,7 +5,11 @@ permalink: /publications/
 author_profile: true
 ---
 
-DeFever, R. S., Hanger, W., Sarupria, S., Kilgannon, J., Apon, A. W., & **Ngo, L. B**. (2019, July). Building A Scalable Forward Flux Sampling Framework using Big Data and HPC. In *Proceedings of the Practice and Experience in Advanced Research Computing Conference Series: Rise of the Machines (learning)* (pp. 1-8). ACM.
+Khan, S. M., Chowdhury, M., **Ngo, L. B.**, & Apon, A. (2020). Multi-class Twitter Data Categorization and Geocoding with a Novel Computing Framework. *Cities*, 26, 102410.
+
+**Ngo, L. B.**, Cui, L., Chen ,S. (2019, April). Computing Infrastructures to Support Cybersecurity Education.  In *Proceedings of the 34th Annual Spring Conference of the Pennsylvania Computer and Information Science Educators (PACISE)*.
+
+DeFever, R. S., Hanger, W., Sarupria, S., Kilgannon, J., Apon, A. W., & **Ngo, L. B.** (2019, July). Building A Scalable Forward Flux Sampling Framework using Big Data and HPC. In *Proceedings of the Practice and Experience in Advanced Research Computing Conference Series: Rise of the Machines (learning)* (pp. 1-8). ACM.
 
 **Ngo, L. B.**, & Denton, J. (2019). Using CloudLab as a Scalable Platform for Teaching Cluster Computing. Journal of Computational Science, 10(1).
 
