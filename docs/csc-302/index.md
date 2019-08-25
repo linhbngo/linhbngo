@@ -9,24 +9,30 @@ toc: true
 
 ### Course Description
 
-- TBD
-
-### Important Dates
-
-- TBD
+- This course will provide an introduction to critical and diverse topics in computer security, such as security requirements, attack models, cryptography, authentication, system security, etc.
 
 ### Course Requirements
+
+- CSC301 Computer Security I
 
 ### Course Materials
 
 ### Grading
+
+Grades will be based on the following distribution:
+
+- Assignment (In-class and take-home labs): 50%
+- Exam 1: 15%
+- Exam 2: 10% (Comprehensive)
+- Quiz: 20%
+- Participation (Attendance): 5%
 
 
 ### Tentative Course Outline
 
 - Introduction
   - [Overview of course syllabus](http://bit.ly/2XR43FD)
-  - Introduction of computer security
+  - [Introduction of computer security](http://bit.ly/2KTBpvs)
   - Introduction to SEED platform
   - Linux reviews
 - Software Security
@@ -38,14 +44,11 @@ toc: true
   - Format String Vulnerability
   - Race Condition Vulnerability
   - The Dirty COW Race Condition Attack
-- Web Security
-  - Cross Site Request Forgery
-  - Database in Web Application
-  - SQL Injection Attack Lab
 - Network Security
   - Packet Sniffing and Spoofing
   - Attacks on the TCP Protocols
   - Firewall
+- Cryptography
 
 ### Class Policy
 
