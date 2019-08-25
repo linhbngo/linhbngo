@@ -33,8 +33,8 @@ Grades will be based on the following distribution:
 - Introduction
   - [Overview of course syllabus](http://bit.ly/2XR43FD)
   - [Introduction of computer security](http://bit.ly/2KTBpvs)
-  - Introduction to SEED platform
-  - Linux reviews
+  - [Introduction to SEED platform](http://bit.ly/2zoiJ0p)
+  - [Introduction to Linux](http://bit.ly/2HoUoMr)
 - Software Security
   - Set-UID Programs
   - Environment Variables
