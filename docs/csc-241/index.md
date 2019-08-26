@@ -55,7 +55,7 @@ Make sure that your laptop is fully charged for the duration of the class (or co
 As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
 
 - Java SDK 1.8.0
-- Atom Text Editor (https://atom.io)  
+- Atom Text Editor (https://atom.io)
 - Git (https://git-scm.com/downloads)
 - Optional:
   - Github Desktop for Mac and Windows (https://desktop.github.com/)
@@ -80,7 +80,7 @@ As laptop style and model can vary, the following common (and free) software env
 - [Setup Environment](http://bit.ly/2Z9AD6p)
 - [Introduction and Overview](http://bit.ly/2Nr5nIY)
 - Algorithm Analysis
-  - Insertion Sort and Computational Complexity
+  - [Insertion Sort and Computational Complexity](http://bit.ly/326EzSa)
   - Merge Sort
   - Quick Sort
   - Best/Worst/Average Case Behavior
