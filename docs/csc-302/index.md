@@ -35,9 +35,10 @@ Grades will be based on the following distribution:
   - [Introduction of computer security](http://bit.ly/2KTBpvs)
   - [Introduction to SEED platform](http://bit.ly/2zoiJ0p)
   - [Introduction to Linux](http://bit.ly/2HoUoMr)
-- Software Security
-  - Set-UID Programs
+- System Security
+  - [Set-UID Programs](http://bit.ly/346ocHl)
   - Environment Variables
+- Software Security
   - Program Memory Layout
   - [Buffer Overflow](http://bit.ly/2SmQcAY)
   - Return-to-libc Attack
