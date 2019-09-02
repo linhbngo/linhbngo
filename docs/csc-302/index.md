@@ -37,7 +37,7 @@ Grades will be based on the following distribution:
   - [Introduction to Linux](http://bit.ly/2HoUoMr)
 - System Security
   - [Set-UID Programs](http://bit.ly/346ocHl)
-  - Environment Variables
+  - [Environment Variables](http://bit.ly/2lxUKIg)
 - Software Security
   - Program Memory Layout
   - [Buffer Overflow](http://bit.ly/2SmQcAY)
