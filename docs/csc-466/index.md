@@ -70,7 +70,7 @@ As laptop style and model can vary, the following common (and free) software env
   - [Introduction to XSEDE](http://bit.ly/2MQDxFC)
   - [Introduction to Linux](http://bit.ly/2lziJXv)
   - [Introduction to C programming](http://bit.ly/2jYkSMf)
-  - [Introduction to Message Passing Interface (MPI)]()
+  - [Introduction to Message Passing Interface (MPI)](http://bit.ly/2lyHTWe)
 - Parallel and Distributed File Systems
   - [Introduction to Parallel and Distributed File Systems]()
   - [OrangeFS]()
