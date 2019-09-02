@@ -68,8 +68,8 @@ As laptop style and model can vary, the following common (and free) software env
   - [The demand for computational speed](http://bit.ly/2yOWMr3)
   - [Introduction to Parallel and Distributed Computing](http://bit.ly/2TeTlmQ)
   - [Introduction to XSEDE](http://bit.ly/2MQDxFC)
-  - [Introduction to Linux](http://bit.ly/2GQ7x0x)
-  - [Introduction to C programming]()
+  - [Introduction to Linux](http://bit.ly/2lziJXv)
+  - [Introduction to C programming](http://bit.ly/2jYkSMf)
   - [Introduction to Message Passing Interface (MPI)]()
 - Parallel and Distributed File Systems
   - [Introduction to Parallel and Distributed File Systems]()
