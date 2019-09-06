@@ -39,7 +39,6 @@ Grades will be based on the following distribution:
   - [Set-UID Programs](http://bit.ly/346ocHl)
   - [Environment Variables](http://bit.ly/2lxUKIg)
 - Software Security
-  - Program Memory Layout
   - [Buffer Overflow](http://bit.ly/2SmQcAY)
   - Return-to-libc Attack
   - Format String Vulnerability
