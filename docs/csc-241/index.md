@@ -79,9 +79,11 @@ As laptop style and model can vary, the following common (and free) software env
 - [Syllabus](http://bit.ly/2MyfkVt)
 - [Setup Environment](http://bit.ly/2Z9AD6p)
 - [Introduction and Overview](http://bit.ly/2Nr5nIY)
+- [Interacting with Java via terminal](http://bit.ly/2kybFuh)
 - Algorithm Analysis
   - [Insertion Sort and Computational Complexity](http://bit.ly/326EzSa)
-  - Merge Sort
+  - [From algorithm to implementation](http://bit.ly/2lCMmr7)
+  - [Merge Sort](http://bit.ly/2k5zrNW)
   - Quick Sort
   - Best/Worst/Average Case Behavior
 - Lists
