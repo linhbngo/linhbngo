@@ -86,7 +86,7 @@ As laptop style and model can vary, the following common (and free) software env
   - [Merge Sort](http://bit.ly/2k5zrNW)
   - [Growth of Function](http://bit.ly/2kCGBtx)
   - [Divide and Conquer](http://bit.ly/2ki6bnd)
-  - Quick Sort
+  - [Quick Sort](http://bit.ly/2kWV3wk)
 - Lists
   - Linked List
   - Doubly Linked List
