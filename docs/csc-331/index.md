@@ -99,7 +99,7 @@ As laptop style and model can vary, the following common (and free) software env
     - [Process API](http://bit.ly/2YMnBL3)
     - [Limited Direct Execution](http://bit.ly/2KmYd6M)
   - CPU Scheduling
-    - [Introduction to Scheduling](https://docs.google.com/presentation/d/1tcFiERHNQMNoX4IdpHe95pBYkA86ZPUzYrZXP_HjSnE/edit?usp=sharing)
+    - [Introduction to Scheduling](http://bit.ly/2mzKOyN)
     - [Introduction to GDB]({{ "/docs/csc-331/intro_gdb/" | relative_url }})
     - [Setup External Access to VM](https://docs.google.com/presentation/d/1R6er9r04ugwN1c0M1q_TOobqWyJ3XToEsbHOtcpi19E/edit?usp=sharing)
     - [Introduction to Scheduling Part 2](https://docs.google.com/presentation/d/1bgDV6pETFaQ_cxLTkkxJmVyz_GoA_ZgfgKJ8Hl5snhM/edit?usp=sharing)

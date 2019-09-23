@@ -40,7 +40,7 @@ Grades will be based on the following distribution:
   - [Environment Variables](http://bit.ly/2lxUKIg)
 - Software Security
   - [Buffer Overflow](http://bit.ly/2SmQcAY)
-  - Return-to-libc Attack
+  - [Return-to-libc Attack](http://bit.ly/2l1gEDS)
   - Format String Vulnerability
   - Race Condition Vulnerability
   - The Dirty COW Race Condition Attack
