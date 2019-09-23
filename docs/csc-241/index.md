@@ -84,8 +84,9 @@ As laptop style and model can vary, the following common (and free) software env
   - [Insertion Sort and Computational Complexity](http://bit.ly/326EzSa)
   - [From algorithm to implementation](http://bit.ly/2lCMmr7)
   - [Merge Sort](http://bit.ly/2k5zrNW)
+  - [Growth of Function](http://bit.ly/2kCGBtx)
+  - [Divide and Conquer](http://bit.ly/2ki6bnd)
   - Quick Sort
-  - Best/Worst/Average Case Behavior
 - Lists
   - Linked List
   - Doubly Linked List
