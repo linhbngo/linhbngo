@@ -72,7 +72,7 @@ As laptop style and model can vary, the following common (and free) software env
   - [Introduction to C programming](http://bit.ly/2jYkSMf)
   - [Introduction to Message Passing Interface (MPI)](http://bit.ly/2lyHTWe)
 - Parallel and Distributed File Systems
-  - [Introduction to Parallel and Distributed File Systems]()
+  - [Introduction to Parallel and Distributed File Systems](http://bit.ly/2mjSKnn)
   - [OrangeFS]()
   - [LustreFS]()
   - [Hadoop Distributed File System - HDFS]()
@@ -94,8 +94,6 @@ As laptop style and model can vary, the following common (and free) software env
 Grades will be based on the following distribution:
 
 - Assignments: 60%
-  - 1 individual assignment (15%)
-  - 1 project-based assignments (45%): 3 deliverables at 15% each
 - Exam:
   - Exam 1: 15%
   - Exam 2: 10% (Comprehensive)
