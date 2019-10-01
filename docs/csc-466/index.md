@@ -73,8 +73,8 @@ As laptop style and model can vary, the following common (and free) software env
   - [Introduction to Message Passing Interface (MPI)](http://bit.ly/2lyHTWe)
 - Parallel and Distributed File Systems
   - [Introduction to Parallel and Distributed File Systems](http://bit.ly/2mjSKnn)
-  - [OrangeFS]()
-  - [LustreFS]()
+  - [OrangeFS](http://bit.ly/2oU3nP7)
+  - [LustreFS](http://bit.ly/2o8S6do)
   - [Hadoop Distributed File System - HDFS]()
 - High Performance and Data-Intensive Computing
   - [MPI: Pleasantly Parallel Computation]()

@@ -41,7 +41,7 @@ Grades will be based on the following distribution:
 - Software Security
   - [Buffer Overflow](http://bit.ly/2SmQcAY)
   - [Return-to-libc Attack](http://bit.ly/2l1gEDS)
-  - Format String Vulnerability
+  - [Format String Vulnerability](http://bit.ly/2mvy8ci)
   - Race Condition Vulnerability
   - The Dirty COW Race Condition Attack
 - Network Security

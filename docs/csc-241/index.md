@@ -87,6 +87,7 @@ As laptop style and model can vary, the following common (and free) software env
   - [Growth of Function](http://bit.ly/2kCGBtx)
   - [Divide and Conquer](http://bit.ly/2ki6bnd)
   - [Quick Sort](http://bit.ly/2kWV3wk)
+  - [More on Quick Sort](http://bit.ly/2oeRgfk)
 - Lists
   - Linked List
   - Doubly Linked List
