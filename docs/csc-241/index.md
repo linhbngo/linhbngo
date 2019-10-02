@@ -94,7 +94,7 @@ As laptop style and model can vary, the following common (and free) software env
   - ArrayList
   - Vector
 - Stacks and Queues
-  - Stacks
+  - [Stacks](http://bit.ly/2nswKb7)
   - Queues
 - Trees
   - Binary Trees (Binary Search Trees)
