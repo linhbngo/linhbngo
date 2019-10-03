@@ -6,6 +6,12 @@ sidebar:
   nav: "docs"
 ---
 
+**Spring 2020**
+- [CSC 496/581: Applications of Parallel Computers]({{ "/docs/csc-468/" | relative_url }})
+
+**Winter 2019**
+- [CSC 496/581: Big Data Engineering]({{ "/docs/csc-467/" | relative_url }})
+
 **Fall 2019**
 
 - [CSC 241: Data Structures and Algorithms]({{ "/docs/csc-241/" | relative_url }})
