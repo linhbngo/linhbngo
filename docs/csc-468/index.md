@@ -1,7 +1,7 @@
 ---
 layout: single
-title: Distributed and Cluster Computing
-permalink: /docs/csc-466/
+title: Applications of Parallel Computers
+permalink: /docs/csc-468/
 sidebar:
   nav: "docs"
 toc: true
@@ -9,9 +9,7 @@ toc: true
 
 ### Course Description
 
-This course will investigate issues in modern distributed platforms by examining a number of important technologies in the areas of distributed computing in computational and data-intensive problems.
-
-By the end of the course, each student should understand and be able to apply several specific tradeoffs for parallel application and algorithms development, performance, and management on a number of distributed platforms.
+This course introduces both graduate and advanced undergraduate students from diverse departments to knowledge and techniques regarding efficient and productive usage of parallel computers. In other words, students learn how to write programs that run fast while minimizing programming effort. The latter is increasingly important since essentially all computers are (becoming) parallel, from supercomputers to laptops. So beyond teaching the basics about parallel computer architectures and programming languages, the course emphasizes commonly used patterns that appear in essentially all programs that need to run fast. The patterns include common computations (e.g. linear algebra, graph algorithms, structured grids ...) and ways to easily compose these into larger programs. We show how to recognize these patterns in a variety of practical problems, efficient (sometimes optimal) algorithms for implementing them, how to find existing efficient implementations of these patterns when available, and how to compose these patterns into larger applications. We do this in the context of the most important parallel programming models today: shared memory, distributed memory, GPUs, and cloud computing (eg MapReduce and Hadoop). We also present a variety of useful tools for debugging correctness and performance of parallel programs. Finally, we have a variety of guest lectures by a variety of experts, including parallel climate modeling, astrophysics, and other topics.
 
 ### Learning Objectives
 
@@ -24,20 +22,11 @@ By the end of the course, each student should understand and be able to apply se
 
 **Prerequisites**
 
-- Working knowledge of C/C++, Java, and Linux OS
-- Knowledge of core data structures and algorithms (CSC 241)
+The course is intended to be useful for students from many departments and with different backgrounds, and supplemental introductory materials will be provided to introduce students to programming languages and techniques used through the course. Eventually, the course will reach a level where it is assumed that students attain/have reasonable programming skills in a conventional (non-parallel) language, as well as enough mathematical skills to understand the problems and algorithmic solutions presented
 
 **Textbook**
 
 There is no textbook requirement for the course.
-
-**Software requirements**
-
-As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
-
-- Virtual Environment: Oracle VirtualBox
-- Other software packages will be specified and installed inside the CentOS virtual machine as needed.
-
 
 ### Course Materials
 
@@ -52,32 +41,36 @@ As laptop style and model can vary, the following common (and free) software env
 
 ### Tentative Course Outline
 
-
-- [Syllabus](http://bit.ly/33kHZ5t)
-- Cluster of Computers
-  - [The demand for computational speed](http://bit.ly/2yOWMr3)
-  - [Introduction to Parallel and Distributed Computing](http://bit.ly/2TeTlmQ)
-  - [Introduction to XSEDE](http://bit.ly/2MQDxFC)
-  - [Introduction to Linux](http://bit.ly/2lziJXv)
-  - [Introduction to C programming](http://bit.ly/2jYkSMf)
-  - [Introduction to Message Passing Interface (MPI)](http://bit.ly/2lyHTWe)
-- Parallel and Distributed File Systems
-  - [Introduction to Parallel and Distributed File Systems](http://bit.ly/2mjSKnn)
-  - [OrangeFS](http://bit.ly/2oU3nP7)
-  - [LustreFS](http://bit.ly/2o8S6do)
-  - [Hadoop Distributed File System - HDFS](http://bit.ly/2oB0XEO)
-- High Performance and Data-Intensive Computing
-  - [MPI: Pleasantly Parallel Computation]()
-  - [MPI: Partitioning and Divide-and-Conquer]()
-  - [MPI: Synchronous Computing]()
-  - [MPI: Parallel I/O]()
-  - [Introduction to MapReduce Programming Paradigm]()
-- Job Scheduling on Cluster of Computers
-  - [Scheduling Clusters of Computers]()
-  - [SLURM]()
-- Complex Distributed Systems
-  - [Memory-centric Data Intensive Computing]()
-
+- [Introduction]()
+- [Single Processor Machines: Memory Hierarchies and Processor Features]()
+- [Optimizing Matrix Multiply (cont), Introduction to Data Parallelism]()
+- [Shared Memory Parallelism]()
+- [Roofline and Performance Modeling]()
+- [Sources of Parallelism and Locality (Part 1)]()
+- [Sources of Parallelism and Locality (Part 2)]()
+- [An Introduction to CUDA/OpenCL and Graphics Processors (GPUs)]()
+- [Distributed Memory Machines and Programming]()
+- [Advanced MPI and Collective Communication Algorithms]()
+- [UPC++: Partitioned Global Address Space Languages]()
+- [Cloud and big data]()
+- [Parallel Matrix Multiply]()
+- [Dense Linear Algebra]()
+- [Sparse-Matrix-Vector-Multiplication and Iterative Solvers]()
+- [Structured Grids]()
+- [Machine Learning Part 1 (Supervised Learning)]()
+- [Scaling Deep Neural Network Training]()
+- [Machine Learning Part 2 (Unsupervised Learning)]()
+- [Graph Partitioning]()
+- [Graph Algorithms]()
+- [Fast Fourier Transform]()
+- [Climate Modeling]()
+- [Sorting and Searching]()
+- [Dynamic Load Balancing]()
+- [Hierarchical Methods for the N-Body Problem]()
+- [Computational Biology]()
+- [Cosmology]()
+- [Supercomputers & Superintelligence]()
+- [Quantum Computing]()
 
 ### Grading
 

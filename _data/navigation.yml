@@ -16,6 +16,17 @@ main:
     url: /blog/
 
 docs:
+
+  - title: "Spring 2020"
+    children:
+      - title: "Application of Parallel Computers"
+        url: /docs/csc-468
+
+  - title: "Winter 2019"
+    children:
+      - title: "Big Data Engineering (496)"
+        url: /docs/csc-467/
+
   - title: "Fall 2019"
     children:
       - title: "Data Structures and Algorithms (241)"
