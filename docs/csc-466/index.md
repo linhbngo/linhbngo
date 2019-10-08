@@ -67,7 +67,7 @@ As laptop style and model can vary, the following common (and free) software env
   - [LustreFS](http://bit.ly/2o8S6do)
   - [Hadoop Distributed File System - HDFS](http://bit.ly/2oB0XEO)
 - High Performance and Data-Intensive Computing
-  - [MPI: Pleasantly Parallel Computation]()
+  - [MPI: Pleasantly Parallel Computation](http://bit.ly/2Vmpj1z)
   - [MPI: Partitioning and Divide-and-Conquer]()
   - [MPI: Synchronous Computing]()
   - [MPI: Parallel I/O]()
