@@ -14,6 +14,8 @@ sidebar:
 
 **Fall 2019**
 
+Office Hours: M (12:30PM - 2:00PM), TR (2:30PM - 3:30PM), W (11:00AM - 12:30PM).
+
 - [CSC 241: Data Structures and Algorithms]({{ "/docs/csc-241/" | relative_url }})
 - [CSC 302: Computer Security II]({{ "/docs/csc-302/" | relative_url }})
 - [CSC 331: Operating Systems]({{ "/docs/csc-331/" | relative_url }})
