@@ -68,7 +68,7 @@ As laptop style and model can vary, the following common (and free) software env
   - [Hadoop Distributed File System - HDFS](http://bit.ly/2oB0XEO)
 - High Performance and Data-Intensive Computing
   - [MPI: Pleasantly Parallel Computation](http://bit.ly/2Vmpj1z)
-  - [MPI: Partitioning and Divide-and-Conquer]()
+  - [MPI: Partitioning and Divide-and-Conquer](http://bit.ly/310kLPy)
   - [MPI: Synchronous Computing]()
   - [MPI: Parallel I/O]()
   - [Introduction to MapReduce Programming Paradigm]()

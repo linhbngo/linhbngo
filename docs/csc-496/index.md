@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Introduction to Cloud Computing
-permalink: /docs/csc-496-2/
+permalink: /docs/csc-496/
 sidebar:
   nav: "docs"
 toc: true
