@@ -95,7 +95,7 @@ As laptop style and model can vary, the following common (and free) software env
   - Vector
 - Stacks and Queues
   - [Stacks](http://bit.ly/2nswKb7)
-  - Queues
+  - [Queues](http://bit.ly/2owI1aZ)
 - Trees
   - Binary Trees (Binary Search Trees)
   - AVL Trees
