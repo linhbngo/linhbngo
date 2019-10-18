@@ -89,10 +89,8 @@ As laptop style and model can vary, the following common (and free) software env
   - [Quick Sort](http://bit.ly/2kWV3wk)
   - [More on Quick Sort](http://bit.ly/2oeRgfk)
 - Lists
-  - Linked List
+  - [Linked List/Array List/Vector](http://bit.ly/2MMiGl6)
   - Doubly Linked List
-  - ArrayList
-  - Vector
 - Stacks and Queues
   - [Stacks](http://bit.ly/2nswKb7)
   - [Queues](http://bit.ly/2owI1aZ)
