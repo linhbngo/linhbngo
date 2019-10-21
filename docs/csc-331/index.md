@@ -102,12 +102,11 @@ As laptop style and model can vary, the following common (and free) software env
     - [Introduction to Scheduling](http://bit.ly/2mzKOyN)
     - [Introduction to Scheduling Part 2](https://docs.google.com/presentation/d/1bgDV6pETFaQ_cxLTkkxJmVyz_GoA_ZgfgKJ8Hl5snhM/edit?usp=sharing)
     - [Introduction to GDB](http://bit.ly/2mjsPNj)
-    - [Setup External Access to VM](https://docs.google.com/presentation/d/1R6er9r04ugwN1c0M1q_TOobqWyJ3XToEsbHOtcpi19E/edit?usp=sharing)    
   - Memory Management
-    - [Address Space](https://docs.google.com/presentation/d/1IbHL88de17-9nFQrSRJaWYk_cfqmrsZl50kQ4sajtnk/edit?usp=sharing)
-    - [Paging](https://docs.google.com/presentation/d/1HReO9A0PZV20fK_jpNEqC327DUeVTwmBnWlW9jp-vuc/edit?usp=sharing)
-    - [Docker](https://docs.google.com/presentation/d/1eDafjXEP2z9AggEDK_88Y2ctdrpb-l70zm5KiM4DuwM/edit?usp=sharing)
-    - [TLB](https://docs.google.com/presentation/d/1bROMGY4_XGnSJtkW_PHCYLi-eyOmHDMRhgIxnlUdB88/edit?usp=sharing)
+    - [Address Space](http://bit.ly/2VHQi7Z)
+    - [Address Space Translation](http://bit.ly/2IVYLzb)
+    - [Paging](http://bit.ly/32vsFSC)
+    - [TLB](http://bit.ly/2pANXjk)
 - Concurrency
   - [Threads](https://docs.google.com/presentation/d/1TTInB1o19MzNHA3IaI0Jf60uuG6EeinAuWa9NARkKEk/edit?usp=sharing)
   - [Locks and Condition Variables](https://docs.google.com/presentation/d/1HNfq_Vht4C-X63nYVzz_0CWjPbuMmejAnmBswGYfvMg/edit?usp=sharing)
