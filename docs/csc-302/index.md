@@ -42,7 +42,7 @@ Grades will be based on the following distribution:
   - [Buffer Overflow](http://bit.ly/2SmQcAY)
   - [Return-to-libc Attack](http://bit.ly/2l1gEDS)
   - [Format String Vulnerability](http://bit.ly/2mvy8ci)
-  - Race Condition Vulnerability
+  - [Race Condition Vulnerability](http://bit.ly/2MwVIjd)
   - The Dirty COW Race Condition Attack
 - Network Security
   - Packet Sniffing and Spoofing
