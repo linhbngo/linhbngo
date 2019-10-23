@@ -100,7 +100,7 @@ As laptop style and model can vary, the following common (and free) software env
     - [Limited Direct Execution](http://bit.ly/2KmYd6M)
   - CPU Scheduling
     - [Introduction to Scheduling](http://bit.ly/2mzKOyN)
-    - [Introduction to Scheduling Part 2](https://docs.google.com/presentation/d/1bgDV6pETFaQ_cxLTkkxJmVyz_GoA_ZgfgKJ8Hl5snhM/edit?usp=sharing)
+    - [Introduction to Scheduling Part 2](http://bit.ly/2MIN8hz)
     - [Introduction to GDB](http://bit.ly/2mjsPNj)
   - Memory Management
     - [Address Space](http://bit.ly/2VHQi7Z)
@@ -108,7 +108,7 @@ As laptop style and model can vary, the following common (and free) software env
     - [Paging](http://bit.ly/32vsFSC)
     - [TLB](http://bit.ly/2pANXjk)
 - Concurrency
-  - [Threads](https://docs.google.com/presentation/d/1TTInB1o19MzNHA3IaI0Jf60uuG6EeinAuWa9NARkKEk/edit?usp=sharing)
+  - [Threads](http://bit.ly/2BCrsgI)
   - [Locks and Condition Variables](https://docs.google.com/presentation/d/1HNfq_Vht4C-X63nYVzz_0CWjPbuMmejAnmBswGYfvMg/edit?usp=sharing)
   - [Semaphores, Deadlock](https://docs.google.com/presentation/d/1Fb0Y2iHbauAdGtC6_A9AbdZSaqIv0Oofffg_KoU8UrA/edit?usp=sharing)
 - Persistence
