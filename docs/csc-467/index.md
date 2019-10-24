@@ -60,9 +60,10 @@ There is no textbook requirement for the course.
 
 Grades will be based on the following distribution:
 
-- Projects: 90%
-  - Project 1: 50%
+- Projects: 80%
+  - Project 1: 40%
   - Project 2: 40%
+- Quiz: 10%
 - Attendance: 10%
 
 Letter grades are assigned according to the following scale:
