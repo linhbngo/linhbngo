@@ -88,12 +88,12 @@ As laptop style and model can vary, the following common (and free) software env
   - [Divide and Conquer](http://bit.ly/2ki6bnd)
   - [Quick Sort](http://bit.ly/2kWV3wk)
   - [More on Quick Sort](http://bit.ly/2oeRgfk)
-- Lists
-  - [Linked List/Array List/Vector](http://bit.ly/2MMiGl6)
-  - Doubly Linked List
 - Stacks and Queues
   - [Stacks](http://bit.ly/2nswKb7)
   - [Queues](http://bit.ly/2owI1aZ)
+- Lists
+  - [Linked List/Array List/Vector](http://bit.ly/2MMiGl6)
+  - [Doubly Linked List](http://bit.ly/2JqyBF0)
 - Trees
   - Binary Trees (Binary Search Trees)
   - AVL Trees
