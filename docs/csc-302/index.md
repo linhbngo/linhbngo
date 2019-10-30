@@ -46,7 +46,7 @@ Grades will be based on the following distribution:
   - [The Dirty COW Race Condition Attack](http://bit.ly/2oXE9Qv)
 - Network Security
   - [Introducion to CloudLab](http://bit.ly/2pXYvcu)
-  - Packet Sniffing and Spoofing
+  - [Packet Sniffing and Spoofing](http://bit.ly/2PuLku3)
   - Attacks on the TCP Protocols
   - Firewall
 - Cryptography
