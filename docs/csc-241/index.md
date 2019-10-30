@@ -95,7 +95,7 @@ As laptop style and model can vary, the following common (and free) software env
   - [Linked List/Array List/Vector](http://bit.ly/2MMiGl6)
   - [Doubly Linked List](http://bit.ly/2JqyBF0)
 - Trees
-  - Binary Trees (Binary Search Trees)
+  - [Binary Trees (Binary Search Trees)](http://bit.ly/2No3iM9)
   - AVL Trees
   - Red-Black Trees
   - Heaps
