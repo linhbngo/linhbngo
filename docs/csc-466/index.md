@@ -69,9 +69,9 @@ As laptop style and model can vary, the following common (and free) software env
 - High Performance and Data-Intensive Computing
   - [MPI: Pleasantly Parallel Computation](http://bit.ly/2Vmpj1z)
   - [MPI: Partitioning and Divide-and-Conquer](http://bit.ly/310kLPy)
-  - [MPI: Synchronous Computing]()
+  - [MPI: Synchronous Computing](http://bit.ly/2o4bEzX)
+  - [Introduction to MapReduce Programming Paradigm](http://bit.ly/2BYwhRq)
   - [MPI: Parallel I/O]()
-  - [Introduction to MapReduce Programming Paradigm]()
 - Job Scheduling on Cluster of Computers
   - [Scheduling Clusters of Computers]()
   - [SLURM]()
