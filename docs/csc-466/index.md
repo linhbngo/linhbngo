@@ -71,6 +71,9 @@ As laptop style and model can vary, the following common (and free) software env
   - [MPI: Partitioning and Divide-and-Conquer](http://bit.ly/310kLPy)
   - [MPI: Synchronous Computing](http://bit.ly/2o4bEzX)
   - [Introduction to MapReduce Programming Paradigm](http://bit.ly/2BYwhRq)
+  - [Hadoop MapReduce: Debugging](http://bit.ly/34tuZtR)
+  - [Hadoop MapReduce: Optimization]()
+  - [Hadoop MapReduce: Simple Jar]()
   - [MPI: Parallel I/O]()
 - Job Scheduling on Cluster of Computers
   - [Scheduling Clusters of Computers]()
