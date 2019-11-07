@@ -112,7 +112,7 @@ As laptop style and model can vary, the following common (and free) software env
   - [Locks and Condition Variables](http://bit.ly/2MUfc1e)
   - [Semaphores, Deadlock](http://bit.ly/32Ye4PJ)
 - Persistence
-  - [I/O and Disks, Disk Scheduling](https://docs.google.com/presentation/d/1LMuyQeOK4Bz-r4H1XKJ_Sl5I7KRTBMbf9ZVPhDUfLqo/edit?usp=sharing)
+  - [I/O and Disks, Disk Scheduling](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/EfJtviy6AXNImxnwp0zcKMwBRHEmsvSre-Uu1tgqXHHj7g?e=RvYfvz)
   - [File Systems](https://docs.google.com/presentation/d/1gVoP704lM2BbX36lPpGJsC_O3v7nltp6WgoRI6Dyh6k/edit?usp=sharing)
   - [File System Implementation](https://docs.google.com/presentation/d/1IrJ9stkHG35pRhPbwZNl9f8NgHIgLY9J4GeKsv45Vx0/edit?usp=sharing)
   - [Journaling, LFS](https://docs.google.com/presentation/d/1F18HPuky5pm13qvCFUNjl7LZALsTcy9fa8Rmw-_izmE/edit?usp=sharing)
