@@ -43,9 +43,18 @@ There is no textbook requirement for the course.
 ### Tentative Course Outline
 
 
-- [Syllabus]()
-- [MapReduce Programming Paradigm]()
-- [Hadoop MapReduce]()
+- Syllabus
+  - [WCUPA](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/EZp_3pb2N3NFv4WuxU-pC8IBQ9TYTIRkhvfzxMsxK2ORbQ?e=dKKLsc)
+  - [non-WCUPA](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/EZp_3pb2N3NFv4WuxU-pC8IBF_og96teo0QSgg5732xY7Q?e=hYQ3Zm)
+- Big Data Overview
+  - [WCUPA](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/EYzjzRIPAFZIi8cNHmbToRIB0dy7s9Va0BTb9ShayeEYsQ?e=dKmEna)
+  - [non-WCUPA](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/EYzjzRIPAFZIi8cNHmbToRIBgPfKmJudw_ZKv5_RFTo4vg?e=X6JbUO)
+- MapReduce Programming Paradigm
+  - [WCUPA](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/EZrReUfF_nlJv0rhR0mlzPoBM6AS6xZ63KF253cK3vH1ng?e=DjTLEf)
+  - [non-WCUPA](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/EZrReUfF_nlJv0rhR0mlzPoBean2uvCLNVgleQGOX4bG2A?e=PggtI2)
+- Setup Docker-based Spark environment
+  - [Docker Desktop]()
+  - [Docker Toolbox for older Windows and Mac](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/EURHe8PH3VxPjmRT6WfoKg4B6KAGi9rK-doh23SgP4dbWQ?e=qh2Lgd)
 - [Data Parallel Computing with Spark]()
 - [MapReduce Programming Patterns]()
 - [SQL Query Processing]()
