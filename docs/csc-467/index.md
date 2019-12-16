@@ -53,7 +53,7 @@ There is no textbook requirement for the course.
   - [WCUPA](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/EZrReUfF_nlJv0rhR0mlzPoBM6AS6xZ63KF253cK3vH1ng?e=DjTLEf)
   - [non-WCUPA](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/EZrReUfF_nlJv0rhR0mlzPoBean2uvCLNVgleQGOX4bG2A?e=PggtI2)
 - Setup Docker-based Spark environment
-  - [Docker Desktop]()
+  - [Docker Desktop](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/EX94I2sihsRNuAl5ZvPgOxEBkc9NatJfJaDVgmrzroUZvw?e=k2vwtg)
   - [Docker Toolbox for older Windows and Mac](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/EURHe8PH3VxPjmRT6WfoKg4B6KAGi9rK-doh23SgP4dbWQ?e=qh2Lgd)
 - [Data Parallel Computing with Spark]()
 - [MapReduce Programming Patterns]()
