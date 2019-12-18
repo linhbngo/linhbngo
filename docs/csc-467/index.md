@@ -55,16 +55,17 @@ There is no textbook requirement for the course.
 - Setup Docker-based Spark environment
   - [Docker Desktop](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/EX94I2sihsRNuAl5ZvPgOxEBkc9NatJfJaDVgmrzroUZvw?e=k2vwtg)
   - [Docker Toolbox for older Windows and Mac](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/EURHe8PH3VxPjmRT6WfoKg4B6KAGi9rK-doh23SgP4dbWQ?e=qh2Lgd)
-- [Data Parallel Computing with Spark]()
+- Data Parallel Computing with Spark
   - [WCUPA](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/ESYPfGeiogNHox-uWU0BU7YB8ZmQrbQPlBY8IN1Uh1NfZQ?e=p4WcT6)
   - [non-WCUPA](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/ESYPfGeiogNHox-uWU0BU7YBvlfPvYIl1GxozFo9-lHJ9Q?e=kUxKxd)
-- [MapReduce Programming Patterns]()
-- [SQL Query Processing]()
-- [Introduction to Streaming Data Processing]()
-- [Message-Oriented Middleware: Kafka]()
-- [Distributed Data Stream Processing]()
-- [Distributed Machine Learning]()
-- [NoSQL Systems]()
+- [Spark on CloudLab](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/EYkKnkNgOq9MlkyOfVf99a8BULKWoWbuQqn_D9wO0pzHxg?e=if8vBp)
+- MapReduce Programming Patterns
+- SQL Query Processing
+- Introduction to Streaming Data Processing
+- Message-Oriented Middleware: Kafka
+- Distributed Data Stream Processing
+- Distributed Machine Learning
+- NoSQL Systems
 
 
 ### Grading
