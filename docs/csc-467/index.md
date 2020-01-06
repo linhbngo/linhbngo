@@ -59,8 +59,9 @@ There is no textbook requirement for the course.
   - [WCUPA](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/ESYPfGeiogNHox-uWU0BU7YB8ZmQrbQPlBY8IN1Uh1NfZQ?e=p4WcT6)
   - [non-WCUPA](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/ESYPfGeiogNHox-uWU0BU7YBvlfPvYIl1GxozFo9-lHJ9Q?e=kUxKxd)
 - [Spark on CloudLab](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/EYkKnkNgOq9MlkyOfVf99a8BULKWoWbuQqn_D9wO0pzHxg?e=if8vBp)
-- MapReduce Programming Patterns
 - SQL Query Processing
+  - [WCUPA](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/EbKtl8MjcOJIoyIKNGayvUkBLzhsQqWeAcvRttbUKPainQ?e=Wdu0gX)
+  - [non-WCUPA](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/EbKtl8MjcOJIoyIKNGayvUkBZy4pLqQUNmL3dcU0taB5Bg?e=1fEnp4)
 - Introduction to Streaming Data Processing
 - Message-Oriented Middleware: Kafka
 - Distributed Data Stream Processing
