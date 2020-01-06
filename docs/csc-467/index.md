@@ -63,6 +63,7 @@ There is no textbook requirement for the course.
   - [WCUPA](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/EbKtl8MjcOJIoyIKNGayvUkBLzhsQqWeAcvRttbUKPainQ?e=Wdu0gX)
   - [non-WCUPA](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/EbKtl8MjcOJIoyIKNGayvUkBZy4pLqQUNmL3dcU0taB5Bg?e=1fEnp4)
 - Introduction to Streaming Data Processing
+  - [WCUPA](https://wcupa-my.sharepoint.com/:p:/g/personal/lngo_wcupa_edu/EV4WiP2P5DpBgKw1mK0l2JIBf93S-y5Np7YeQjrdvROUwg?e=21wHPa)
 - Message-Oriented Middleware: Kafka
 - Distributed Data Stream Processing
 - Distributed Machine Learning
