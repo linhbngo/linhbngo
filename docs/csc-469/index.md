@@ -1,7 +1,7 @@
 ---
 layout: single
-title: Introduction to Cloud Computing
-permalink: /docs/csc-468/
+title: Applications of Parallel Computers
+permalink: /docs/csc-469/
 sidebar:
   nav: "docs"
 toc: true
@@ -9,14 +9,24 @@ toc: true
 
 ### Course Description
 
-This course provides an introductory overview to the technologies that enable cloud computing. Topics covered include basic concepts about cloud computing, and advanced technical concepts regarding virtualization, containerization, and orchestration.
+This course introduces both graduate and advanced undergraduate students from diverse departments to knowledge and techniques regarding efficient and productive usage of parallel computers. In other words, students learn how to write programs that run fast while minimizing programming effort. The latter is increasingly important since essentially all computers are (becoming) parallel, from supercomputers to laptops. So beyond teaching the basics about parallel computer architectures and programming languages, the course emphasizes commonly used patterns that appear in essentially all programs that need to run fast. The patterns include common computations (e.g. linear algebra, graph algorithms, structured grids ...) and ways to easily compose these into larger programs. We show how to recognize these patterns in a variety of practical problems, efficient (sometimes optimal) algorithms for implementing them, how to find existing efficient implementations of these patterns when available, and how to compose these patterns into larger applications. We do this in the context of the most important parallel programming models today: shared memory, distributed memory, GPUs, and cloud computing (eg MapReduce and Hadoop). We also present a variety of useful tools for debugging correctness and performance of parallel programs. Finally, we have a variety of guest lectures by a variety of experts, including parallel climate modeling, astrophysics, and other topics.
 
-### Important Dates
+### Learning Objectives
 
-- Tue, Jan 28: Last Day of Add/Drop
-- Mon, Mar 09-15: Spring Break
-- Tue, Mar 24, 2019: Last Day of Course Withdrawal
-- TBD: FINAL EXAM
+- Students will be able to apply mathematical foundations, algorithmic principles, and computer science theory in the modeling and design of computer-based systems in a way that demonstrates comprehension of the tradeoffs involved in design choices.
+- Students will be able to analyze a problem, and identify and define the computing requirements appropriate to its solution.
+- Students will be able to apply design and development principles in the construction of large-scale computing systems.
+- Students will be able to function effectively on teams to accomplish a common goal.
+
+### Course Requirements
+
+**Prerequisites**
+
+The course is intended to be useful for students from many departments and with different backgrounds, and supplemental introductory materials will be provided to introduce students to programming languages and techniques used through the course. Eventually, the course will reach a level where it is assumed that students attain/have reasonable programming skills in a conventional (non-parallel) language, as well as enough mathematical skills to understand the problems and algorithmic solutions presented
+
+**Textbook**
+
+There is no textbook requirement for the course.
 
 ### Course Materials
 
@@ -28,50 +38,45 @@ This course provides an introductory overview to the technologies that enable cl
 
 - Google Scholar is another excellent source for downloading preprint or open-source versions of papers.
 
-### Software requirements
-As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
-
-- Virtual Environment: Oracle VirtualBox
-- Other software packages will be specified and installed inside the virtual OS as needed.
-
-### Git
-
-- The class materials, including source codes, will be disseminated via Git. Being able to use Git is a critical skill for most, if not all software developers and/or IT professionals. There are many tutorials already available online for Git. Some of the more helpful ones include Github's, "the simple guide", and Atlassian's);
-
-- It would be a mistake if you just attempt to access the class materials via the web browser. "This is a mistake. Just learn Git. The command line interface is faster and more powerful, and you're going to need to learn it at some point in your life. Why not today?" - Dr. Jacob Sorber, Clemson University.
-
 
 ### Tentative Course Outline
 
-- [Syllabus]({{ "/docs/csc-468/syllabus_slide/" | relative_url }})
-- Basic Concepts
-  - [Cloud Computing: Introduction, Essential Characteristics, and Enabling Technologies]({{ "/docs/csc-496-2/intro_cloud/" | relative_url }})
-  - [Cloud Computing: Service Models and Depoyment Models]({{ "/docs/csc-496-2/service_deployment/" | relative_url }})
-  - Cloud Infrastructure through Common Cloud Providers:
-    - [CloudLab (academic)]({{ "/docs/csc-496-2/intro_cloudlab/" | relative_url }})
-    - Google Compute Engine
-    - Amazon Web Services
-- Virtualization and Containerization
-  - [Introduction to Virtualization in Cloud Computing](https://docs.google.com/presentation/d/1Qotr8-cG6aq-zHFVSVihHwXv5KdUzRtrtVfArgUPbK4/edit?usp=sharing)
-  - [KVM, Docker, and Singularity](https://docs.google.com/presentation/d/1vxfa-9dqCtlXBjmdRga7wO9Qm2RJfqWS2oPTFOjzgt8/edit?usp=sharing)
-  - [CloudLab: Programmatically Deployment of Infrastructure](https://github.com/linhbngo/intro-to-cloudlab)
-  - [CloudLab: Instantiating an OpenStack experiment](https://docs.google.com/presentation/d/1SdNmgORNbGJ6vKA5qUIVDthEEEGSeaXV-8ISHAplDCI/edit?usp=sharing)
-  - [CloudLab: Programmatic Deployment of Infrastructures](https://docs.google.com/presentation/d/1CBPd74FU9Q6-kthcAI0_SMQlzB1nVE7MiGM4tYmeWd8/edit?usp=sharing)
-  - [Introduction to Docker Part 1](https://docs.google.com/presentation/d/1CiWOstVISUezXfzzuKvVXZW97Dm7595rviVDRYfYzPE/edit?usp=sharing)
-  - [Introduction to Docker Part 2](https://docs.google.com/presentation/d/1Qd0yirV5GCephFnnv9V4dnpiEMV-YABDXZ9Bf7IV7iE/edit?usp=sharing)
-- Containers Orchestration
-  - [Docker Swarm Part 1](https://docs.google.com/presentation/d/15VTfgzvjQp1hVK5CGstrdBWfQ2DeOnR42YXc8hG5clE/edit?usp=sharing)
-  - [Docker Swarm Part 2](https://docs.google.com/presentation/d/1IfaHpUUzbrFG6GrjzugJzyTJzDm54iO-UBj7ul2Ht5o/edit?usp=sharing)
-  - [Borg and Kubernetes](https://docs.google.com/presentation/d/1mGDDWlzvAysEMKXkh_xTD43zsB-v5na8IPy_mbwvpY8/edit?usp=sharing)
-  - [Kubernetes](https://docs.google.com/presentation/d/1FmWWNXn-2OCNJva6kB2g09jcRwPntGrl_3dM2nC8t4M/edit?usp=sharing)
+- [Introduction]()
+- [Single Processor Machines: Memory Hierarchies and Processor Features]()
+- [Optimizing Matrix Multiply (cont), Introduction to Data Parallelism]()
+- [Shared Memory Parallelism]()
+- [Roofline and Performance Modeling]()
+- [Sources of Parallelism and Locality (Part 1)]()
+- [Sources of Parallelism and Locality (Part 2)]()
+- [An Introduction to CUDA/OpenCL and Graphics Processors (GPUs)]()
+- [Distributed Memory Machines and Programming]()
+- [Advanced MPI and Collective Communication Algorithms]()
+- [UPC++: Partitioned Global Address Space Languages]()
+- [Cloud and big data]()
+- [Parallel Matrix Multiply]()
+- [Dense Linear Algebra]()
+- [Sparse-Matrix-Vector-Multiplication and Iterative Solvers]()
+- [Structured Grids]()
+- [Machine Learning Part 1 (Supervised Learning)]()
+- [Scaling Deep Neural Network Training]()
+- [Machine Learning Part 2 (Unsupervised Learning)]()
+- [Graph Partitioning]()
+- [Graph Algorithms]()
+- [Fast Fourier Transform]()
+- [Climate Modeling]()
+- [Sorting and Searching]()
+- [Dynamic Load Balancing]()
+- [Hierarchical Methods for the N-Body Problem]()
+- [Computational Biology]()
+- [Cosmology]()
+- [Supercomputers & Superintelligence]()
+- [Quantum Computing]()
 
 ### Grading
 
 Grades will be based on the following distribution:
 
 - Assignments: 60%
-  - 1 individual assignment (15%)
-  - 1 project-based assignments (45%): 3 deliverables at 15% each
 - Exam:
   - Exam 1: 15%
   - Exam 2: 10% (Comprehensive)
@@ -86,7 +91,7 @@ Letter grades are assigned according to the following scale:
 
 **Grading Appeals**
 
-Mistakes occasionally happen during the grading process. If you think a mistake has been made regarding your grades, you should send me an email with detailed justification within one week of the date the grades are available. No changes on grades will be made after one week from the date the grades are posted.
+Mistakes occasionally happen during the grading process. If you think a mistake has been made regarding your grades, you should send me an email with detailed justification within one week of the date the grades are available. No changes on grades will be made after twenty days from the date the grades are posted.
 
 
 ### Class Policy
@@ -99,7 +104,7 @@ Office hours are an opportunity to reinforce course topics either one-on-one or 
 **Attendance**
 
 - Attendance is critical to the success of students in.
-- We will take note of who attends, including occasionally using attendance check in place of a quiz score.
+- Attendance will be taken at random, and count toward your participation score.
 - If you miss a class, you are responsible for obtaining lecture notes, handouts, and homework assignments from fellow students.
 - If the instructor is late for class, please wait 20 minutes before leaving.
 
@@ -107,7 +112,7 @@ Office hours are an opportunity to reinforce course topics either one-on-one or 
 **Excused Absences Policy for University-Sanctioned Event**
 
 - Students are advised to carefully read and comply with the excused absences policy for university-sanctioned events contained in the WCU Undergraduate Catalog.
-- In particular, please note that the “responsibility for meeting academic requirements rests with the student,” that this policy does not excuse students from completing required academic work, and that professors can require a “fair alternative” to attendance on those days that students must be absent from class in order to participate in a University-Sanctioned Event.
+- In particular, please note that the "responsibility for meeting academic requirements rests with the student," that this policy does not excuse students from completing required academic work, and that professors can require a “fair alternative” to attendance on those days that students must be absent from class in order to participate in a University-Sanctioned Event.
 
 
 **Late Work**
@@ -123,8 +128,7 @@ A make-up for the exams will be given only with a valid medical or University ex
 
 - Official university communications, including those from your instructor, will be sent through your university e-mail account.
 
-- You are responsible for accessing that mail to be sure to obtain official University communications.
-Failure to access will not exempt individuals from the responsibilities associated with this course.
+- You are responsible for accessing that mail to be sure to obtain official University communications. Failure to access will not exempt individuals from the responsibilities associated with this course.
 Instructor Email Policy
 
 - For individual issue, it is best to contact me via email. I check my email frequently during normal working hours (9-5) on weekdays, and I will try to respond quickly (hopefully the same day). I do also check email on weekends and evenings, but not nearly as frequently (almost never on Sundays). As a result, you should expect longer delays during these times.
