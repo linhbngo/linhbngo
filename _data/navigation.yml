@@ -19,29 +19,21 @@ docs:
 
   - title: "Spring 2020"
     children:
-      - title: "Application of Parallel Computers (496/581)"
-        url: /docs/csc-468
-
-  - title: "Winter 2019"
-    children:
-      - title: "Big Data Engineering (496/581)"
-        url: /docs/csc-467/
-
-  - title: "Fall 2019"
-    children:
-      - title: "Data Structures and Algorithms (241)"
-        url: /docs/csc-241/
-      - title: "Computer Security II (302)"
-        url: /docs/csc-302/
-      - title: "Operating Systems (331)"
-        url: /docs/csc-331/
-      - title: "Distributed and Cluster Computing (496)"
-        url: /docs/csc-466/
+      - title: "Computer Science I"
+        url: /docs/csc-141/
+      - title: "Cloud Computing"
+        url: /docs/csc-468/
+      - title: "Applications of Parallel Computers"
+        url: /docs/csc-469/
+      - title: "Analysis of Algorithms"
+        url: /docs/csc-560/
 
   - title: "Courses Taught"
     children:
       - title: "Fundamentals of Computer Science (110)"
         url: /docs/csc-110/
+      - title: "Data Structures and Algorithms (241)"
+        url: /docs/csc-241/
       - title: "Computer Security II (302)"
         url: /docs/csc-302/
       - title: "Operating Systems (331)"
@@ -50,6 +42,8 @@ docs:
         url: /docs/csc-496/
       - title: "Distributed and Cluster Computing (496)"
         url: /docs/csc-466/
+      - title: "Big Data Engineering (496/581)"
+        url: /docs/csc-467/
       - title: "Programming I (512)"
         url: /docs/csc-512/
       - title: "Data Structures (516)"

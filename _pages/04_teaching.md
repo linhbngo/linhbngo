@@ -13,9 +13,6 @@ sidebar:
 - [CSC 496/581: Applications of Parallel Computers]({{ "/docs/csc-469/" | relative_url }})
 - [CSC 560: Analysis of Algorithms]({{ "/docs/csc-560/" | relative_url }})
 
-**Winter 2019**
-- [CSC 496/581: Big Data Engineering]({{ "/docs/csc-467/" | relative_url }})
-
 **Courses Taught**
 
 - [CSC 110: Fundamental of Computer Science]({{ "/docs/csc-110/" | relative_url }}): Fall 2018, Summer 2019
