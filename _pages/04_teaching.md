@@ -6,7 +6,11 @@ sidebar:
   nav: "docs"
 ---
 
+
+
 **Spring 2020**
+
+Office Hours: M (1:00-3:00PM), W (3:00-4:00PM), TR (12:30-1:30PM)
 
 - [CSC 141: Computer Science I]({{ "/docs/csc-141/" | relative_url }})
 - [CSC 496: Cloud Computing]({{ "/docs/csc-468/" | relative_url }})
