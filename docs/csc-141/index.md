@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Computer Programming I
+title: Computer Science I
 permalink: /docs/csc-141/
 sidebar:
   nav: "docs"
@@ -114,7 +114,8 @@ Grades will be based on the following distribution:
 - Assignments: 60%
   - At least 6 programming assignments, each of which has multiple problems.
 - Quizzes: 20%
-- Exams: 15%
+- Midterm Exam: 10%
+- Final Exam: 5%
 - Attendance and Participation: 5%
 
 Letter grades are assigned according to the following scale:

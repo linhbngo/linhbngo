@@ -9,11 +9,29 @@ toc: true
 
 ### Course Description
 
-This course introduces both graduate and advanced undergraduate students from diverse departments to knowledge and techniques regarding efficient and productive usage of parallel computers. In other words, students learn how to write programs that run fast while minimizing programming effort. The latter is increasingly important since essentially all computers are (becoming) parallel, from supercomputers to laptops. So beyond teaching the basics about parallel computer architectures and programming languages, the course emphasizes commonly used patterns that appear in essentially all programs that need to run fast. The patterns include common computations (e.g. linear algebra, graph algorithms, structured grids ...) and ways to easily compose these into larger programs. We show how to recognize these patterns in a variety of practical problems, efficient (sometimes optimal) algorithms for implementing them, how to find existing efficient implementations of these patterns when available, and how to compose these patterns into larger applications. We do this in the context of the most important parallel programming models today: shared memory, distributed memory, GPUs, and cloud computing (eg MapReduce and Hadoop). We also present a variety of useful tools for debugging correctness and performance of parallel programs. Finally, we have a variety of guest lectures by a variety of experts, including parallel climate modeling, astrophysics, and other topics.
+This course introduces both graduate and advanced undergraduate students from diverse
+departments to knowledge and techniques regarding efficient and productive usage of
+ parallel computers. In other words, students learn how to write programs that run fast
+ while minimizing programming effort. The latter is increasingly important since essentially
+ all computers are (becoming) parallel, from supercomputers to laptops. So beyond teaching
+ the basics about parallel computer architectures and programming languages, the course
+ emphasizes commonly used patterns that appear in essentially all programs that need to
+ run fast. The patterns include common computations (e.g. linear algebra, graph algorithms,
+ structured grids ...) and ways to easily compose these into larger programs. We show
+ how to recognize these patterns in a variety of practical problems, efficient (sometimes
+ optimal) algorithms for implementing them, how to find existing efficient implementations
+ of these patterns when available, and how to compose these patterns into larger applications.
+ We do this in the context of the most important parallel programming models today: shared memory,
+ distributed memory, GPUs, and cloud computing (eg MapReduce and Hadoop). We also present
+ a variety of useful tools for debugging correctness and performance of parallel programs.
+ Finally, we have a variety of guest lectures by a variety of experts, including
+ parallel climate modeling, astrophysics, and other topics.
 
 ### Learning Objectives
 
-- Students will be able to apply mathematical foundations, algorithmic principles, and computer science theory in the modeling and design of computer-based systems in a way that demonstrates comprehension of the tradeoffs involved in design choices.
+- Students will be able to apply mathematical foundations, algorithmic principles,
+and computer science theory in the modeling and design of computer-based systems
+in a way that demonstrates comprehension of the tradeoffs involved in design choices.
 - Students will be able to analyze a problem, and identify and define the computing requirements appropriate to its solution.
 - Students will be able to apply design and development principles in the construction of large-scale computing systems.
 - Students will be able to function effectively on teams to accomplish a common goal.
@@ -22,7 +40,12 @@ This course introduces both graduate and advanced undergraduate students from di
 
 **Prerequisites**
 
-The course is intended to be useful for students from many departments and with different backgrounds, and supplemental introductory materials will be provided to introduce students to programming languages and techniques used through the course. Eventually, the course will reach a level where it is assumed that students attain/have reasonable programming skills in a conventional (non-parallel) language, as well as enough mathematical skills to understand the problems and algorithmic solutions presented
+The course is intended to be useful for students from many departments and with
+different backgrounds, and supplemental introductory materials will be provided to
+introduce students to programming languages and techniques used through the course.
+Eventually, the course will reach a level where it is assumed that students
+attain/have reasonable programming skills in a conventional (non-parallel) language,
+as well as enough mathematical skills to understand the problems and algorithmic solutions presented
 
 **Textbook**
 
@@ -41,46 +64,43 @@ There is no textbook requirement for the course.
 
 ### Tentative Course Outline
 
-- [Introduction]()
-- [Single Processor Machines: Memory Hierarchies and Processor Features]()
-- [Optimizing Matrix Multiply (cont), Introduction to Data Parallelism]()
-- [Shared Memory Parallelism]()
-- [Roofline and Performance Modeling]()
-- [Sources of Parallelism and Locality (Part 1)]()
-- [Sources of Parallelism and Locality (Part 2)]()
-- [An Introduction to CUDA/OpenCL and Graphics Processors (GPUs)]()
-- [Distributed Memory Machines and Programming]()
-- [Advanced MPI and Collective Communication Algorithms]()
-- [UPC++: Partitioned Global Address Space Languages]()
-- [Cloud and big data]()
-- [Parallel Matrix Multiply]()
-- [Dense Linear Algebra]()
-- [Sparse-Matrix-Vector-Multiplication and Iterative Solvers]()
-- [Structured Grids]()
-- [Machine Learning Part 1 (Supervised Learning)]()
-- [Scaling Deep Neural Network Training]()
-- [Machine Learning Part 2 (Unsupervised Learning)]()
-- [Graph Partitioning]()
-- [Graph Algorithms]()
-- [Fast Fourier Transform]()
-- [Climate Modeling]()
-- [Sorting and Searching]()
-- [Dynamic Load Balancing]()
-- [Hierarchical Methods for the N-Body Problem]()
-- [Computational Biology]()
-- [Cosmology]()
-- [Supercomputers & Superintelligence]()
-- [Quantum Computing]()
+- [Introduction](https://youtu.be/o7DQd8FkA6M)
+- [Single Processor Machines: Memory Hierarchies and Processor Features](https://youtu.be/UeVNYwtLJ_s)
+- [Optimizing Matrix Multiply (cont), Introduction to Data Parallelism](https://youtu.be/-RegO-8WF88)
+- [Shared Memory Parallelism](https://youtu.be/PR-98tVHFVg)
+- [Roofline and Performance Modeling](https://youtu.be/hX8KjB3fJ3M)
+- [Sources of Parallelism and Locality (Part 1)](https://youtu.be/p51sY0QcXvM)
+- [Sources of Parallelism and Locality (Part 2)](https://youtu.be/EAIHzh0SjaE)
+- [Sources of Parallelism in Simulation](https://youtu.be/5Ol5cNZ9dKM)
+- [An Introduction to CUDA/OpenCL and Graphics Processors (GPUs)](https://youtu.be/2R5R0nXm3xc)
+- [Distributed Memory Machines and Programming](https://youtu.be/mKsjQGMllac)
+- [Advanced MPI and Collective Communication Algorithms](https://youtu.be/Wy33f9J2CWo)
+- [UPC++: Partitioned Global Address Space Languages](https://youtu.be/0ZnZB3U2OHc)
+- [Cloud and big data](https://youtu.be/o4mv29y3PmM)
+- [Parallel Matrix Multiply](https://youtu.be/ECo-5FN5sTI)
+- [Dense Linear Algebra](https://youtu.be/sVy2EN5ko8U)
+- [Sparse-Matrix-Vector-Multiplication and Iterative Solvers](https://youtu.be/EFXpfNJtG5k)
+- [Structured Grids](https://youtu.be/bvHQ6qAMN2I)
+- [Machine Learning Part 1 (Supervised Learning)](https://youtu.be/3hwI3FHZB_s)
+- [Machine Learning Part 2 (Unsupervised Learning)](https://youtu.be/jeoF4OkM2rc)
+- [Graph Algorithms](https://youtu.be/xbh-UzdRGGs)
+- [Fast Fourier Transform](https://youtu.be/ZTS_jUhgn7g)
+- [Climate Modeling](https://youtu.be/9BwX7cbHOoo)
+- [Sorting and Searching](https://youtu.be/U8Gx63SHa5A)
+- [Dynamic Load Balancing](https://youtu.be/3GiJcggkHnM)
+- [Hierarchical Methods for the N-Body Problem](https://youtu.be/8ct3zV3utMY)
+- [Computational Biology](https://youtu.be/1mDLUDZAg7Q)
+- [Cosmology](https://youtu.be/htEVA4XRAxs)
+- [Supercomputers & Superintelligence](https://youtu.be/B5YG5lxgQ5I)
+- [Quantum Computing](https://youtu.be/zomhCOq9YUQ)
 
 ### Grading
 
 Grades will be based on the following distribution:
 
-- Assignments: 60%
-- Exam:
-  - Exam 1: 15%
-  - Exam 2: 10% (Comprehensive)
-- Quiz: 10%
+- Assignments: 45%
+- Project: 30%
+- Quiz: 20%
 - Participation: 5%
 
 Letter grades are assigned according to the following scale:
