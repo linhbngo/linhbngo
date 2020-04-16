@@ -6,7 +6,16 @@ sidebar:
   nav: "docs"
 ---
 
+**Fall 2020**
+- [CSC 466: Distributed and Cluster Computing]({{ "/docs/csc-466/" | relative_url }})
+- [CSC 331: Operating Systems]({{ "/docs/csc-331/" | relative_url }})
+- [CSC 231: Computer Systems]({{ "/docs/csc-231/" | relative_url }})
 
+
+**Summer 2020**
+
+- [CSC 142: Computer Science II]({{ "/docs/csc-142/" | relative_url "}})
+- [CSC 586: System Administration and Security]({{ "/docs/csc-586/" | relative_url }})
 
 **Spring 2020**
 

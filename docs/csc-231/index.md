@@ -67,12 +67,12 @@ Make sure that your laptop is fully charged for the duration of the class (or co
 As laptop style and model can vary, the following common (and free) software environment will be enforced for all lectures and programming assignments:
 
 - Virtual Environment: Oracle VirtualBox
-- Other software packages will be specified and installed inside the CentOS virtual machine as needed.
+- Other software packages will be specified and installed inside the virtual machine as needed.
 
 
 ### Course Materials
 
-- The course website: https://www.cs.wcupa.edu/lngo/docs/csc-243/
+- The course website: https://www.cs.wcupa.edu/lngo/docs/csc-231/
 
 - Lecture slides and example codes will be available online via the course website and the course’ D2L page
 
@@ -82,6 +82,18 @@ As laptop style and model can vary, the following common (and free) software env
 
 - Google Scholar is another excellent source for downloading preprint or open-source versions of papers.
 
+
+
+### Tentative Course Outline
+
+- Introduction to C Programming Language
+- Data Representation
+- Assembly Language
+- Processor Architecture
+- Memory Hierarchy
+- File Systems
+- Network Programming
+- Concurrent Programming
 
 ### Grading
 
@@ -183,17 +195,6 @@ If you have a disability that requires accommodations under the Americans with D
 
 - It would be a mistke if you just attempt to access the cloass materials via the web browser. "This is a mistake. Just learn Git. The command line interface is faster and more powerful, and you're going to need to learn it at some point in your life. Why not today?" - Dr. Jacob Sorber, Clemson University.
 
-
-### Tentative Course Outline
-
-- Introduction to C Programming Language
-- Data Representation
-- Assember Language
-- Processor Architecture
-- Memory Hierarchy
-- File Systems
-- Network Programming
-- Concurrent Programming
 
 ### Bibliography for Computer Systems
 
