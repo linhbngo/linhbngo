@@ -23,14 +23,6 @@ The following are clear, measurable and observable outcomes from taking this cou
 - Student will learn how to install the Linux OS on a system and how to install and configure various critical services including network file systems and firewalls.
 
 
-### Important Dates
-
-- First Day of Session: 07/01/2019
-- Last Day of Add/Drop: 07/02/2019
-- Last Day of Course Withdrawal: 07/18/2019
-- Last Day of Session: 08/03/2019
-- Official Grades Posted:	08/07/2019
-
 ### Course Requirements
 
 **Textbook**
@@ -77,15 +69,6 @@ As laptop style and model can vary, the following common (and free) software env
   - [Single Sign-On](https://docs.google.com/presentation/d/1NKpbcJNUvss1IdVACVd_XW6YCxCkzPGWLjROpsKROw8/edit?usp=sharing)
   - [Network file system](http://bit.ly/2YtxHfE)
   - [TCP/IP]()
-- Operations
-  - [Configuration Management]()
-  - [Security]()
-  - [Monitoring]()
-  - [Performance Analysis]()
-- After Promotion
-  - [Data Center Basics]()
-  - [Methodology, Policy, and Politics]()
-
 
 ### Grading
 
