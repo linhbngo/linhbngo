@@ -15,7 +15,7 @@ sidebar:
 **Summer 2020**
 
 <!--- [CSC 142: Computer Science II]({{ "/docs/csc-142/" | relative_url "}})-->
-- [CSC 142: Computer Science II](csc142)
+- [CSC 142: Computer Science II]({{ "/csc142/" | relative_url "}})
 - [CSC 586: System Administration and Security]({{ "/docs/csc-586/" | relative_url }})
 
 **Spring 2020**
