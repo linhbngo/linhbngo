@@ -1,0 +1,1 @@
+[csc142]: https://cs.wcupa.edu/lngo/csc142
