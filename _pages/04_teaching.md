@@ -39,5 +39,3 @@ Office Hours: M (1:00-3:00PM), W (3:00-4:00PM), TR (12:30-1:30PM)
 - [CSC 512: Computer Programming I]({{ "/docs/csc-512/" | relative_url }}):  Spring 2019
 - [CSC 516: Introduction to Data Structures and Algorithms]({{ "/docs/csc-516/" | relative_url }}): Spring 2019
 - [CSC 586: System Administration and Security]({{ "/docs/csc-586/" | relative_url }}): Summer 2019
-
-{% include links.md %}
