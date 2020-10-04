@@ -128,5 +128,5 @@ configuration information.
 personal computer. From the figure below, you can see the runner has all ready accepts two jobs after one hour. 
 The students are working hard!
 
-![runner]({{ "/assets/images/20201002/04.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
+![runner]({{ "/assets/images/20201002/05.png" | prepend: site.baseurl | prepend: '/' | prepend: site.url }})
 
