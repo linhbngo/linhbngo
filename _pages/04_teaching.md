@@ -18,9 +18,9 @@ sidebar:
 - [CSC 141: Computer Science I]({{ "/docs/csc-141/" | relative_url }}): Spring 2020
 - [CSC 142: Computer Science II]({{ "/csc142/" | relative_url "}}): Summer 2020
 - [CSC 241: Data Structures and Algorithms]({{ "/docs/csc-241/" | relative_url }}): Fall 2019
-- [CSC 302: Computer Security II]({{ "/docs/csc-302/" | relative_url }}): Fall 2018 ([archive](https://github.com/linhbngo/Computer-Security)), Fall 2019
+- [CSC 302: Computer Security II]({{ "/docs/csc-302/" | relative_url }}): Fall 2018, Fall 2019
 - [CSC 331: Operating Systems]({{ "/docs/csc-331/" | relative_url }}): Spring 2019, Fall 2019
-- [CSC 496: Special Topic in Complex Systems - Distributed and Cluster Computing]({{ "/csc466/" | relative_url }}): Fall 2018 ([archive](https://github.com/linhbngo/Distributed-and-Cluster-Computing)), Fall 2019 ([archive](({{ "/docs/csc-466/" | relative_url }})))
+- [CSC 466: Distributed and Cluster Computing]({{ "/csc466/" | relative_url }}): Fall 2018, Fall 2019
 - [CSC 496: Cloud Computing]({{ "/docs/csc-496/" | relative_url }}): Spring 2019, Spring 2020
 - [CSC 496/581: Big Data Engineering]({{ "/docs/csc-467/" | relative_url }}): Winter 2019
 - [CSC 496/581: Applications of Parallel Computers]({{ "/docs/csc-469/" | relative_url }}): Spring 2020
