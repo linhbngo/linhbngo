@@ -6,6 +6,16 @@ sidebar:
   nav: "docs"
 ---
 
+**Spring 2021**
+
+- [CSC 468: Cloud Computing]({{ "/csc468/" | relative_url }})
+- [CSC 331/525: Operating Systems]({{ "/csc331/" | relative_url }})
+- [CSC 231: Computer Systems]({{ "/csc231/" | relative_url }})
+
+**Winter 2020**
+
+- [CSC 496/581: Big Data Engineering]({{ "/csc467/" | relative_url }})
+
 **Fall 2020**
 
 - [CSC 466: Distributed and Cluster Computing]({{ "/csc466/" | relative_url }})
