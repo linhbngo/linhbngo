@@ -16,19 +16,6 @@ main:
     url: /blog/
 
 docs:
-  - title: "Winter 2021"
-    children:
-      - title: "Big Data Engineering (496/581)"
-        url: /csc467/
-
-  - title: "Spring 2020"
-    children:
-      - title: "Computer Systems"
-        url: /csc231/
-      - title: "Operating Systems"
-        url: /csc331/
-      - title: "Distributed and Cluster Computing"
-        url: /csc466/
 
   - title: "Courses Taught"
     children:
@@ -46,7 +33,7 @@ docs:
         url: /docs/csc-302/
       - title: "Operating Systems (331)"
         url: /csc331/
-      - title: "Cloud Computing (496)"
+      - title: "Cloud Computing (468)"
         url: /csc468/
       - title: "Distributed and Cluster Computing (496)"
         url: /csc466/

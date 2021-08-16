@@ -5,6 +5,12 @@ permalink: /publications/
 author_profile: true
 ---
 
+Halabi, W.H., Smith, D.N., Hill, J.C., Anderson, J.W., Kennedy, K.E., Posey, B.M., **Ngo, L. B.**, & Apon, A.W., (2021, April). Viability of Azure IoT Hub for Processing High Velocity Large Scale IoT Data. In *Companion of the ACM/SPEC International Conference on Performance Engineering* (pp. 73-76).
+
+**Ngo, L. B.**, Burns, R. & Chen, S. (2020). Containerizing CS Learning Environments. Journal of Computing Sciences in Colleges, 36(3), 169-169.
+
+**Ngo, L. B.** & Kilgannon, J. (2020). Virtual Cluster for HPC Education. Journal of Computing Sciences in Colleges, 36(3), 20-30.
+
 Khan, S. M., Chowdhury, M., **Ngo, L. B.**, & Apon, A. (2020). Multi-class Twitter Data Categorization and Geocoding with a Novel Computing Framework. *Cities*, 26, 102410.
 
 **Ngo, L. B.**, Cui, L., Chen ,S. (2019, April). Computing Infrastructures to Support Cybersecurity Education.  In *Proceedings of the 34th Annual Spring Conference of the Pennsylvania Computer and Information Science Educators (PACISE)*.
