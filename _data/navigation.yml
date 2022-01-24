@@ -39,8 +39,10 @@ docs:
         url: /csc466/
       - title: "Big Data Engineering (496/581)"
         url: /csc467/
+      - title: "Competitive Programming"
+        url: /docs/csc495/
       - title: "Applications of Parallel Computers (496/581)"
-        url: /docs/csc-469/
+        url: /docs/csc-496/
       - title: "Programming I (512)"
         url: /docs/csc-512/
       - title: "Data Structures (516)"
