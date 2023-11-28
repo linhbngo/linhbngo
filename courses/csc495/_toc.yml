@@ -1,0 +1,15 @@
+# Table of contents
+
+format: jb-book
+root: index
+
+parts:
+- caption: Introduction
+  chapters:
+    - file: lectures/00-preparation.md
+    - file: lectures/01-introduction.md
+- caption: Problem Solving
+  chapters:
+    - file: lectures/02-ds-algo-libraries.md
+    - file: lectures/03-problem-solving-paradigms.md
+  

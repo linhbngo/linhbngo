@@ -1,0 +1,31 @@
+# Table of contents
+
+format: jb-book
+root: index
+
+parts:
+- caption: Introduction
+  chapters:
+    - file: lectures/01-introduction.md
+    - file: lectures/03-project-part-1.md
+    - file: lectures/02-cloudlab.md
+    - file: lectures/04-why-cloud.md
+- caption: Virtualization
+  chapters:
+    - file: lectures/05-virtualization.md
+    - file: lectures/06-programmatic-deployment.md
+- caption: Containerization
+  chapters:
+    - file: lectures/07-docker.md
+    - file: lectures/15-project-part-2.md
+    - file: lectures/08-docker-compose.md 
+    - file: lectures/09-kvm-docker-podman-singularity.md
+- caption: Orchestration
+  chapters:
+    - file: lectures/10-kubernetes.md
+    - file: lectures/kubernetes-jenkins.md
+    - file: lectures/16-project-part-3.md
+- caption: Appendix
+  chapters:
+    - file: extras/intro-linux.md
+    - file: extras/github.md

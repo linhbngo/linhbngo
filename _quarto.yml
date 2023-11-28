@@ -1,0 +1,71 @@
+project:
+  type: website
+
+website:
+  title: "Linh B. Ngo"
+  navbar:
+    background: primary
+    left:
+      - text: Home
+        file: index.qmd
+      - sidebar:teaching
+      - sidebar:research
+      - sidebar:blog
+  
+  sidebar: 
+    - id: teaching
+      title: "Teaching"
+      style: "docked"
+      collapse-level: 2
+      background: light
+      contents:
+        - section: "CSC231: Computer Systems"
+          contents:
+            - courses/csc231/lectures/01-introduction.qmd
+            - courses/csc231/lectures/02-intro-to-c.qmd
+            - courses/csc231/lectures/03-data-representation.qmd
+            - courses/csc231/lectures/04-more-c.qmd
+            - courses/csc231/lectures/05-architecture.qmd
+            - courses/csc231/lectures/06-machine-language.qmd 
+            - courses/csc231/lectures/07-memory-cache.qmd
+            - courses/csc231/lectures/08-code-optimization.qmd
+        - section: "CSC331: Operating Systems"
+          contents:
+          - section: "Introduction"
+            contents:
+              - courses/csc331/lectures/01-introduction.qmd
+          - section: "Virtualization"
+            contents:
+              - courses/csc331/lectures/02-process.qmd
+              - courses/csc331/lectures/03-process-api.qmd
+              - courses/csc331/lectures/04-limited-direct-execution.qmd
+              - courses/csc331/lectures/05-cpu-scheduling.qmd
+              - courses/csc331/lectures/06-memory-virtualization.qmd
+              - courses/csc331/lectures/07-address-translation.qmd
+              - courses/csc331/lectures/08-paging.qmd
+          - section: "Concurrency"
+            contents:
+              - courses/csc331/lectures/09-concurrency.qmd
+              - courses/csc331/lectures/10-lock-condition-variables.qmd
+              - courses/csc331/lectures/11-semaphores.qmd  
+          - section: "Persistence"
+            contents:
+              - courses/csc331/lectures/12-io-disk-scheduling.qmd
+              - courses/csc331/lectures/13-file-systems.qmd
+              - courses/csc331/lectures/14-crash-consistency-fsck-journaling.qmd  
+              - courses/csc331/lectures/15-minix.qmd
+
+    - id: blog
+      title: "Blog"
+      style: "docked"
+      background: light
+      contents: blogs/*
+        
+format:
+  html:
+    theme: cosmos
+    css: styles.css
+    toc: true
+
+editor: visual
+
